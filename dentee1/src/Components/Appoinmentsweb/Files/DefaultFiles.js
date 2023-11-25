@@ -29,6 +29,23 @@ const Files = () => {
     setSelectedFolder(folderName);
   };
 
+  function formatFileSize(sizeInBytes) {
+    const kilobyte = 1024;
+    const megabyte = kilobyte * 1024;
+    const gigabyte = megabyte * 1024;
+  
+    if (sizeInBytes < kilobyte) {
+      return sizeInBytes + ' B';
+    } else if (sizeInBytes < megabyte) {
+      return (sizeInBytes / kilobyte).toFixed(2) + ' KB';
+    } else if (sizeInBytes < gigabyte) {
+      return (sizeInBytes / megabyte).toFixed(2) + ' MB';
+    } else {
+      return (sizeInBytes / gigabyte).toFixed(2) + ' GB';
+    }
+  }
+  
+
   return (
     <div className='file-head'>
       <div className='file-main'>
@@ -95,22 +112,34 @@ const Files = () => {
             <div className='file-line'></div>
           </div>
           <div className='file-col'>
-            <div className='file-there'>There are no files</div>
-            {selectedFiles.length > 0 && (
-              <div className='selected-files'>
-                <p>Selected Files:</p>
-                <ul>
-                  {selectedFiles.map((file, index) => (
-                    <li key={index}>{file.name}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            <div className='' onClick={handleImage1Click}>
-              <div><button className='file-upload1'>Select Files</button></div>
-              <input type='file' ref={input1Ref} className='file-img-upload-10' onChange={handleFileChange} multiple></input>
+  {selectedFiles.length === 0 && (
+    <div className='file-there'>There are no files</div>
+  )}
+  {selectedFiles.length > 0 && (
+    <div className='selected-files'>
+      <p>Selected Files:</p>
+      <ul>
+        {selectedFiles.map((file, index) => (
+          <li key={index}>
+            <div className='file-row'>
+              <div className='file-name'>{file.name}</div>
+              <div className='file-size'>{formatFileSize(file.size)}</div>
+              
             </div>
-          </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+  <div onClick={handleImage1Click}>
+    <div>
+      <button className='file-upload1'>Select Files</button>
+    </div>
+    <input type='file' ref={input1Ref} className='file-img-upload-10' onChange={handleFileChange} multiple></input>
+  </div>
+</div>
+
+
         </div>
       </div>
     </div>
