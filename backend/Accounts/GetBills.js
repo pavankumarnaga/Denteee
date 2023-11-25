@@ -8,6 +8,7 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
+
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/bills', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
