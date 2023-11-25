@@ -1,0 +1,219 @@
+.Formsq3{
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 0.2%;
+  }
+.personal-main{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.144);
+    border-width: 1px;
+    height: 230px;
+    width: 95%;
+}
+.personal-column{
+    display: flex;
+    flex-direction: column;
+}
+.personal-row{
+    display: flex;
+    flex-direction: row;
+}
+.personal-name1{
+    margin-left: 3%;
+    margin-top: 3%;
+
+}
+.Personal-name2{
+    margin-top: 10px;
+    height: 23px;
+    width: 21vw;
+}
+.personal-date1{
+    margin-top: 3%;
+    margin-left: 8%;
+}
+.personal-date2{
+    margin-top: 10px;
+    height: 23px;
+    width: 21vw;
+
+
+}
+.personal-school1{
+    margin-top: 3%;
+    margin-left: 8%;
+}
+.personal-school2{
+    margin-top: 10px;
+    height: 23px;
+    width: 21vw;
+
+
+}
+.personal-tags1{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.personal-tags2{
+    margin-top: 10px;
+    height: 23px;
+    width: 21vw;
+
+}
+.personal-spouse1{
+    margin-top: 3%;
+    margin-left: 8%;
+}
+.personal-spouse2{
+    margin-top: 10px;
+    height: 23px;
+    width: 21vw;
+
+}
+.personal-button7{
+    height: 30px;
+    /* margin-top: 2%; */
+    width: 60%;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.personal-button7:hover{
+    background-color: #3d50ae;
+}
+.personal-button6{
+    margin-top: -10px;
+    margin-left: 80%;
+    height: 30px;
+    width: 10%;
+}
+.color{
+    background-color: green;
+    border: none;
+    height: 50px;
+    /* margin-left: -5%; */
+    width: 200px;
+}
+.personal-icon10{
+ color: white;
+ margin: 15px;
+}
+.personal-success{
+    color: white;
+    margin-top: 12px;
+}
+
+
+
+@media(max-width:768px){
+
+    .personal-main{
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.144);
+        border-width: 1px;
+        height: 30vh;
+        width: 95%;
+        margin: 10px;
+    }
+    .personal-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .personal-name1{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 10px;
+        font-weight: bold;
+    
+    }
+    .Personal-name2{
+        margin-top: 10px;
+        height: 15px;
+        width: 21vw;
+        font-size: 10px;
+
+    }
+    .personal-date1{
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 6%;
+    }
+    .personal-date2{
+        margin-top: 10px;
+        height: 15px;
+        width: 21vw;
+        font-size: 10px;
+    }
+    .personal-school1{
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 6%;
+    }
+    .personal-school2{
+        margin-top: 10px;
+        height: 15px;
+        width: 21vw;
+        font-size: 10px;
+    }
+    .personal-tags1{
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .personal-tags2{
+        margin-top: 10px;
+        height: 15px;
+        width: 21vw;
+        font-size: 10px;
+    }
+    .personal-spouse1{
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 6%;
+    }
+    .personal-spouse2{
+        margin-top: 10px;
+        height: 15px;
+        width: 21vw;
+        font-size: 10px;
+    }
+    .personal-button7{
+        height: 20px;
+        width: 30px;
+        background-color: rgb(25, 25, 235);
+        border: none;
+        font-size: 10px;
+        color: white;
+    }
+    .personal-button6{
+        margin-top: 10px;
+        margin-left: 80%;
+    }
+    .color{
+        background-color: green;
+        border: none;
+        height: 25px;
+        font-size: 7px;
+        width: 80px;
+    }
+    .personal-icon10{
+     color: white;
+     margin: 5px;
+     margin-top: 7px;
+    }
+    .personal-success{
+        color: white;
+        margin-top: 7px;
+    }
+
+}

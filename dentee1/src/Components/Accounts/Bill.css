@@ -1,0 +1,293 @@
+.bill-Body {
+    margin: 0;
+    margin-left: 10%;
+    width: 90%;
+  margin-top: 5.9%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.search-barbills{
+  height: 39px;
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 15px;
+  border-right: none;
+  border: 1px solid grey;
+}
+.search-containerbills{
+  display: flex;
+  width: 50%;
+}
+.search-btnbills{
+  height: 44px;
+  width: 40px;
+  margin-top: 14.5px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 17px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+  /* Header Styles */
+  .bill-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:-6px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(209, 203, 203);
+  }
+  
+  .bill-icon {
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+  
+  .bill-acc-1 {
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .bill-selc {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 15px;
+  }
+  
+  .bill-date-from,
+  .bill-d-2,
+  .bill-date-to {
+    padding: 4px 25px;
+  }
+  
+  .bill-view-re,
+  .bill-excel
+   {
+    /* padding: 4px 37px; */
+    /* margin-left: 30px; */
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-width: 0.1px;
+    border-color: white;
+  }
+
+  .bill-newpay{
+    /* padding: 4px 37px; */
+    /* margin-left: 30px; */
+    color: white;
+    height: 40px;
+    background-color: #007bff;
+    border-width: 0.1px;
+    border-color: white;
+  }
+  
+  .bill-search {
+    margin: 20px 61px;
+  }
+  
+  .bill-search-1 {
+    padding: 4px 70px;
+  }
+  
+  .bill-se-btn {
+    border: none;
+    align-items: center;
+    background-color: rgb(211, 206, 206);
+    padding: 6px 6px;
+  }
+  
+  /* .icon {
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+  } */
+
+  .bill-table-sunil {
+    width: 60vw;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bill-table-sunil {
+    width: 100%;
+    float: none;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bill-table-head {
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: rgb(209, 203, 203);
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .some td {
+    border-collapse: collapse;
+    padding: 10px 80px;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    /* Adjust styles for screens up to 768px wide */
+    .bill-head {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+  
+    .bill-icon {
+      margin-left: 20px;
+    }
+  
+    .bill-selc {
+      flex-direction: column;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+  
+    .bill-view-re,
+    .bill-excel,
+    .bill-newpay {
+      padding: 4px 20px;
+      margin-left: 10px;
+    }
+  
+    .bill-search {
+      margin: 10px 20px;
+    }
+  
+    .bill-search-1 {
+      padding: 4px 20px;
+    }
+  
+    .bill-total {
+      margin-left: 0;
+    }
+  
+    .some td {
+      padding: 10px 20px;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .bill-Body {
+      margin-left: 10%; 
+      width: 90%; 
+      margin-top: 15%; 
+    }
+  
+  }
+
+  
+
+
+  .Bill-22{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ .Bill-page{
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+}
+ .Bill-pat{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+}
+.trbills{
+  background-color: #007bff;
+  color: white;
+  font-size: medium;
+}
+
+
+
+
+
+
+.bill-table-sunil {
+  width: 100%;
+  border: 1px solid whitesmoke; /* Add a white smoke border to the table */
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bill-table-head {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid whitesmoke; /* Add a white smoke border to table header cells */
+  border-collapse: collapse;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.some td {
+  border: 1px solid whitesmoke; /* Add a white smoke border to table data cells */
+  border-collapse: collapse;
+  padding: 10px 80px;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-label {
+  margin-bottom: 5px;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.popup-buttons button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background-color: #ddd;
+}

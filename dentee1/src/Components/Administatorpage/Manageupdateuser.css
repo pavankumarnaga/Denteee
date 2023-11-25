@@ -1,0 +1,206 @@
+.updatenon{
+    margin-top: 6%;
+    margin-left: 10.5%;
+    width: 91%;
+}
+.update-main{
+    height: 50px;
+    width: 98%;
+    background-color: rgb(245, 244, 244);
+    border: 1px solid rgb(226, 217, 217);
+    display:flex;
+    flex-direction: row;
+}
+
+.update-user{
+    font-size: 20px;
+    font-weight: bold;   
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.update-icon{
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+}
+.update-box{
+    height: 600px;
+    width: 80%;
+    border: 1px solid  rgb(223, 218, 218);
+    margin-top: 40px;
+    margin-left: 90px;
+    border-top: 5px  solid  rgb(230, 227, 227);
+}
+.update-text-1{
+    color:blue;
+    font-weight: 600;
+    margin: 30px 50px;
+    font-size: 20px;
+}
+.update-row{
+    display: flex;
+    flex-direction: row;
+}
+.update-box1,.update-box4{
+    height: 35px;
+    width: 290px;
+    border: 1px solid blue;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.update-icon1{
+    color: rgb(90, 88, 88);
+    padding-top: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.update-input{
+    width: 220px;
+    padding: 2px 5px;
+    border: none;
+    outline-width: 0px;
+}
+.update-box2{
+    height: 35px;
+    width: 95px;
+    background-color: rgb(231, 229, 229);
+    border: 1px solid blue;
+    border-right: none;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.update-image{
+    height: 20px;
+    width: 30px;
+    padding-top: 6px;
+    padding-left: 5px;
+}
+.update-text-2{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.update-icon3{
+    color:rgb(83, 83, 83);
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.update-box3{
+    width: 190px;
+    height: 35px;
+    border: 1px solid blue ;
+    margin-top: 10px;
+    border-left: none;
+}
+.update-input1{
+    width: 170px;
+    border: none;
+    padding-top: 3px;
+    padding-left: 5px;
+    outline-width: 0px;
+}
+.update-box4{
+    margin-top: 50px;
+}
+.update-select{
+    width: 290px;
+    height: 35px;
+    border-color: blue;
+    margin-top: 50px;
+    margin-left: 50px;
+    outline-width: 0px;
+}
+.update-text-3{
+    color:blue;
+    font-weight: 600;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.update-line{
+    width: 90%;
+    margin: 50px 50px;
+    background-color: rgb(236, 235, 235);
+    height: 1px;
+}
+.update-input2{
+    width: 14px;
+    height: 14px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.update-text-4{
+    padding-left: 7px;
+    padding-top: 15px;
+}
+.update-lastbox{
+    height: 55px;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    margin-top: 100px;
+}
+.update-save{
+    height: 30px;
+    width: 60px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 700px;
+}
+.update-cancel{
+    height: 30px;
+    width: 60px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.update-save:hover{
+    background-color: rgb(42, 42, 235);
+}
+.update-cancel:hover{
+    background-color: rgb(42, 42, 235);
+}
+.update-active{
+    height: 30px;
+    width: 70px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-left: 60px;
+}
+.update-popupbox{
+    height: 75px;
+    width: 600px;
+    border: 1px solid blue;
+}
+.update-input3{
+    border: none;
+    outline-width: 0px;
+    padding-left: 5px;
+}
+.update-button1{
+    border: none;
+    background-color: rgb(245, 244, 244);
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+
+@media (max-width:768px){
+    .update-box{
+        width: 92%;
+        height: 95vh;
+        margin-left: 20px;
+    }
+    .update-save{
+        margin-left: 200px;
+    }
+    
+    .update-line{
+        margin-left: 20px;
+    }
+}

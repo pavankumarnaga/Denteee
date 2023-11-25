@@ -1,0 +1,243 @@
+.manageuse{
+    margin-top: 5.8%;
+    margin-left: 10.2%;
+    width: 90.3%;
+}
+.manage-main{
+    height: 7.5vh;
+    width: 101%;
+    margin-left: -1%;
+    background-color: rgb(224, 228, 228);
+    border: 1px solid rgb(226, 217, 217);
+    display: flex;
+    flex-direction: row;
+}
+.box-row{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+.managesearch-bar{
+    height: 5.3vh;
+    width: 55%;
+    margin-left: 5%;
+    margin-top: 2.2%;
+    border-right: none;
+    border: 1px solid grey;
+    outline-width: 0px;
+}
+.managesearch-container{
+    display: flex;
+    width: 50%;
+}
+.managesearch-btn{
+    height: 6vh;
+    width: 5.5%;
+    margin-top: 2.1%;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.manage-button{
+    border: none;
+    background-color: rgb(224, 228, 228);
+    margin-left: 2%;
+    
+}
+.manage-icon{
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+}
+.manage-text{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1% 1%;
+}
+.manage-input-1{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    outline-width: 0px;
+}
+.manage-button1{
+    padding: 7px 7px;
+    background-color: red;
+    border: none;
+}
+.manage-icon1{
+    color: white;
+}
+.manage-button2{
+    margin-right:6%;
+    margin-top: 1%;
+    float: right;
+    width: 10%;
+    height: 5vh;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.manage-button2:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+}
+.manage-box{
+    height: 15vh;
+    width: 99%;
+    border: 1px solid rgb(212, 211, 211);
+    background-color: whitesmoke;
+    /* margin: 20px 25px; */
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.manage-text-1{
+    padding: 1% 2%;
+}
+.manage-text-2{
+    padding: 1% 8%;
+}
+.manage-text-3{
+    width: 7%;
+    height: 4vh;
+    background-color: rgb(6, 171, 236);
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin: 1% 6% ;
+}
+.manage-text-4{
+    margin: 0.5% 12%;
+    font-size: 30px;
+    color:blue;
+}
+.manage-popup-box{
+    height: 9vh;
+    width: 100%;
+    border: 1px solid rgb(212, 211, 211);
+    box-shadow: 1px 1px 2px 1px gray;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 1px;
+    padding-left: 1%;
+}
+.manage-delete{
+    height: 4vh;
+    
+}
+.manage-share{
+    height: 4vh;
+}
+.manage-delete:hover{
+    background-color: rgb(240, 238, 238);
+}
+.manage-share:hover{
+    background-color: rgb(240, 238, 238);
+}
+.manage-delete-confirm{
+    height: 21vh;
+    width: 110%;
+    /* margin-top: 5px; */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+}
+.confirm-1{
+    height: 5vh;
+    background-color: blue;
+    color: white;
+    margin-top: 20%;
+
+}
+.confirm{
+    padding-left: 3%;
+    font-weight: 600;
+    padding-top: 1%;
+}
+.delete-user{
+    padding: 1% 2%;
+}
+.yes-no{
+    display: flex;
+    margin-top: 5%;
+}
+.delete-yes{
+    height: 4.5vh;
+    width: 15%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    font-family: arial;
+    text-align: center;
+    margin-left: 60%;
+    cursor: pointer;
+    outline-width: 0px;
+}
+.delete-no{
+    height: 4.5vh;
+    width: 15%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    font-family: arial;
+    text-align: center;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.sec-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    /* Modify manage-button2 */
+    .manage-button2 {
+        width: 120px;
+    }
+
+    /* Modify manage-box */
+    .manage-box {
+        height: 50px;
+        width: 95%;
+        border: 1px solid rgb(212, 211, 211);
+        background-color: rgb(240, 237, 237);
+        margin: 20px 0px 20px 10px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* Modify manage-text-1 and manage-text-2 */
+    .manage-text-1,
+    .manage-text-2 {
+        padding: 10px 10px;
+    }
+
+    /* Modify manage-text-3 */
+    .manage-text-3 {
+        width: 50px;
+        height: 30px;
+        margin: 10px 0px 10px 20px;
+    }
+
+    /* Modify manage-text-4 */
+    .manage-text-4 {
+        margin: 8px 0px 8px 3px;
+        font-size: 20px; /* Reduced font size for better fit */
+        color: blue;
+    }
+
+    /* Modify manage-popup-box */
+    .manage-popup-box {
+        height: 70px;
+        width: 120px;
+    }
+}

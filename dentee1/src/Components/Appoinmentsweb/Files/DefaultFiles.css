@@ -1,0 +1,391 @@
+.file-main{
+    display: flex;
+    flex-direction: row;
+}
+.file-head{
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 90%;
+}
+.document{
+    height: 35px;
+    width: 10%;
+    background-color: rgb(77, 183, 224);
+    border: none;
+    margin-top: 20px;
+    margin-left: 4.1%;
+    color: white;
+    font-weight: 600;
+}
+.consentform{
+    height: 35px;
+    width: 10%;
+    border: 1px solid rgb(230, 227, 227);;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.file-box{
+    height: 220px;
+    width: 93%;
+    border: 1px solid rgb(192, 190, 190);
+    margin-left: 50px;
+    margin-top: -1.5%;
+}
+.file-icon{
+    margin-left: 70%;
+    color: gray;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.file-show{
+    font-weight: 600;
+    padding-top: 5%;
+    padding-left: 15%;
+}
+.file-upload{
+    height: 35px;
+    width: 110%;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.file-upload22{
+    height: 35px;
+    width: 50%;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 63%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.file-upload:hover{
+background-color: #3d50ae;
+}
+
+.file-upload22:hover{
+    background-color: #3d50ae;
+    }
+.file-folder{
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 15%;
+}
+.file-icon1{
+    font-size: 22px;
+    color: rgb(63, 62, 62);
+    margin-left: 15%;
+    margin-top: 15px;
+}
+.file-patient{
+    margin-left: 3%;
+    margin-top: 15px;
+}
+.file-line{
+    height: 1px;
+    width: 150%;
+    margin-left: 15%;
+    margin-top: 10px;
+    /* background-color: rgb(224, 223, 223); */
+}
+.file-scan{
+    margin-left: 1vw;
+    margin-top: 5px;
+}
+.file-icon2{
+    font-size: 22px;
+    color: rgb(63, 62, 62);
+    margin-left: 2vw;
+    margin-top: 5px;
+}
+.file-col{
+    display: flex;
+    flex-direction: column;
+}
+.file-there{
+    padding-left: 32vw;
+    padding-top: 50px;
+}
+.file-upload1{
+    height: 35px;
+    width: 250px;
+    background-color: #007bff;
+    border: none;
+    margin-top: 30px;
+    margin-left: 70%;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.file-upload1:hover{
+    background-color: #3d50ae;
+    }
+.file-img-upload-10{
+    display: none;
+}
+/* ----------------------------popup css---------------------------- */
+.file-popup-box{
+    /* height: 280px; */
+    width: 109%;
+    margin-top: -35%;
+    border: 1px solid rgb(231, 223, 223);
+    background-color: whitesmoke;
+    padding-right: 7%;
+}
+
+.file-popup-box234{
+    /* height: 280px; */
+    width: 109%;
+    margin-left: -50%;
+    margin-top: -35%;
+    border: 1px solid rgb(231, 223, 223);
+    background-color: whitesmoke;
+    padding-right: 7%;
+}
+.file-popup-box1{
+    height: 240px;
+    width: 63%;
+    border-style: dotted;
+    border-color: rgb(121, 107, 107);
+    margin-left: 2%;
+    margin-top: 20px;
+}
+.file-icon3{
+    color: rgb(17, 181, 187);
+    font-size: 18px;
+    padding: 10px 10px;
+}
+.file-portlet{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.file-box2{
+    height: 180px;
+    width: 95%;
+    border: 1px solid rgb(197, 191, 191);
+    cursor: pointer;
+    margin-left: 3%;
+}
+.file-box3{
+    height: 150px;
+    width: 40vw;
+    border: 1px solid rgb(197, 191, 191);
+    margin-left: 3%;
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.file-icon4{
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+
+}
+.file-button{
+    border: none;
+    background-color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 41%;
+}
+.file-btn-upload{
+    display: none;
+}
+.file-left-upload{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+
+
+
+.file-drop{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(61, 56, 56);
+    margin-left: 31%;
+}
+.file-to{
+    color: rgb(85, 79, 79);
+    margin-left: 1.5%;
+    margin-top: 8px;
+}
+.file-click{
+    margin-left: 45%;
+    margin-top: 8px;
+}
+.file-select1{
+    width: 82%;
+    height: 35px;
+    border-color: skyblue;
+    margin-top: 20px;
+    margin-left: 18%;
+}
+.file-input{
+    width: 20.5vw;
+    height: 35px;
+    border-color: skyblue;
+    margin-top: 20px;
+    margin-left: 5vw;
+    padding-left: 10px;
+    outline-width: 0px;
+}
+.file-save{
+    height: 30px;
+    width: 15%;
+    background-color: #007bff;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-left: 20%;  
+}
+.file-cancel{
+    height: 30px;
+    /* width: 17%; */
+    background-color: #007bff;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-left: 5%;
+}
+.file-save:hover{
+    background-color:#3d50ae;
+}
+.file-cancel:hover{
+    background-color:#3d50ae;
+}
+/* ----------------------------------------------------------------- */
+
+@media (max-width: 768px){
+    .file-box{
+        height: 260px;
+        width: 90%;
+        margin-left: 11%;
+    }
+    .file-show{
+        font-weight: 600;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: 10px;
+    }
+    .file-upload{
+        height: 35px;
+        width: 35%;
+        font-size: 12px;
+    }
+    .document{
+    height: 35px;
+    width: 20%;
+    margin-left: 11%;
+    font-size: 12px;
+    }
+    .consentform{
+        height: 35px;
+        width: 20%;
+        font-size: 10px;
+    }
+    .file-icon{
+        margin-left: 42%;
+    }
+    .file-icon1{
+        font-size: 20px;
+    }
+    .file-patient{
+        font-size: 14px;
+    }
+    .file-icon2{
+        font-size: 20px;
+        margin-left: 5vw;
+    }
+    .file-scan{
+        font-size: 14px;
+    }
+    .file-line{
+        height: 1px;
+        width: 95%;
+        margin-left: 15%;
+    }
+    .file-there{
+        padding-left: 11vw;
+    }
+    .file-upload1{
+        width: 150px;
+        margin-left: 25%;
+    }
+    /* -----------------------------popup css------------------------------------ */
+    .file-popup-box{
+        width: 90%;
+    }
+    .file-portlet{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .file-drop{
+        font-size: 16px;
+        margin-left: 18%;
+    }
+    .file-to{
+        margin-left: 2%;
+        margin-top: 2px;
+    }
+    .file-save{
+        height: 30px;
+        width: 35%;
+        margin-left: 20%;  
+    }
+    .file-cancel{
+        height: 30px;
+        width: 40%;
+        margin-left: 5%;
+    }
+    /* -------------------------------------------------------------- */
+
+    .file-box2{
+        height: 180px;
+        width: 94%;
+        border: 1px solid rgb(197, 191, 191);
+        margin-left: 3%;
+    }
+    .file-box3{
+        height: 150px;
+        width: 36vw;
+        border: 1px solid rgb(197, 191, 191);
+        margin-left: 3%;
+        margin-top: 15px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        background-color: rgb(223, 220, 220);
+    }
+    .file-drop{
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(61, 56, 56);
+        margin-left: 5%;
+    }
+    .file-main{
+        align-items: center;
+    }
+    .file-click{
+        margin-left: 33%;
+    }
+    .file-button{
+        margin-left: 32%;
+    }
+}

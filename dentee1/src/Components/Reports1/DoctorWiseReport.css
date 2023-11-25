@@ -1,0 +1,331 @@
+.maincontdws{
+    margin-top: 6%;
+    margin-left: 1.4%;
+    width: 97%;
+}
+
+
+
+
+.dwsmain-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    height: 50px;
+    width: 102%;
+    margin-left: 9.2%;
+    background-color:rgb(219, 228, 231);
+}
+/* .dwsmainhead-icon{
+    margin-top: 5px;
+    margin-left: 50px;
+} */
+.dwsmain-heading{
+    font-size: 89%;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+
+
+
+
+.dws-body{
+    width: 92%;
+}
+/* .dws-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(209, 203, 203);
+} */
+/* .dws-icon{
+    margin-top: 5px;
+    margin-left: 50px;
+    background-color: rgb(209, 203, 203);
+    border:none;
+    cursor: pointer;   
+} */
+/* .dws-icon-1{
+    font-size: 17px;
+}
+.dws-report{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+} */
+.dws-menu{
+    /* margin-left: 890px; */
+    margin-left: 70%;
+    background-color: rgb(209, 203, 203);
+    cursor: pointer; 
+    border-width: 0.1px;
+}
+.dws-menu-1{
+    font-size: 92%;
+}
+.dws-sel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    flex-wrap: wrap;
+}
+.dws-treatment{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    font-size: 13%;
+    margin-top: 2%;
+    align-items: center;
+}
+.dws-treatment-1{
+    padding: 7%;
+    width: 145px;
+    margin-left: 7%;
+    border-width: 0.1px;
+}
+.dws-date-sel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    font-size: 13%;
+    margin-top: 2%;
+    align-items: center;
+}
+.dws-date-sel-1{
+    padding: 6%;
+    width: 140px;
+    margin-left: 12%;
+    border-width: 0.1px;
+}
+.dws-view-1:hover {
+    background-color: #3d50ae; 
+  }
+/* .dws-view{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    font-size: 13px;
+    margin-top: 20px;
+    align-items: center;
+    
+} */
+.dws-view-1{
+    padding: 8%;
+    width: 100px;
+    margin-left: 7%;
+    border-width: 0.1px;
+   
+}
+/* .dws-view-2{
+   background-color: white;
+   padding: 20px 30px;
+} */
+.dws-1{
+    padding: 20px 40px;
+}
+/* .dws-filter{
+    margin-left: 10px;
+    margin-top: 23px;
+    background-color: white;
+    border-width: 0.1px;
+    border-color: gray;
+    width: 40px;
+    height: 32.5px;
+}
+.dws-filter-1{
+    cursor: pointer; 
+    font-size: 15px;
+} */
+.dws-date-1{
+    margin-left: 1%;
+    margin-top: 2%;
+    
+}
+.dws-date-2{
+    padding: 7% 8%;
+}
+.dws-date-to{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.dws-date-3{
+    margin-left: 1%;
+    margin-top: 2%;
+}
+.dws-date-4{
+    padding: 7% 8%;
+}
+.dws-view{
+    margin-left: 3%;
+    margin-top: 2%;
+    border-width: 0.1px;
+    
+}
+.dws-view-1{
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.dws-table-nikhil{
+    width: 92%;
+    float: none;
+    border: 1px solid rgb(209, 203, 203);
+    margin-left: 9%;
+    border-collapse: collapse;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.dws-table-head{
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: #007bff;
+    color: white;
+    padding: 1%;
+    font-size: 91%;
+
+}
+.dws-some-1 .td-some-1 {
+    border-collapse: collapse;
+    padding: 1% 5%;
+} 
+.dws-table-head,
+.td-some-1 {
+    align-items: center;  
+}
+.dws-footer-nikhil{
+    display: flex; 
+    align-items: center; 
+}
+/* .thead-nikhil{
+    background-color: #007bff;
+} */
+/* .dws-bottom-icons{
+    color: grey;
+    margin: 10px 30px;
+}
+.dws-bottom-num{
+    color: grey;
+    margin: 9px 15px;
+    font-size: 13px;
+} */
+/* .dws-btm-righticon{
+    color: grey;
+    margin: 10px 30px;  
+}
+.dws-btm-items{
+    font-size: 13px;
+    margin: 8px 10px;
+} */
+/* .dws-btm-items2{
+    font-size: 14px;
+    margin: 8px 0px 8px 500px;
+    color: rgb(174, 170, 170);
+}
+.dws-re-icon{
+    font-size: 15px;
+    margin-bottom: -3px;
+} */
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .dws-footer-nikhil{
+        display: flex; 
+        align-items: center; 
+    }
+    /* .dws-bottom-icons{
+        color: grey;
+        margin: 10px 15px 10px 5px;
+    } */
+
+    /* .dws-bottom-num{
+        color: grey;
+        margin: 10px 15px 10px 5px;
+        font-size: 13px;
+    }
+     */
+    /* .dws-btm-righticon{
+        color: grey;
+        margin: 10px 15px 10px 5px; 
+    }
+    .dws-btm-items{
+        font-size: 13px;
+        margin: 10px 15px 10px 5px;
+    } */
+    /* .dws-btm-items2{
+        font-size: 14px;
+        margin: 8px 0px 8px 100px;
+        color: rgb(174, 170, 170);
+    }
+    .dws-re-icon{
+        font-size: 15px;
+        margin-bottom: -3px;
+    }
+    .dws-icon{
+        margin-top: 5px;
+        margin-left: 10px;
+        background-color: rgb(209, 203, 203);
+        border:none;
+        cursor: pointer;   
+    } */
+    /* .dws-report{
+        font-size: 15px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .dws-menu{
+        margin-left: 120px;
+        background-color: rgb(209, 203, 203);
+        cursor: pointer; 
+        border-width: 0.1px;
+    } */
+    /* .dws-treatment{
+        font-size: 13px;
+    }
+    .dws-date-1{
+        margin-left: 70px;
+        margin-top: 23px; 
+    }
+    .dws-view{
+        margin-left: 60px;
+        margin-top: 20px;
+        border-width: 0.1px;   
+    }
+    .dws-filter{
+        margin-left: 150px;
+        margin-top: 23px;
+    } */
+    /* .dws-date-sel{
+        margin-left: 30px;
+    } */
+}
+
+
+
+.sury{
+    background-color: #007bff;
+    /* margin-left: 5%; */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Ram-Polinati{
+    color: black;
+    margin: 2% 1%;
+    font-size: 91%;
+  }
+  .Polinati{
+    display: flex; 
+    align-items: center;
+    padding-left: 10%; 
+  }

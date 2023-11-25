@@ -1,0 +1,259 @@
+.Dentalchart22va122 {
+  margin-left: 10%;
+  margin-top: 6%;
+  width: 89.5%;
+}
+.pat-dc{
+  display: flex; 
+  align-items: center;
+  padding-left: 10px; 
+  margin-left: 135px;
+}
+.but-dc{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pat-bott-dc{
+color: black;
+  margin: 9px 10px;
+  font-size: 13px;
+}
+
+
+.search-bar12va{
+  height: 39px;
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 0px;
+  border-right: none;
+  border: 1px solid grey;
+  outline-width: 0px;
+}
+.search-container12va{
+  display: flex;
+  width: 50%;
+}
+.search-btn12va{
+  height: 43px;
+  width: 40px;
+  margin-top: 0px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 17px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.Dental-head1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -1%;
+  height: 8vh;
+  width: 100%;
+  background-color:rgb(219, 228, 231);
+}
+.Dental-icon2{
+  margin-top: 0.8%;
+  margin-left: 4%;
+}
+.Dental-heading3{
+  font-size: 15px;
+  margin-left: 2%;
+  font-weight: bold;
+}
+
+.Dentalchart22va12 {
+  background-color: white;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.heading-admin4va12 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color:#0a0707;
+  background-color: #ddd;
+  height: 60px;
+}
+
+.heading-admin4va12 svg {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+ 
+
+.Dental-rowva12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  
+}
+
+.search-boxva12 {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+
+
+
+
+
+
+
+
+/*   
+.Dental-recordva123 {
+
+  border: none;
+  text-align: right;
+  margin-top: 100px;
+  background-color: #007bff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  
+} */
+
+.Dental-tableva12 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+ 
+}
+
+
+
+
+  /* background-color: #e22b3a; */
+
+.Dental-tableva12 td {
+  padding: 1%;
+  text-align: left;
+  border-bottom: 1px solid #720dc5;
+  border: 1px solid #ddd
+  
+}
+
+.Dental-tableva12 th {
+  background-color: hsl(210, 6%, 87%);
+  height: 3vh;
+  color: rgb(7, 7, 7);
+  border: 1px solid #ddd;
+  text-align: left;
+  padding-left:20px;
+  /* margin-right: 90px; */ 
+}
+
+
+
+/* .headingname12{
+  margin-left: 70px;
+} */
+
+
+.Dental-tableva12 td input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.Dental-tableva12 td button {
+  background-color: #9c9fa1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.Dental-tableva12  {
+  margin-left: 5px;
+}
+.headingbutton12{
+margin-right:5px;
+
+
+}
+.dropdownva12{
+  /* margin-left: 3%; */
+  width: 1%;
+  height:3vh ;
+} 
+
+
+.data-inputva12{
+  margin-left: -18vw;
+  height: 5vh;
+  border-radius: 5px;
+  width: 16vw;
+}
+
+.add-button40va12{
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  margin-top: 1%;
+  height: 5vh;
+  margin-left: 85%;
+  color: whitesmoke;
+  
+  
+}
+
+
+
+/* Your existing CSS code goes here */
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .Dentalchart22va12 {
+    padding: 10px;
+  }
+
+  .Dental-rowva12 {
+    flex-direction: column;
+  }
+
+  .Dental-rowva12 > div {
+    margin-bottom: 10px;
+  }
+
+  .Dental-tableva12 {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .Dental-tableva12 th {
+    background-color: rgb(234, 237, 240);
+  }
+
+  .Dental-tableva12 td {
+    padding: 8px;
+    font-size: 14px;
+    background-color: antiquewhite;
+  }
+
+  .Dental-tableva12 button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  /* Responsive styles for search button */
+  .search-bar-buttonva12 {
+    width: 40px;
+    height: 28px;
+  }
+}

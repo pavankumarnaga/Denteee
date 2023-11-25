@@ -1,0 +1,126 @@
+.tplanbody {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    height: 40vh;
+  }
+  .tpaln-container{
+    margin-left: 1%;
+    margin-top: 0.1%;
+    width: 98%;
+  }
+  
+  .tplanbuttons button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tplan-add-btn {
+    margin-left: 75%;
+    padding: 8px 20px;
+    border: none;
+    margin-top: 25px;
+    gap: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tplan-add-btn:hover {
+    background-color: #3d50ae;
+    /* transform: scale(1.1); */
+  }
+  
+  
+  #tplan-q-icon {
+    font-size: 18px;
+    margin-left: 1%;
+    margin-top: 30px;
+    color: grey;
+  }
+  
+  .tplan-btm-para {
+    height: 66px;
+    width: 99%; 
+    background-color: #f9f9f9;
+    margin-top: 25px;
+    margin-left: 10; 
+    border: 1px solid grey;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  .tplan-btm-statement {
+    text-align: center; 
+    font-size: 18px;
+  }
+/* Prescription Container */
+.tplan-container {
+  position: relative;
+}
+
+/* Sidebar Styles */
+.tplansidebar {
+  position: fixed;
+  top: 110px;
+  right: -300px; /* Initial hidden position on the right side */
+  width: 300px;
+  height: 80%;
+  background-color: #f1f1f1;
+  transition: right 0.3s ease-in-out; /* Slide in from the right with a smooth transition */
+  z-index: 999;
+}
+
+.tplansidebar.open {
+  right: 0; /* Slide in from the right */
+}
+
+.tplansidebar-content {
+  padding: 20px;
+}
+.tplansidebar-input{
+  padding: 6px 40px;
+  border-radius: 5px;
+  border:0.5px solid grey;
+}
+
+/* Style for the question icon */
+#tplan-q-icon {
+  cursor: pointer;
+  float: right;
+  margin-right: 50px;
+  font-size: 21px;
+}
+
+
+
+.tplancancel-button {
+  /* background-color: #ff5555; */
+  color: #fff;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border:none;
+  border-radius: 3px;
+  color:rgb(38, 113, 142);
+  font-size: 17px;
+}
+
+  @media (max-width: 768px) {
+    .tplanbody {
+      margin-top: 60px; 
+    }
+  
+    .tplan-add-btn {
+      margin-left: 30%;
+    }
+  
+  
+    #tplan-q-icon {
+      margin-left: 10%; 
+    }
+  }

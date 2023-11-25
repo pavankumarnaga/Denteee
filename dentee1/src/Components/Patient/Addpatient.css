@@ -1,0 +1,268 @@
+.maincont1234 {
+  margin-top: 5.9%;
+  margin-left: 11.3%;
+  width: 88%;
+}
+
+.main-head1234 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  height: 50px;
+  width: 98%;
+  background-color: rgb(219, 228, 231);
+}
+
+.mainhead-icon1234 {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.main-heading1234 {
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.patient-ds-form123 {
+  display: flex;
+  flex-direction: row;
+}
+
+.Date-123 {
+  display: flex;
+  flex-direction: row;
+}
+
+.Phone-123 {
+  display: flex;
+  flex-direction: row;
+}
+
+.Base-123,
+.base-123 {
+  display: flex;
+}
+
+.Base1 {
+  display: flex;
+}
+
+.Base3 {
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -9px;
+  background-color: white;
+  /* padding: 10px; */
+  width: 150%;
+}
+
+.gender-range {
+  width: 5%;
+  
+}
+
+.gender-range1 {
+  width: 300px;
+  height: 28px;
+}
+
+.Button009 {
+  background-color: #007bff;
+  color: white;
+  margin-left: 90px;
+  margin: 5px;
+  border-width: 0px;
+  cursor: pointer;
+  padding: 5px;
+}
+.Button009:hover{
+  background-color: #3d50ae;
+  color: whitesmoke;
+}
+.ss1 {
+  color: rgb(16, 90, 164);
+  text-align: left;
+  margin-top: -27px;
+}
+
+.ss2 {
+  text-align: left;
+  margin-top: -50px;
+  color: rgb(35, 109, 213);
+}
+
+.ss3 {
+  color: rgb(35, 109, 213);
+  text-align: left;
+  margin-top: -30px;
+}
+
+.text-2{
+  display: flex;
+}
+
+
+
+.sa {
+  height: 15px;
+  padding: 6px;
+  /* width: 100%; */
+  border-style: solid;
+  border-width: 1px;
+}
+
+.IMG1230 {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.hsa {
+  height: 30px;
+}
+
+.small-image1239 {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container123 {
+  padding: 30px;
+  display: flex;
+  margin-top: 15px;
+  /* height: 330px; */
+  width: 100%;
+  flex-direction: row;
+}
+
+.second-container234 {
+  width: 63%;
+}
+
+.button135 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  height: 22px;
+  width: 100%;
+  text-align: center;
+}
+.button135:hover{
+  background-color: #3d50ae;
+  color: whitesmoke;
+}
+
+
+@media (max-width: 1024px) {
+  .patient-ds-form123 {
+    flex-direction: row;
+  }
+
+  .gender-range {
+    width: 100%;
+    margin-bottom: 10px;
+  
+  }
+
+  .sa {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .patient-ds-form123 {
+    flex-direction: row;
+  }
+
+  .gender-range,
+  .sa {
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  .Drop{
+    width: 50px;
+    height: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+.Pat123 {
+  color: rgb(151, 148, 148);
+  height: 33px;
+  width: 40px;
+  margin-top: 1px;
+  margin-left: 59%;
+  border: none;
+  background-color: rgb(250, 246, 246);
+}
+
+@media (max-width: 1024px) {
+  .Pat123 {
+    margin-left: 59%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .Pat123 {
+    margin-left: 10px; 
+  }
+}
+
+
+.icon-7 {
+  font-size: 25px;
+}
+
+.main-container123 {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
+  width: 91.5%;
+  margin-left: 2px;
+}
+
+
+
+
+.image-container2345 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .image-container2345 {
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 2%;
+  }
+}
+
+
+
+.ss {
+  color: rgb(35, 109, 213);
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the styles for screens with a max-width of 768px (e.g., tablets and smaller screens) */
+  .ss {
+    font-size: 14px;
+    height: 28px;
+    margin-top: 30%;
+    margin-right: 15%;
+    margin-left: -68%;
+     }
+}

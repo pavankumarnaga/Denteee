@@ -1,0 +1,139 @@
+/* .rx-maincont{
+    margin-left:5%;
+    padding-top: 4.7%;
+    height:auto;
+    position: relative;
+}
+
+.rx-head{
+    padding-top: 8px;
+    padding-left: 7%;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 233, 233);
+    border: 1px solid rgb(223, 218, 218);
+}
+.rx-text{
+    font-weight: 600;
+    padding-left: 50px;
+}
+.rx-box{
+    height: 100vh;
+    width: 90%;
+    border: 1px solid  rgb(223, 218, 218);
+    margin-top: 40px;
+    margin-left: 40px;
+    border-top: 5px  solid  rgb(216, 214, 214);
+}
+.rx-box2{
+    width: 90%;
+    height: 80vh;
+    background-color: rgb(233, 229, 229);
+    margin-top: 30px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.rx-text2{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: rgb(73, 70, 70);
+    font-weight: bold;
+}
+.rx-input-1{
+    width: 400px;
+    height: 30px;
+    border: 2px solid skyblue;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.rx-select-1{
+    width: 170px;
+    height: 35px;
+    border-color: skyblue;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.rx-select{
+    display: flex;
+    flex-direction: row;
+}
+.rx-iconp{
+    font-size: 30px;
+    color: white;
+}
+.rx-buttonp{
+    background-color: #3d50ae;
+    border-radius: 60px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.rx-hr{
+    width: 90%;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+.rx-text3{
+    padding-left: 30px;
+    padding-top: 50px;
+    font-size: 20px;
+    color: rgb(73, 70, 70);
+    font-weight: bold;
+}
+.rx-input-2{
+    width: 90%;
+    height: 30px;
+    border: 2px solid skyblue;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.rx-sav-can{
+    display: flex;
+    flex-direction: row;
+}
+.rx-save{
+    height: 28px;
+    width: 60px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 900px;
+    margin-top: 20px;
+}
+.rx-cancel{
+    height: 28px;
+    width: 60px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.rx-main-table{
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid rgb(201, 196, 196);
+    margin-left: 70px;
+    border-collapse: collapse;
+    height: 100px;
+}
+.rx-table{
+    height: 40px;
+    background-color: #007bff;
+    color:white;
+    border: 1px solid rgb(201, 196, 196);
+}
+.rx-table-body{
+    text-align: center;
+}
+.rx-input-3{
+    height: 30px;
+    width: 90px;
+    border: 1px solid skyblue;
+} */

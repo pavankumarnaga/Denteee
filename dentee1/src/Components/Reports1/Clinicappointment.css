@@ -1,0 +1,232 @@
+.appointment-body {
+    margin-left: 10.1%;
+    margin-top: 6%;
+    width: 90%;
+}
+
+.appointment-ka {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 237, 237);
+    border: 1px solid rgb(226, 217, 217);
+    display: flex;
+    flex-direction: row;
+}
+
+.appointment-kb {
+    border: none;
+    background-color: rgb(241, 237, 237);
+    margin-left: 20px;
+}
+
+.appointment-kc {
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+}
+
+.appointment-kd {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.appointment-ke {
+    height: 35px;
+    width: 145px;
+    border-color: black;
+    margin: 20px 80px;
+    outline-width: 0px;
+}
+
+.appointment-kf {
+    height: 35px;
+    width: 150px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.appointment-kg {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-kh {
+    height: 100px;
+    width: 145px;
+    background-color: rgb(241, 237, 237);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: gray;
+}
+
+.appointment-kh:hover {
+    background-color: #0077bf;
+    color: white;
+}
+
+.appointment-ki {
+    font-size: 50px;
+    padding-left: 45px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.appointment-kj {
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.appointment-kk {
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.appointment-kl {
+    padding-left: 35px;
+    font-size: 16px;
+}
+
+.appointment-input-a {
+    width: 140px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline-width: 0px;
+}
+
+.appointment-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-k2 {
+    display: flex;
+}
+
+.appointment-heading {
+    background-color: #007bff;
+    color: white;
+    height: 40px;
+    width: 1000px;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.appointment-head {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.appointment-one {
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.appointment-two {
+    height: 30px;
+    background-color: rgb(250, 248, 248);
+    border: 1px solid rgb(224, 222, 222);
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.appointment-main {
+    height: 40vh;
+    width: 100%;
+    border: 1px solid rgb(197, 185, 185);
+}
+
+.appointment-kn {
+    padding-left: 74%;
+}
+
+.k6 {
+    padding-left: 81.8%;
+}
+
+.k7 {
+    padding-left: 81%;
+}
+
+@media (max-width: 768px) {
+    .appointment-ke {
+        margin: 10px 200px 10px 10px;
+    }
+
+    .appointment-input-a {
+        margin-left: 10px;
+        height: 32px;
+    }
+
+    .appointment-kf {
+        height: 33px;
+        width: 130px;
+        font-size: 13px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .appointment-kh {
+        height: 60px;
+        width: 60px;
+        background-color: rgb(241, 237, 237);
+        margin-left: 10px;
+    }
+
+    .appointment-ki {
+        font-size: 20px;
+        padding-left: 18px;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+
+    .appointment-kj {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .appointment-kk {
+        font-size: 10px;
+        padding-left: 1px;
+    }
+
+    .appointment-kl {
+        padding-left: 3px;
+        font-size: 12px;
+    }
+
+    .appointment-head {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .appointment-main {
+        height: 30vh;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .appointment-kn {
+        padding-left: 170px;
+    }
+}
+
+
+.kia6{
+margin-left: 84%;
+
+}
+
+.appointment-kn{
+    margin-left: 9%;
+}
+/* .appointment-kg{
+    margin-left: 30%;
+} */

@@ -1,0 +1,49 @@
+/* Accounts.css */
+.Administator1{
+    width: 80%;
+    
+}
+.card-container737-go {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 80%; */
+    justify-content: space-between;
+   
+  }
+  
+  .card737-go {
+    border: 1px solid #7b7a7a;
+    background-color: white;
+    padding: 5px;
+    margin: 4px;
+    text-align: center;
+    width: calc(25% - 30px); 
+    box-shadow: 0 0 5px rgba(31, 30, 30, 0.2);
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+   
+  }
+  
+  .card737-go:hover {
+    transform: scale(1.05);
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .card737-go a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .card737-go a:hover {
+    color: white;
+  }
+  
+  .card737-go svg {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }

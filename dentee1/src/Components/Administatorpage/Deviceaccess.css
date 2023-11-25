@@ -1,0 +1,114 @@
+/* Deviceaccess.css */
+.maincontgop11{
+  margin-left: 10%;
+  margin-top: 1.5%;
+  width: 89.9%;
+}
+.pat-die{
+  display: flex; 
+  align-items: center;
+  padding-left: 1%; 
+}
+.pat-bot-die{
+color: black;
+  margin: 1%  1%;
+  font-size: 13px;
+}
+.but-die{
+background-color: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.patientdocument-headgop11{
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 4%;
+height: 10vh;
+width: 100%;
+background-color:rgb(219, 228, 231);
+}
+.patient-icongop11{
+margin-top: 1%;
+margin-left: 3%;
+}
+.patient-headinggop11{
+font-size: 15px;
+margin-left: 1%;
+font-weight: bold;
+}
+.table-heading-gop11 {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 1%;
+  font-weight: bold;
+}
+
+
+.table-row-gop11 {
+  cursor: pointer; 
+  transition: background-color 0.2s; 
+}
+
+.table-row-gop11:hover {
+  background-color: #f0f0f0; 
+}
+
+.type-gp-112[type="text"] {
+  width: 400%; 
+  padding: 8%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.enable-disable-button-ipog-7 {
+  padding: 8px 12px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  margin-left: 4%;
+  height: 5vh;
+  /* margin-top: 4%; */
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.enable-disable-button-ipog-7.disabled {
+  background-color: #ccc; 
+  cursor: not-allowed;
+}
+
+.table-gop11 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2%; 
+}
+
+/* td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+} */
+
+/* Style table header background */
+.table-heading-gop11 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table-gop11 {
+  transition: background-color 0.2s; 
+}
+
+/* tr:hover {
+  background-color: #f0f0f0; 
+} */
+
+.table-gop11 + * {
+  margin-top: 1%;
+}

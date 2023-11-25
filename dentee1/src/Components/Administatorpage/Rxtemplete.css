@@ -1,0 +1,343 @@
+.Rxds{
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 90%;
+}
+
+.main-head-rx{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    height: 50px;
+    width: 101%;
+    margin-left: -0.5%;
+    background-color:rgb(219, 228, 231);
+}
+.mainhead-icon-rx{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.main-heading-rx{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.rx-head{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(218, 216, 216);
+    border: 1px solid rgb(214, 212, 212);
+}
+
+
+.rx-text{
+    font-weight: 600;
+    padding-left: 50px;
+    margin-top: 16px;
+}
+.rx-box{
+    height: 73vh;
+    width: 90%;
+    border: 1px solid  rgb(223, 218, 218);
+    margin-top: 15px;
+    margin-left: 45px;
+    border-top: 5px  solid  rgb(216, 214, 214);
+}
+.rx-box2{
+    width: 90%;
+    height: 75vh;
+    background-color: white;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.rx-text2{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(73, 70, 70);
+    font-weight: bold;
+}
+.rx-input-1{
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgb(14, 14, 14);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.rx-select-1{
+    width: 115px;
+    height: 35px;
+    border-color: rgb(6, 6, 6);
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.rx-select{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.rx-iconp{
+    font-size: 30px;
+    color: white;
+}
+.rx-buttonp{
+    background-color: #007bff;
+    color: white;
+    border-radius: 90px;
+    height: 40px;
+    width: 40px;
+    border: 1px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.rx-hr{
+    width: 90%;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+.rx-text3{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(73, 70, 70);
+    font-weight: bold;
+}
+.rx-input-2{
+    width: 90%;
+    height: 30px;
+    border: 1px solid rgb(6, 6, 6);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.rx-sav-can{
+    display: flex;
+    flex-direction: row;
+}
+.rx-save {
+
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border: none;
+    margin-left: 500px;
+    
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .rx-save-hover{
+    background-color: #007bff;
+    color: black;
+  }
+  .rx-Cancelss:hover, 
+  .rx-savess:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+  }
+  .rx-Cancelss, 
+  .rx-savess{
+    color: white;
+    height: 30px;
+    padding: 5px 8px;
+    margin-left: 60px;
+    border: none;
+     background-color:#007bff;
+ }
+
+.rx-main-tablesss{
+    margin-top: 10px;
+    width: 92%;
+    border: 1px solid rgb(201, 196, 196);
+    margin-left: 25px;
+    border-collapse: collapse;
+    height: 100px;
+}
+.rx-tablefm{
+    height: 40px;
+    color: white;
+    background-color: #0077bf;
+    border: 1px solid rgb(201, 196, 196);
+}
+.rx-table-bodyds{
+    text-align: center;
+}
+.rx-input-3{
+    height: 25px;
+    width: 100px;
+    border: 1px solid #0d0d0d;
+}
+
+
+@media (max-width: 768px) {
+    .rx-head {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(220, 222, 222);
+        border: 1px solid rgb(223, 218, 218);
+    }
+
+    .Rxds {
+        margin-top: 7.5%;
+        margin-left: 7.5%;
+        width: 95%;
+    }
+
+    .rx-text {
+        font-weight: 600;
+        padding-left: 20px; /* Adjust the padding as needed */
+    }
+
+    .rx-box {
+        height: auto; /* Remove fixed height */
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 20px; /* Adjust margin as needed */
+        border-top: 5px solid rgb(216, 214, 214);
+    }
+
+    .rx-box2 {
+        width: 90%;
+        height: auto; /* Remove fixed height */
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 20px; /* Adjust margin as needed */
+    }
+
+    .rx-text2 {
+        padding-left: 20px; /* Adjust padding as needed */
+        padding-top: 20px; /* Adjust padding as needed */
+        font-size: 20px;
+        color: rgb(73, 70, 70);
+        font-weight: bold;
+    }
+
+    .rx-input-1 {
+        width: 99%; /* Use full width */
+        margin-top: 20px;
+        margin-left: 0px; /* Adjust margin as needed */
+    }
+
+    .rx-select-1 {
+        width: 100%; /* Use full width */
+        margin-left: 0; /* Adjust margin as needed */
+        margin-top: 10px;
+    }
+
+    .rx-select {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center items horizontally */
+        padding-left: 0; /* Adjust padding as needed */
+    }
+
+    .rx-iconp {
+        font-size: 30px;
+        color: white;
+    }
+
+    .rx-buttonp {
+        background-color: rgb(72, 72, 224);
+        border-radius: 50%; /* Make it a circle */
+        height: 40px;
+        width: 40px;
+        border: none;
+        margin-top: 15px;
+        margin-left: 0; /* Adjust margin as needed */
+    }
+
+    .rx-hr {
+        width: 100%; /* Use full width */
+        margin-top: 20px; /* Adjust margin as needed */
+        padding-left: 0; /* Adjust padding as needed */
+    }
+
+    .rx-text3 {
+        padding-left: 20px; /* Adjust padding as needed */
+        padding-top: 20px; /* Adjust padding as needed */
+        font-size: 20px;
+        color: rgb(73, 70, 70);
+        font-weight: bold;
+    }
+
+    .rx-input-2 {
+        width: 98%; /* Use full width */
+        margin-top: 20px;
+        margin-left: 0; /* Adjust margin as needed */
+    }
+
+    .rx-sav-can {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center items horizontally */
+        margin-left: 0; /* Adjust margin as needed */
+    }
+
+    .rx-save {
+        width: 8%; /* Use full width */
+        margin-left: 60px; /* Adjust margin as needed */
+        margin-top: 5px;
+    }
+
+    .rx-main-tablesss {
+        width: 100%; /* Use full width */
+        margin-top: 20px;   
+        margin-left: 0;
+    }
+
+    .rx-tablefm {
+        height: 40px;
+        background-color: #0077bf;
+        border: 1px solid rgb(201, 196, 196);
+    }
+
+    .rx-table-bodyds {
+        text-align: center;
+    }
+
+    .rx-input-3 {
+        height: 25px;
+        width: 55px;
+        border: 1px solid #070707;
+    }
+}
+
+@media (max-width: 400px) {
+    .rx-head {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .rx-text {
+        padding-left: 10px;
+    }
+
+    .rx-box,
+    .rx-box2 {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .rx-text2,
+    .rx-text3 {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .rx-input-1,
+    .rx-select-1,
+    .rx-input-2,
+    .rx-input-3 {
+        width: 95%;
+        margin: 7px 0;
+    }
+
+    .rx-save {
+        width: 20%;
+        margin: 10px auto;
+    }
+
+    .rx-main-tablesss {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

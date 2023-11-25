@@ -1,0 +1,105 @@
+.maincontbkdep{
+  margin-top: 7.4%;
+  margin-left: 8%;
+  width: 92%;
+}
+
+
+.main-headaddd{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -1%;
+  margin-left: 2%;
+  height: 50px;
+  width: 98%;
+  background-color:rgb(219, 228, 231);
+}
+.mainhead-iconaddd{
+  margin-top: 0%;
+  margin-left: 5%;
+}
+.main-headingaddd{
+  font-size: 90%;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+.bankdepositpp {
+    background-color: #f0f0f0;
+    padding: 1%;
+    max-width: 90%;
+    background-color: rgb(244, 246, 248);
+    margin-left: 4%;
+    border: 1px solid;
+    border-top: 5px solid gray;
+    border-radius: 0%;
+    margin-bottom: 0%;
+  }
+  
+  .bankdepositpp h1 {
+    font-size: 100%;
+    margin-bottom: 2%;
+  }
+  
+  .Bankdepositp {
+    display: grid;
+    width:98%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+  }
+  
+  .Bankdepositp input[type="text"],
+  .Bankdepositp input[type="date"] {
+    width: 100%;
+    padding: 4%;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    font-size: 100%;
+  }
+  
+  /* .Bankdepositp input#comments {
+    grid-column: span 2; 
+  } */
+  .bds-ff1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+.bds-cancel{
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  /* pointer-events: none; */
+}
+.bds-save{
+  padding: 10px 28px;
+  /* background-color: blue; */
+  /* color: white; */
+  border: none;
+  border-radius: 3px;
+}
+  
+.bds-save,
+.bds-cancel {
+  padding: 1% 1%;
+  margin-left: 48%;
+  height: 35px;
+  width: 113%;
+  color: white;
+  background-color: #007bff;
+  border-width: 0.1px;
+  border-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bds-save:hover,
+.bds-cancel:hover {
+  background-color: #3d50ae;
+  color: white;
+}

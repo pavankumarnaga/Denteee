@@ -1,0 +1,144 @@
+.analysis-total {
+    /* margin: 2px; */
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 89.8%;
+}
+
+.analysis-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    height: 50px;
+    width: 101.3%;
+    margin-left: -0.5%;
+    background-color: rgb(216, 213, 213);
+}
+
+.analysis-icon {
+    margin-top: 5px;
+    margin-left: 21px;
+}
+
+.analysis-profileicon {
+    margin-left: 55%;
+    color: blue;
+    font-size: 25px;
+}
+
+.analysis-excelicon {
+    padding: 10px;
+    color: rgb(93, 181, 93);
+    font-size: 25px;
+}
+
+.analysis-info {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.analysis-filter {
+    margin-left: 70px;
+    color: rgb(205, 22, 22);
+    font-size: 25px;
+    background: none;
+    border: 1px solid grey;
+}
+
+.analysis-acc-1 {
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.analysis-table {
+    width: 100%;
+    height: 35px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid white;
+}
+
+.analysis-th {
+    background-color: #007bff;
+    color: white;
+    /* height: 15%;  */
+}
+
+.analysis-tbody {
+    padding: 12px 15px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.analysis-tabletd {
+    padding: 12px 15px;
+    height: 25px;
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .analysis-head {
+        margin-top: 10px;
+    }
+
+    .analysis-icon {
+        margin-left: 5px;
+    }
+
+    .analysis-filter {
+        margin-left: 10px;
+    }
+
+    .analysis-acc-1 {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    .analysis-tabletd,
+    .analysis-.analysis-th1,
+    .analysis-tbody {
+        padding: 10px 10px;
+    }
+
+    .analysis-.analysis-th1 {
+        height: 30px;
+    }
+
+    .analysis-table {
+        margin-top: 10px;
+    }
+
+    .analysis-acc-1 {
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .analysis-profileicon {
+        margin-left: 7%;
+        color: blue;
+        font-size: 25px;
+    }
+}
+
+.but-gopi-22 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pat-bottle-21 {
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+}
+
+.pat-gopi-11 {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}

@@ -1,0 +1,116 @@
+.maincontgop11{
+    margin-left: 9%;
+    padding-top: 1%;
+}
+.table-heading-gop11 {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 8px;
+    font-weight: bold;
+  }
+  .but-bro{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+.pat-brosw{
+  display: flex; 
+  align-items: center;
+  padding-left: 10px; 
+}
+.pat-bot-bro{
+  color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+
+}
+  
+.search-bargop11{
+  height: 35px;
+  width: 350px;
+  margin-left: 5px;
+  margin-top: 15px;
+  border-right: none;
+  border: 1px solid grey;
+}
+.search-containergop11{
+  display: flex;
+  width: 50%;
+}
+.search-btngop11{
+  height: 39px;
+  width: 38px;
+  margin-top: 14.5px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 17px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+  .patientdocument-gop11{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 101%;
+    margin-left: -0.4%;
+    background-color:rgb(219, 228, 231);
+}
+.patient-icongop11{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.patient-headinggop11{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+  
+  .table-row-gop11 {
+    cursor: pointer; 
+    transition: background-color 0.2s; 
+  }
+  
+  .table-row-gop11:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .type-gp-112[type="text"] {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Make the table take up the full width */
+  .tabletable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td, .table-heading-gop11 {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style table header background */
+  .table-heading-gop11 {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .table-tr {
+    transition: background-color 0.2s; 
+  }
+  
+  .table-tr:hover {
+    background-color: #f0f0f0; 
+  }
+  

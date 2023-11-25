@@ -1,0 +1,203 @@
+.medicine-table-container-an51 {
+
+  margin-left: 10.3%;
+  padding-top: 2.6%;
+  width: 89.1%;
+  font-family: Arial, sans-serif;
+}
+.pat-bot-mt {
+  color: black;
+  margin: 1.7% 1.7%; /* Adjusted from margin: 9px 10px; */
+  font-size: 13px; /* Adjusted from font-size: 13px; */
+}
+
+.pat-mt{
+  display: flex; 
+  align-items: center;
+  padding-left: 1%; 
+}
+.but-mt{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.patientdocument-head-an51{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3%;
+  height: 50px;
+  width: 102.3%;
+  margin-left: -1%;
+  background-color:rgb(224, 228, 228);
+}
+.patient-icon-an51 {
+  margin-top: 0.3%;    
+  margin-left: 1%;  
+}
+
+.patient-heading-an51{
+  font-size: 95%;
+  margin-left: 1%;
+  font-weight: bold;
+}
+
+
+
+
+
+.h1-an51 {
+  font-size: 2.4%;
+  margin: 0;
+  color: #333;
+  display: inline-block;
+}
+
+
+
+.search-baran51{
+  height: 35px;
+  width: 65%;
+  margin-left: 5%;
+  margin-top: 2.8%;
+  border-right: none;
+  border: 1px solid grey;
+}
+.search-containeran51{
+  display: flex;
+  width: 50%;
+}
+.search-btnan51{
+  height: 39px;
+  width: 6.9%;
+  /* border-radius: 5%; */
+  margin-top: 2.8%;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 97%;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+.medicine-table-container-an51 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medicine-table-an51 .th-an51,
+.medicine-table-an51 .td-an51 {
+  padding: 1%;
+  border: 1px solid #ddd;
+}
+
+.medicine-table-an51 .th-an51 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* .medicine-table-an51 tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.add-button-an51 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.6% 0.8%;
+  border: none;
+  margin-left: 80%;
+  width: 13%;
+  text-align: right;
+  border-radius: 2%;
+  font-size: 90%;
+  cursor: pointer;
+  
+}
+
+.add-button-an51:hover {
+  background-color: #0056b3;
+}
+
+.edit-button-an51,
+.delete-button-an51 {
+  padding: 2% 4%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.5%;
+  font-size: 90%;
+  cursor: pointer;
+  margin-right: 0.5%;
+}
+
+.delete-button-an51 {
+  background-color: white;
+}
+
+.frequency-dropdown-an51 {
+  padding: 0.5%;
+  border: 1px solid #ccc;
+  border-radius: 0.5%;
+  width: 8%;
+}
+
+@media (max-width: 768px) {
+  .search-input-an51 {
+    width: 100%; 
+  }
+
+  .search-button-an51 {
+    margin-left: 0; 
+  }
+
+  .add-button-an51,
+  .edit-button-an51,
+  .delete-button-an51 {
+    font-size: 16px; 
+  }
+
+  .medicine-table-container-an51 table {
+    display: block;
+    overflow-x: auto; 
+  }
+
+  .medicine-table-an51 .th-an51,
+  .medicine-table-an51 .td-an51 {
+    white-space: nowrap; 
+  }
+
+  .medicine-table-an51 .th-an51,
+  .medicine-table-an51 .td-an51:before {
+    display: none; 
+  }
+
+  .medicine-table-an51 .tr-an51 {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .medicine-table-an51 .td-an51 {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%; 
+  }
+
+  .medicine-table-an51 .td-an51:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%; 
+    padding-left: 10px; 
+    font-weight: bold;
+  }
+}

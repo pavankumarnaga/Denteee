@@ -1,0 +1,239 @@
+.pass-Body {
+  margin-left: 10%;
+  width: 88%;
+ margin-top: 5.8%;
+
+}
+
+.pass-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(209, 203, 203);
+}
+
+.pass-icon {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.trpass123{
+  width: 80%;
+  /* background-color: #007bff; */
+}
+.pass-acc-1 {
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.pass-selc {
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.pass-date-from,
+.pass-d-2,
+.pass-date-to,
+.pass-view-re,
+.pass-excel,
+.pass-search,
+.pass-search-1,
+.pass-se-btn,
+.pass-total {
+  padding: 4px 10px;
+  margin: 5px;
+  border-width: 0.1px;
+  border-color: rgb(154, 150, 150);
+}
+
+.pass-search-1 {
+  width: 200px;
+}
+
+.passbook-table th,
+.passbook-table td {
+  border: 1px solid whitesmoke; /* You can adjust the border properties as needed */
+  text-align: center; /* Adjust text alignment as needed */
+}
+
+
+.pass-view-re{
+  /* padding: 4px 20px; */
+  /* margin-top: 3%; */
+  margin-left: 10px;
+  background-color: #007bff;
+  border-width: 0.1px;
+  color: white;
+  border-color: white;
+}
+.pass-excel {
+  /* padding: 4px 20px; */
+  margin-left: 10px;
+  width: 30%;
+  height: 40px;
+  background-color: #007bff;
+  border-width: 0.1px;
+  color: white;
+  border-color: white;
+}
+
+.pass-view-re{
+  height: 40px;
+}
+
+.pass-view-re:hover,
+.pass-excel:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.pass-se-btn {
+  border: none;
+  align-items: center;
+  background-color: rgb(192, 189, 189);
+  padding: 5px 5px;
+}
+
+.pass-total {
+  margin-left: 77%;
+  margin-top: -46px;
+}
+
+.pass-table {
+  margin-top: 20px;
+  width: 100%;
+  margin-right: 10px;
+  /* border: 1px solid rgb(209, 203, 203); */
+}
+
+/* Table Styles */
+.pass124 {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.passbook-table {
+  border: none;
+  width: 75%;
+  border-collapse: collapse;
+}
+
+.pass123{
+  background-color: rgb(59, 95, 126);
+  border: none;
+  height: 40px;
+  padding: 10px 58px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+  .pass-head {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .pass-selc {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .pass-date-from,
+  .pass-d-2,
+  .pass-date-to,
+  .pass-view-re,
+  .pass-excel,
+  .pass-search,
+  .pass-search-1,
+  .pass-se-btn,
+  .pass-total {
+    padding: 4px 10px;
+    margin: 5px;
+  }
+
+  .pass-search-1 {
+    padding: 3.7px 15px;
+  }
+}
+.trpass123 {
+  background-color: #007bff; /* Background color for the table row */
+  color: white; /* Text color for the table row */
+}
+
+.trpass123 th {
+  background-color: #007bff; /* Background color for table header cells */
+  color: white; /* Text color for table header cells */
+}
+
+
+/* Table Styles */
+.pass124 {
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid white-smoke; /* Add white smoke border to td elements */
+}
+
+/* .passbook-table {
+  border: none;
+  width: 80%;
+  border-collapse: collapse;
+} */
+
+.pass123 {
+  background-color: rgb(59, 95, 126);
+  border: 1px solid white-smoke; /* Add white smoke border to th elements */
+  height: 40px;
+  padding: 10px 58px;
+}
+
+/* .passbook-table tr:not(:first-child) {
+  border: none;
+} */
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-label {
+  margin-bottom: 5px;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.popup-buttons button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background-color: #ddd;
+}

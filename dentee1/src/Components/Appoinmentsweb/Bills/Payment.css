@@ -1,0 +1,162 @@
+
+
+
+.payment-total1{
+    height: 17vw;
+    /* width: 99%; */
+    width: 96.5%;
+    border: 1px solid  whitesmoke;
+    margin-top: 2%;
+    margin-left: 2%;   
+}
+.paymentin{
+    /* margin-left: 2%; */
+    display: flex;
+    margin: 2%;
+    align-items: center;
+}
+.payment-selectoption{
+    height: 30px;
+    width: 130px;
+    margin-left: 1%;
+    /* border: none;
+    border-color: 5px solid grey; */
+}
+.payment-printbutton{
+    height: 30px;
+    width: 137px;
+    margin-left: 50%;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.payment-printbutton:hover{
+  background-color: #3d50ae;
+}
+.payment-addnew{
+    height: 30px;
+    width:177px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.payment-addnew:hover{
+  background-color: #3d50ae;
+
+}
+.invest2-table{
+    width:100%;
+    height: 40px;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    text-align: center;
+}
+.invest2-thead{
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+  
+}
+.invest2-tablebody{
+    border-collapse: collapse;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    align-items: center;
+}
+.invest2-headrow th{
+  margin: 10px 30px;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .payment-total1{
+        height: 35vw;
+        /* width: 99%; */
+        width: 93%;
+        border: 1px solid;
+        margin-top: 2%;
+        margin-left: 2%;   
+    }
+
+    .payment-selectoption{
+        height: 30px;
+        width: 130px;
+        margin-left: 1%;
+        /* border: none;
+        border-color: 5px solid grey; */
+    }
+    .payment-printbutton{
+        height: 30px;
+        width: 137px;
+        margin-left: 10%;
+        background-color: aqua;
+        border: none;
+    }
+    .invest2-table{
+        width:98%;
+        height: 40%;
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: 0.5%;
+      }
+      .invest2-thead{
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        background-color: rgb(140, 140, 140);
+        font-size: 10px;
+        height: 40%;
+        width: 100%;
+      
+      }
+      .invest2-tablebody{
+        border-collapse: collapse;
+        height: 20%;
+        width: 100%;
+        text-align:center;
+        align-items: center;
+      }
+      .invest2-headrow th{
+      margin: 10px 30px;
+      }
+    
+      /* th,td {
+        align-items: center;  
+        font-size: 7px;
+      } */
+      .invest-bills-payment-22{
+        align-items: center;  
+        font-size: 10px;
+      }
+      .invest-bills-payment-33{
+        align-items: center;  
+        font-size: 10px;
+      }
+}
+
+
+/* Add border styles to table, th, and td elements */
+.invest2-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000; /* Add border to the entire table */
+}
+
+.invest2 {
+  border: 1px solid whitesmoke; /* Add border to table header cells */
+}
+
+.invest2{
+  border: 1px solid whitesmoke; /* Add border to table data cells */
+}

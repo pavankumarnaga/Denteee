@@ -1,0 +1,179 @@
+ /* .new-y-Body{
+    width: 100%;
+} */
+
+
+.maincontnew{
+    margin-top: -1%;
+    margin-left: 1.1%;
+    width: 98%;
+}
+
+.new-y-body{
+    margin-top: 9%;
+    margin-left: 10.2%;
+    width: 89%;
+}
+.new-y-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+    border-bottom: 1px solid rgb(181, 176, 176);
+}
+.new-y-icon{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.new-y-acc-1{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.new-y-content{
+    height: 50vh;
+
+    border-radius: 7px;
+    background-color:rgb(247, 247, 247);
+    box-shadow: 0,0,5px rgba(0, o, o, 0.2);                                                                                                   ;
+}
+.new-y-search{
+    height: 10px;
+}
+.new-y-top-contents{
+    display: flex;
+    padding: 10px 20px;
+}
+.new-y-date{
+    padding: 4px ;
+    width: 14vw;
+    background: transparent;
+    border: 1px solid rgb(220, 215, 215);
+}
+.new-y-search{
+    height: 4.5vh ;
+    width: 36vw;
+    border: 1px solid grey;
+    margin-left: 20px;
+    background: transparent;
+}
+.new-y-button{
+    padding: 5px 6px;
+    border: none;
+    margin-top: 2px;
+    background: transparent;
+}
+.new-y-ser{
+    padding-top: 5px;
+    padding-left: 250px;
+    margin-bottom: 1px;
+    border: none;
+
+}
+.newy-select{
+    margin-left: 30px;
+    padding: 5px ;
+    width: 300px;
+}
+.new-y-table-head{
+    width: 100%;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: rgb(209, 203, 203);
+    /* padding: 10px; */
+    /* font-size: 14px; */
+    white-space-collapse: collapse;
+}
+.new-y-th{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+.new-y2-table-head{
+
+    width: 100%;
+    margin-left: -232px;
+    margin-top: 30px;
+    width: 50px;
+    height: 40px;
+}
+/* .td{
+    height: 30px;
+    width: 100px;
+} */
+
+
+
+.treatmenttype{
+    margin-left: -100px;
+}
+
+.Addtooth{
+    margin-left: 250px;
+    margin-top: -45px;
+    width: 50px;
+    color: blue;
+}
+.cost1{
+    margin-left: 344px;
+    margin-top: -45px;
+    width: 50px;
+    
+}
+.cost2{
+    margin-left: 541px;
+    margin-top: -43px;
+}
+.cost3{
+    margin-left: 746px;
+    margin-top: -42px;
+}
+
+.noticon{
+    margin-left: 1160px;
+    margin-top: -30px;
+   
+}
+.line{
+    border: 1px solid rgb(156, 147, 147);
+    margin-top: -100px;
+}
+.Total{
+    margin-left: 702px;
+    margin-top: -96px;
+    color: blue;
+}
+.saveaddbill{
+    
+    border: 1px solid;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    margin-left: 800px;
+    
+    margin-top: -35px;
+    background-color: rgb(193, 193, 233);
+}
+.canceladdbill{
+    border: 1px solid;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    /* margin-left: 1180px; */
+    margin: 80px;
+    
+    margin-top: -30px;
+    background-color: rgb(18, 18, 223);
+}
+.last{
+    display: flex;
+}

@@ -1,0 +1,311 @@
+.maincontcustom{
+    
+    margin-top: 5.8%;
+    margin-left: 10.2%;
+    width: 89.7%;
+  }
+  
+  .butpagenationn2n{
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+   .pat-bottom-numn2n{
+      color: black;
+      margin: 9px 10px;
+      font-size: 13px;
+  }
+   .pat-footern2n{
+      display: flex; 
+      align-items: center;
+      padding-left: 10px; 
+  }
+  
+  .custom-body-ty{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  .custom-head-4455{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 70px;
+      height: 50px;
+      margin-left: -0.7%;
+      width: 101.5%;
+      background-color: rgba(205, 206, 209, 0.836);
+  }
+  .custom-icon{
+      margin-top: 5px;
+      margin-left: 50px;
+      color:#000;
+  }
+  .custom-icon-1{
+      font-size: 18px;
+  }
+  .custom-h1{
+      font-size: 15px;
+      margin-left: 20px;
+      font-weight: bold;
+  }
+  .custom-options{
+      margin-left: 50px;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+  }
+  .selection-1{
+      height: 30px;
+      width: 300px;
+  }
+  .custom-options-2{
+      margin-left: 30px;
+  }
+  .selection-2{
+      height: 30px;
+  }
+  /* .selection-1:hover{
+      background-color: rgb(255, 255, 255);
+      color: white;
+  } */
+  .custom-se{
+      margin-top: 4px;
+      margin-left: 30px;
+      border-color: none;
+      border: none;
+      background-color: white;
+  }
+  .custom-se-1{
+      font-size: 20px;
+      cursor: pointer;
+  }
+  
+  
+  .custom-search-bar{
+      height: 26px;
+      width: 400px;
+      margin-left: 30px;
+      margin-top: 0px;
+      border-right: none;
+      border: 0.5px solid grey;
+      outline-width: 0 !important;
+  }
+  .custom-search-container{
+      display: flex;
+  }
+  .custom-search-btn{
+      height: 30px;
+      width: 35px;
+      margin-top: 0px;
+      border: none;
+      background-color: red;
+      color: #fff;
+      font-size: 17px;
+      display: flex ;
+      align-items: center;
+      justify-content: center;
+  }
+  .custom-excel{
+      /* margin-left: 580px; */
+      border-color: none;
+      border: none;
+      background-color: white;
+  }
+  .custom-excel:hover{
+      background-color: white;
+  }
+  .custom-excel-1{
+      font-size: 28px;
+      color: green;
+      cursor: pointer;
+  }
+  
+  
+  
+  .custom-table{
+      width: 100%;
+      float: none;
+      border: 1px solid rgb(209, 203, 203);
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .custom-table-head{
+      background-color: #007bff;
+      color: white;
+      border-collapse: collapse;
+      height: 50px;
+      font-size: 14px;
+  }
+  .custom-data td {
+      border-collapse: collapse;
+      /* padding: 10px 70px; */
+  } 
+  th,
+  td {
+      align-items: center;  
+  }
+  .custom-footer-nikhil{
+      display: flex; 
+      align-items: center; 
+  }
+  .custom-bottom-icons{
+      color: grey;
+      margin: 10px 30px;
+  }
+  .custom-bottom-num{
+      color: grey;
+      margin: 9px 15px;
+      font-size: 13px;
+  }
+  .custom-btm-righticon{
+      color: grey;
+      margin: 10px 30px;  
+  }
+  .custom-btm-items{
+      font-size: 13px;
+      margin: 8px 10px;
+  }
+  .custom-btm-items2{
+      font-size: 14px;
+      margin: 8px 0px 8px 500px;
+      color: rgb(174, 170, 170);
+  }
+  .custom-re-icon{
+      font-size: 15px;
+      margin-bottom: -3px;
+  }
+  
+  
+  @media (max-width: 768px) {
+      .custom-options{
+          margin-left: 0px;
+          margin-top: 15px;
+          display: flex;
+          flex-direction: row;
+      }
+      .custom-head{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 10px;
+          height: 40px;
+          width: 110%;
+          background-color: rgba(205, 206, 209, 0.836);
+      }
+      .selection-1{
+          height: 30px;
+          width: 80px;
+      }
+      .custom-icon{
+          margin-top: 5px;
+          margin-left: 0px;
+          color: grey;
+      }
+      .custom-options-2{
+          margin-left: 10px;
+      }
+      .selection-2{
+          width: 100px;
+      }
+      .custom-se{
+          margin-top: 4px;
+          margin-left: 10px;
+          border-color: none;
+          border: none;
+          background-color: white;
+      }
+      .custom-se-1{
+          font-size: 18px;
+      }
+      .custom-search-bar{
+          height: 23px;
+          width: 80px;
+          margin-left: 3px;
+          border-right: none;
+          border: 0.5px solid grey;
+          outline-width: 0 !important;
+      }
+      .custom-search-btn{
+          height: 27px;
+          width: 25px;
+          margin-top: 0px;
+          border: none;
+          background-color: red;
+          color: #fff;
+          font-size: 17px;
+          display: flex ;
+          align-items: center;
+          justify-content: center;
+      }
+      .custom-excel{
+          margin-left:150px;
+          border-color: none;
+          border: none;
+          background-color: white;
+      }
+      .custom-footer-nikhil{
+          display: flex; 
+          align-items: center; 
+      }
+      .custom-bottom-icons{
+          color: grey;
+          margin: 10px 15px 10px 5px;
+      }
+      .custom-bottom-num{
+          color: grey;
+          margin: 10px 15px 10px 5px;
+          font-size: 13px;
+      }
+      .custom-btm-righticon{
+          color: grey;
+          margin: 10px 15px 10px 5px; 
+      }
+      .custom-btm-items{
+          font-size: 13px;
+          margin: 10px 15px 10px 5px;
+      }
+      .custom-btm-items2{
+          font-size: 14px;
+          margin: 8px 0px 8px 100px;
+          color: rgb(174, 170, 170);
+      }
+      .custom-re-icon{
+          font-size: 15px;
+          margin-bottom: -3px;
+      }
+  }
+
+
+
+
+  .custom-table {
+    width: 100%;
+    float: none;
+    border: 1px solid whitesmoke; /* Set the border for the entire table */
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-table-head {
+    background-color: #007bff;
+    color: white;
+    border-collapse: collapse;
+    height: 50px;
+    font-size: 14px;
+    border: 1px solid whitesmoke; /* Set the border for table headers */
+}
+
+.custom-data td {
+    border-collapse: collapse;
+    border: 1px solid whitesmoke; /* Set the border for table data cells */
+}
+
+/* th,
+td {
+    align-items: center;
+} */

@@ -1,0 +1,88 @@
+
+
+.Formdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+  }
+  
+  .formds {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 115px;
+    margin-right: -5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 90%; 
+
+  }
+  
+  .Clinic-ydf {
+    margin-top: 20px;
+  }
+  
+  .Clinic-Clinicdf {
+    padding: 20px;
+  }
+  
+  .Clinic-Rowdf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Clinic-Patientdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .Clinic-qdf {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .Clinic-inputsdf {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .Clinic-Updatedf {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -14px;
+  }
+  
+  .Clinic-Button2df {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Clinic-Button2df:hover {
+    background-color: #1aa6fc;
+    color: black;
+  }
+  
+  .Clinic-Textdf {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .Clinic-Text1df {
+    font-size: 16px;
+    color: #007bff;
+    word-break: break-word;
+  }
+  

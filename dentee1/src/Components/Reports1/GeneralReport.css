@@ -1,0 +1,550 @@
+.maincontgeneral{
+  margin-top: 6%;
+  margin-left: 10.1%;
+  width: 89.8%;
+}
+.GeneralReportBody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.General{
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247); 
+    box-shadow: 10px;
+    background-color: rgba(254, 254, 254, 0.856);
+    width: 100%;
+    height: 50px;
+    
+}
+.Report{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: #000;
+}
+.GeneralReport{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+      background-color: rgba(197, 191, 191, 0.856);
+      display: inline-block;
+}
+.Row{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(197, 191, 191, 0.856);
+}
+.Row1{
+    display: flex;   
+    margin-top: 2%;
+}
+.Today,.Dropdown{
+    width: 200px;
+    height:30px;
+    
+}
+select option:hover{
+    color: blue;
+}
+.Selecttype{
+    margin-left: 20px;
+}
+.Date{
+    margin-left: 20px;
+}
+.Search{
+    margin-left: 20px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247); 
+    box-shadow: 10px;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 400px;
+    height: 26px;
+}
+.icon{
+    color: white;
+}
+.Searchicon1{
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+.Icon2{
+    width: 50px;
+    height: 30px;
+    color: green;
+    cursor: pointer;
+    margin-left: -110px;
+}
+.Exel {
+ 
+ cursor: pointer;
+}
+.excel button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: 5%;
+}
+
+.Exel button:hover{
+    background-color: white;
+}
+.rew{
+    padding-left: 10px;
+}
+.daily-table{
+    width:100%;
+    height: 40px;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    text-align: center;
+}
+.daily-thead{
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: rgb(140, 140, 140);
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+
+}
+.daily-tablebody{
+    border-collapse: collapse;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    align-items: center;
+}
+.daily-headrow th{
+margin: 10px 5px;
+}
+.some-1 td {
+    border-collapse: collapse;
+    padding: 10px 70px;
+} 
+th,td {
+    align-items: center;  
+}
+.Downbar{
+    color:gray;
+    padding: 20px 30px;
+}
+.ReportNumber{
+    color: gray;
+    margin: 18px 5px;
+}
+.Formsw{
+    color:"black";
+    padding-left: 500px;
+    font-size: 16px;
+}
+.items{
+    color:"black";
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+.Report-Row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+@media(max-width:768px){
+   
+    .GeneralReport{
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .General{
+        border-style: solid ;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.247); 
+        background-color: rgba(255, 255, 255, 0.856);
+        width: 100%;
+        height: 30px;
+        
+    }
+    .icon-8{
+        height: 10px;
+        width: 10px;
+        color:#000;
+    }
+
+    .Today,.Dropdown{
+        width: 80px;
+        height:20px;
+        
+    }
+    .Report{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        font-size: 10px;
+        color: #000;
+    }
+    .Search{
+        margin-left: 20px;
+        border-style: solid ;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.247); 
+        box-shadow: 10px;
+        background-color: rgba(255, 255, 255, 0.856);
+        width: 100px;
+        height: 16px;
+    }
+    .Searchicon1{
+        margin-top: 3px;
+        border: none;
+        height: 20px;
+        width: 30px;
+        background-color: red;
+    }
+
+    .Exel{
+        margin-left: 80px;
+    }
+
+    .daily-table{
+        width:100%;
+        height: 40px;
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .daily-thead{
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        background-color: rgb(140, 140, 140);
+        font-size: 14px;
+        height: 40px;
+        width: 100%;
+    
+    }
+    .daily-tablebody{
+        border-collapse: collapse;
+        height: 40px;
+        width: 100%;
+        text-align:center;
+        align-items: center;
+    }
+    .daily-headrow th{
+    margin: 10px 30px;
+    }
+    .Th{
+        font-size: 10px;
+    }
+    .Icon2{
+    width: 30px;
+    height: 22px;
+    color: green;
+}
+.Downbar{
+    color:gray;
+    padding: 10px 5px;
+}
+.ReportNumber1{
+    color: gray;
+    font-size: 10px;
+}
+.Formsw{
+    color:"black";
+    font-size: 10px;
+    padding-left: 170px;
+    padding-top: 5px;
+}
+.items{
+    font-size: 10px;
+
+}
+.Report-Row{
+    display: flex;
+    flex-direction: row;
+}
+
+}
+.General{
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247); 
+    box-shadow: 10px;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 100%;
+    height: 50px;
+    
+}
+.Report{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.GeneralReport{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.Row{
+    display: flex;
+    flex-direction: row;
+}
+.Today,.Dropdown{
+    width: 200px;
+    height:30px;
+    
+}
+select option:hover{
+    color: blue;
+}
+.Selecttype{
+    margin-left: 20px;
+}
+.Date{
+    margin-left: 20px;
+}
+.Search{
+    margin-left: 20px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247); 
+    box-shadow: 10px;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 400px;
+    height: 26px;
+}
+.icon{
+    color: white;
+}
+.Searchicon1{
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+.Icon2{
+    width: 50px;
+    height: 30px;
+    color: green;
+}
+.Exel{
+    margin-left: 200px;
+}
+.excel{
+    border: none;
+    background-color: white;
+}
+.rew{
+    padding-left: 10px;
+}
+.daily-table{
+    width:100%;
+    height: 40px;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    text-align: center;
+}
+.daily-thead{
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: rgb(140, 140, 140);
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+
+}
+.daily-tablebody{
+    border-collapse: collapse;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    align-items: center;
+}
+.daily-headrow th{
+margin: 10px 30px;
+}
+.some-1 td {
+    border-collapse: collapse;
+    padding: 10px 70px;
+} 
+th,td {
+    align-items: center;  
+}
+.Downbar{
+    color:gray;
+    padding: 20px 30px;
+}
+.ReportNumber{
+    color: gray;
+    margin: 18px 5px;
+}
+.Formsw{
+    color:"black";
+    padding-left: 600px;
+    font-size: 16px;
+}
+.items{
+    color:"black";
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+.Report-Row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+@media(max-width:768px){
+   
+    .GeneralReport{
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .General{
+        border-style: solid ;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.247); 
+        background-color: rgba(255, 255, 255, 0.856);
+        width: 100%;
+        height: 30px;
+        
+    }
+    .icon-8{
+        height: 10px;
+        width: 10px;
+    }
+
+    .Today,.Dropdown{
+        width: 80px;
+        height:20px;
+        
+    }
+    .Report{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .Search{
+        margin-left: 20px;
+        border-style: solid ;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.247); 
+        box-shadow: 10px;
+        background-color: rgba(255, 255, 255, 0.856);
+        width: 80px;
+        height: 16px;
+    }
+    .Searchicon1{
+        margin-top: 3px;
+        border: none;
+        height: 20px;
+        width: 30px;
+        background-color: red;
+    }
+
+    .Exel{
+        margin-left: 80px;
+    }
+
+    .daily-table{
+        width:100%;
+        height: 40px;
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .daily-thead{
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        background-color: rgb(140, 140, 140);
+        font-size: 14px;
+        height: 40px;
+        width: 100%;
+    
+    }
+    .daily-tablebody{
+        border-collapse: collapse;
+        height: 40px;
+        width: 100%;
+        text-align:center;
+        align-items: center;
+    }
+    .daily-headrow th{
+    margin: 10px 30px;
+    }
+    .Th{
+        font-size: 10px;
+    }
+    .Icon2{
+    width: 30px;
+    height: 22px;
+    color: green;
+}
+.Downbar{
+    color:gray;
+    padding: 10px 5px;
+}
+.ReportNumber1{
+    color: gray;
+    font-size: 10px;
+}
+.Formsw{
+    color:"black";
+    font-size: 10px;
+    padding-left: 170px;
+    padding-top: 5px;
+}
+.items{
+    font-size: 10px;
+
+}
+.Report-Row{
+    display: flex;
+    flex-direction: row;
+}
+
+}
+
+
+
+
+.rama{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dora{
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+  }
+  .kasu{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+  }

@@ -1,0 +1,241 @@
+.treatment-body{
+    width: 89%;
+    margin-top: 5.9%;
+    margin-left: 10.2%;
+}
+.treatment-ka{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 237, 237);
+    border: 1px solid rgb(226, 217, 217);
+    display: flex;
+    flex-direction: row;
+}
+.treatment-kb{
+    border: none;
+    background-color: rgb(241, 237, 237);
+    margin-left: 20px;
+}
+.treatment-kc{
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+}
+.treatment-kd{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+.treatment-ke{
+    height: 35px;
+    width: 145px;
+    border-color: #007bff;
+    margin: 20px 80px;
+    outline-width: 0px;
+}
+.treatment-kf{
+    height: 35px;
+    width: 150px;
+    background-color: #007bff; 
+    border: none; 
+    color: white;
+    font-size: 16px;
+}
+.treatment-kg{
+    display: flex;
+    flex-direction: column;
+}
+.treatment-kh{
+    height: 100px;
+    width: 145px;
+    background-color:  rgb(241, 237, 237);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: gray;
+}
+.treatment-kh:hover{
+    background-color: #007bff;
+    color: white;
+}
+.treatment-ki{
+    font-size: 50px;
+    padding-left: 45px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.treatment-kj{
+    font-size: 20px;
+    padding-left: 40px;
+}
+.treatment-kk{
+    font-size: 16px;
+    padding-left: 30px;
+}
+.treatment-kl{
+    padding-left:35px ;
+    font-size: 16px;
+}
+.treatment-input-a{
+    width: 140px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline-width: 0px;
+}
+.treatment-data{
+    display: flex;
+    flex-direction: column;
+}
+.treatment-k2{
+    display: flex;
+    /* flex-direction: row; */
+}
+.treatment-heading{
+    background-color: #007bff;
+    color: white;
+    height: 40px;
+    width: 1000px;
+    text-align: start;
+    padding-left: 10px;
+}
+.treatment-head{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.treatment-one{
+    height: 15px;
+    /* width: 100%; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.treatment-two{
+    height: 30px;
+    /* width: 100%; */
+    background-color: rgb(250, 248, 248);
+    border: 1px solid rgb(224, 222, 222);
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+.treatment-main{
+    height: 40vh;
+    width: 100%;
+    border: 1px solid rgb(197, 185, 185);
+}
+.k8{
+    padding-left: 80%;
+}
+.k9{
+    padding-left: 84.5%;
+}
+.k10{
+    padding-left: 69.5%;
+}
+.k11{
+    padding-left: 80%;
+}
+.k12{
+    padding-left: 70.5%;
+}
+.k13{
+    padding-left: 72.2%;
+}
+.k14{
+    padding-left: 72.4%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .treatment-ke{
+        /* margin: 20px 80px; */
+        margin: 10px 200px 10px 10px;
+    }   
+    .treatment-input-a{
+        margin-left: 10px;
+        height: 32px;
+    }
+    .treatment-input-a1{
+        margin-left: 10px;
+        height: 32px;
+    }
+    .treatment-kf{
+        height: 33px;
+        width: 130px; 
+        font-size: 13px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .treatment-kh{
+        height: 60px;
+        width: 60px;
+        background-color:  rgb(241, 237, 237);
+        margin-left: 10px;
+        /* display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-radius: 5px;
+        color: gray; */
+    }
+    .treatment-ki{
+        font-size: 20px;
+        padding-left: 18px;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    .treatment-kj{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .treatment-kk{
+        font-size: 10px;
+        padding-left: 1px;
+    }
+    .treatment-kl{
+        padding-left:3px ;
+        font-size: 12px;
+    }
+    .treatment-head{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .treatment-one{
+        height: 15px;
+        /* width: 100%; */
+    }
+    .treatment-two{
+        height: 30px;
+        /* width: 100%; */
+    }
+    .treatment-main{
+        height: 50vh;
+        width: 100%;
+        font-size: 10px;
+    }
+    .k8{
+        padding-left: 68%;
+    }
+    .k9{
+        padding-left: 57%;
+    }
+    .k10{
+        padding-left: 48%;
+    }
+    .k11{
+        padding-left: 67.5%;
+    }
+    .k12{
+        padding-left: 50%;
+    }
+    .k13{
+        padding-left: 52.5%;
+    }
+    .k14{
+        padding-left: 53%;
+    }
+
+}

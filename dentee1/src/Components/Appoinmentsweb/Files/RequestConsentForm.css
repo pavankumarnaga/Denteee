@@ -1,0 +1,56 @@
+.con-overall{
+    height: 70vh;
+    width: 55%;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+}
+.con-form{
+    font-size: 20px;
+    color: black;
+}
+.con-nikhil{
+    border: none;
+    cursor: pointer;
+  outline-width: 0px;
+  color: green;
+
+}
+.con-nikhil1{
+    border: none;
+    cursor: pointer;
+  outline-width: 0px;
+  background-color: white;
+  color: green;
+  margin-left: 50px;
+
+}
+.conson{
+    margin-left: 30px;
+}
+.con-nikhil2{
+    border: none;
+    cursor: pointer;
+  outline-width: 0px;
+  background-color: white;
+  color: green;
+}
+.first-btn button{
+    border: none;
+    background:transparent;
+}
+.first-btn{
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.consent-btns{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2%;
+    margin-top: 1%;
+  
+    margin-bottom: 1%;
+}

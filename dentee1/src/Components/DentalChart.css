@@ -1,0 +1,225 @@
+.dental-chart-container {
+    text-align: center;
+  }
+  
+  /* Red background for the image container with margin-right */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-right: 20px;
+    padding: 10px; /* Add some padding for better spacing */
+  }
+  
+  .dental-image {
+    text-align: center;
+  }
+  
+  .dental-image img {
+    max-width: 100px;
+    max-height: 100px;
+    transition: filter 0.3s;
+  }
+  
+  .dental-image:hover img {
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+  
+  /* Orange container with margin-left */
+  .orange-container {
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid grey;
+    margin-left: 25%;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .orange-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* .orange-container input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+  } */
+  
+  .dateteeth{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+
+  .datenameteeth{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .dropdownteeth{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+
+  .Remarks-page-tnx{
+    text-align: start;
+    width:54%;
+  }
+  .rectangle-box{
+    display: flex;
+    background-color: white;
+    width:350px;
+    height:50px;
+    
+  }
+  .orange-container h2 {
+    margin-top: 15px;
+  }
+
+
+  .buttonteethbutton{
+    margin-left: 85%;
+    margin-top: 4%;
+  }
+
+  .buttonteeth33{
+    background-color: #007bff;
+    height: 30px;
+    width: 40px;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+
+  .buttonteeth33:hover{
+    background-color: blue;
+  }
+  
+  /* CSS for the skyblue container (conditionally rendered) */
+  .skyblue-container {
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid #87ceeb;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  /* Style for the Primary Teeth Images */
+  .skyblue-container h2 {
+    margin-top: 0;
+  }
+  
+  /* CSS for the image popup (conditionally rendered) */
+  .image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-popup h2 {
+    font-size: 20px;
+    margin-top: 1%;
+    /* margin-left: -80%; */
+    margin-right: 70%;
+  }
+  
+  .image-popup img {
+    max-width: 20%;
+    max-height: 30%;
+    margin-right: 70%;
+    /* margin: 10px 0; */
+  }
+  
+  .image-popup select {
+    width: 50%;
+    padding: 10px;
+    /* margin: 10px 0; */
+  }
+  
+  .image-popup button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 75%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 10px 0; */
+    cursor: pointer;
+  }
+  
+  .image-popup button:hover {
+    background-color: #45a049;
+  }
+
+
+
+  /* Add this to your DentalChart.css file */
+.tableteeth {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tableteeth th, .tableteeth td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tableteeth th {
+  background-color: #007bff;
+  color: white;
+}
+
+.tableteeth tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableteeth tr:hover {
+  background-color: #ddd;
+}
+
+
+
+  .buttonteeth123{
+     background-color: blue;
+     border: none;
+     height: 30px;
+     width: 50px;
+     color: white;
+     cursor: pointer;
+
+  }
+
+
+  /* .table-container{
+    display: flex;
+    width: 100%;
+
+  }
+  .tableteeth{
+    width: 100%;
+  } */
+  
+  /* Add more CSS styles as needed to further customize the appearance of the popup and other elements */
+  

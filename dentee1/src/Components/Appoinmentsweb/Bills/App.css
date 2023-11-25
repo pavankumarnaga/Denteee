@@ -1,0 +1,30 @@
+.Bills-1-container-btn{
+    margin-left: 1%;
+    margin-top: 0.2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Bills-1-container-btn button{
+    height: 35px;
+    width: 10%;
+    background-color: #007bff;
+    cursor: pointer;
+    border: none;
+    margin-left: 0.5%;
+    color: white;
+}
+.Bills-1-container-btn button:hover{
+    background-color:#3d50ae;
+}
+
+@media(max-width:768px){
+    .Bills-1-container-btn button{
+        height: 35px;
+        width: 35%;
+        background-color: #007bff;
+        border: none;
+        margin-left: 5%;
+        color: white;
+        margin-top: 4px;
+    }
+}

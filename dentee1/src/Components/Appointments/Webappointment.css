@@ -1,0 +1,159 @@
+.maincontka {
+    margin-top: 5.9%;
+    margin-left: 10.2%;
+    width: 89%;
+  }
+  
+  .main-headwebappoint {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(219, 228, 231);
+  }
+  
+  .mainhead-iconwebappoint {
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+  
+  .main-headingwebappoint {
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .ri {
+    height: 40px;
+    width: 96.2%;
+    background-color: whitesmoke;
+    margin: 2px;
+    padding: none;
+    margin-top: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .dr {
+    height: 20px;
+    width: 250px;
+  }
+
+  .butpagenation-nk233{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ .pat-bottom-num33pat-nk133{
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+}
+ .pat-footer33pat-nk333{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+}
+  
+  .es {
+    height: 20px;
+    width: 250px;
+  }
+  
+  .but12390 {
+    padding-left: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin-left: 200px;
+    height: 40px;
+    width: 100px;
+  }
+  
+  .sel {
+    background-color: #007bff;
+    color: white;
+    margin-left: 40px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  .trweb90 {
+    background-color: #007bff;
+    color: white;
+    height: 8vh;
+    width: 90%;
+  }
+  
+  .custom908 {
+    width: 100%;
+    
+  }
+  
+  .thweb90 {
+    padding: 10px;
+  }
+  
+  .intiate-td {
+    padding: 10px;
+  }
+  
+  .tbodyka {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  
+  .table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  .table-responsive{
+    border-collapse: collapse;
+    border-spacing: 0px;
+  }
+  .table .abserve-th,
+  .table .intiate-td {
+    text-align: center;
+    
+  }
+  
+  .table .abserve-th {
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    padding: 6px;
+  }
+  
+
+  
+  /* .butpagenation {
+    background-color: #007bff;
+    color: white;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+  } */
+  
+  .pat-bottom-num33pat {
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .cd {
+      padding-left: 360px;
+    }
+  }

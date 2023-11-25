@@ -1,0 +1,263 @@
+.maincontlab{
+    margin-top: 5.9%;
+    margin-left: 10.2%;
+    width: 88.6%;
+}
+
+
+.labmain-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3%;
+    height: 50px;
+    width: 102.8%;
+    margin-left: -0.7%;
+    background-color:rgb(219, 228, 231);
+}
+.labmainhead-icon{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.labmain-heading{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.search-barlabpw{
+    height: 39px;
+    width: -1%;
+    margin-left: 130%;
+    margin-top: -58px;
+    border-right: none;
+    border: 1px solid grey;
+}
+.search-containerlabpw{
+    display: flex;
+    width: 50%;
+}
+.search-btnlabpw{
+    height: 43px;
+    width: 40px;
+    margin-top: -58px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.butpagenation9{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ .pat-bottom-num339pat{
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+}
+ .pat-footer339pat{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+}
+
+
+
+.labworkTotalBody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.labwork-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(234, 231, 231);
+    border-bottom: 1px solid grey;
+}
+.labwork-icon{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: black;
+}
+.labwork-heading{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.labwork-bill-contents{
+    display: flext;
+    flex-direction: row;
+}
+.labwork-bill-select{
+    height: 40px;
+    width: 15%;
+margin-left: -350px;
+}
+.labwork-view-report{
+    /* padding: 12px 50px; */
+    height: 40px;
+    width: 15%;
+    margin: 17px 0px 17px 100px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+.labwork-view-report:hover{
+background-color: #3d50ae;
+}
+.labwork-excel-icon{
+    color: green;
+    font-size: 33px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.labwork-table-sunil{
+    width: 100%;
+    float: none;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.labwork-table-head{
+    border-collapse: collapse;
+    background-color: #007bff;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+.labworksome .tddt {
+    border-collapse: collapse;
+   padding: 10px 10px 10px 50px;
+   margin-left: 30px;
+} 
+.labwork-table-head
+.tddt {
+    align-items: center;  
+}
+.labwork-footer_sunil{
+    display: flex; 
+    align-items: center; 
+}
+.labwork-bottom-icons{
+    color: grey;
+    margin: 10px 30px;
+}
+.labwork-bottom-num{
+    color: grey;
+    margin: 9px 15px;
+    font-size: 13px;
+}
+.labwork-btm-righticon{
+    color: grey;
+    margin: 10px 30px;  
+}
+.labwork-btm-items{
+    font-size: 13px;
+    margin: 8px 10px;
+}
+.labwork-btm-items2{
+    font-size: 14px;
+    margin: 8px 250px;
+    color: rgb(174, 170, 170);
+}
+.refresh-icon{
+    font-size: 15px;
+    margin-bottom: -3px;
+}
+
+@media (max-width: 768px) {
+    .labwork-icon{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .labwork-bill-select{
+        height: 40px;
+        width: 100px;
+        margin: 17px 0px 17px 10px;
+    }
+    .labwork-view-report{
+        height: 40px;
+        width: 100px;
+        margin: 17px 0px 17px 30px;
+        background-color: rgb(112, 173, 197);
+        color: #fff;
+        font-weight: bold;
+    }
+    .labwork-excel-icon{
+        color: rgb(39, 215, 39);
+        font-size: 33px;
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+    .labwork-bottom-icons{
+        color: grey;
+        margin: 3px 0px 3px 10px;
+    }
+    .labwork-bottom-num{
+        color: grey;
+        margin: 3px 0px 3px 10px;
+        font-size: 10px;
+    }
+    .labwork-btm-righticon{
+        color: grey;
+        margin: 3px 0px 3px 10px;
+    }
+    .labwork-btm-items{
+        font-size: 13px;
+        margin: 3px 0px 3px 10px;
+    }
+    .labwork-btm-items2{
+        font-size: 13px;
+        margin: 3px 0px 3px 40px;
+        color: rgb(174, 170, 170);
+    }
+    .refresh-icon{
+        font-size: 13px;
+        margin-bottom: -3px;
+    }
+}
+
+
+
+.labwork-table-sunil {
+    width: 100%;
+    float: none;
+    border: 1px solid whitesmoke; /* Set the border for the entire table */
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.labwork-table-head {
+    border-collapse: collapse;
+    background-color: #007bff;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid whitesmoke; /* Set the border for table headers */
+}
+
+.labworksome .tddt {
+    border-collapse: collapse;
+    border: 1px solid whitesmoke; /* Set the border for table data cells */
+    padding: 10px 10px 10px 50px;
+    margin-left: 30px;
+}
+
+.labwork-table-head .tddt {
+    align-items: center;
+}

@@ -1,0 +1,174 @@
+.refund-totaleew{
+    height: 25vh;
+    width: 98%;
+    border: 1px solid;
+    margin: 10px;
+}
+.refundin{
+    margin: 10px;
+    display: flex;
+}
+.refund-selectoption{
+    margin-left: 20px;
+    background-color: rgb(235, 231, 227);
+    height: 30px;
+    width: 130px;
+}
+.refund-printbutton-1{
+    margin-left: 51%;
+    background-color: aqua;
+    border: none;
+    width: 240px;
+    height: 30px;
+}
+.sf{
+    height: 3vh;
+    width: 5vh;
+    font-size: 70%;
+}
+.refund-addnew{
+    height: 30px;
+    width:177px;
+    margin-left: 20px;
+    background-color: aqua;
+    border: none;
+}
+.investr-table{
+    width:100%;
+    height: 40px;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    text-align: center;
+}
+.investr-thead{
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    background-color: rgb(140, 140, 140);
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+  
+}
+.gt{
+    margin: 10px;
+}
+.investr-tablebody{
+    border-collapse: collapse;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    align-items: center;
+}
+.investr-headrow th{
+  margin: 10px 30px;
+}
+.iconleft{
+    text-align: right;
+}
+.iconleft2{
+    text-align: left;
+}
+/* th,td {
+    align-items: center;  
+} */
+
+@media (max-width: 768px) {
+    .refund-totaleew{
+        height: 25vh;
+        width: 95%;
+        border: 1px solid;
+        margin: 10px;
+    }
+    .investr-table{
+        width:98%;
+        height: 40%;
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .investr-thead{
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        background-color: rgb(140, 140, 140);
+        font-size: 10px;
+        height: 40%;
+        width: 98%;
+      
+      }
+      .investr-tablebody{
+        border-collapse: collapse;
+        height: 20%;
+        width: 98%;
+        text-align:center;
+        align-items: center;
+      }
+      .investr-headrow th{
+      margin: 10px 30px;
+      }
+    
+      th,td {
+        align-items: center;  
+        font-size: 10px;
+      }
+    .refund-total{
+        height:60vh;
+        width: 70%;
+        border: 1px solid;
+        margin: 10px;
+    }
+    .refund-selectoption{
+        margin-left: 40px;
+        background-color: rgb(235, 231, 227);
+        height: 30px;
+        width: 130px;
+    }
+    .sf{
+        height: 1vh;
+        width: 0.01vw;
+        font-size: 70%;
+    }
+    .refund-printbutton-1{
+        margin-left: 5%;
+        background-color: aqua;
+        border: none;
+        width: 240px;
+        height: 30px;
+    }
+    
+    .refund-addnew{
+        height: 30px;
+        width:177px;
+        margin-left: 20px;
+        background-color: aqua;
+        border: none;
+    }
+    .refund-table{
+        width:80%;
+        height: 40px;
+        border: 1px solid rgb(235, 237, 231);
+        border-collapse: collapse;
+        /* text-align: center; */
+        margin: 10px;
+    }
+    .refund-thead{
+        border: 1px solid rgb(209, 203, 203);
+        border-collapse: collapse;
+        background-color: rgb(235, 228, 221);
+        height: 7vh;
+        width: 80%;
+    
+    }
+    .refund-tablebody{
+        border-collapse: collapse;
+        height: 5vh;
+        width: 80%;
+       
+    }
+    /* th{
+        font-size: 7px;
+    } */
+    .refund-headrow th{
+        margin: 5px 10px;
+    }
+
+}

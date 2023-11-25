@@ -1,0 +1,213 @@
+.container-666{
+  margin-left: 10.1%;
+  padding-top: 4.5%;
+  width: 88.6%;
+}
+.pat-ip{
+  display: flex; 
+  align-items: center;
+  padding-left: 1%; 
+}
+.but-ip{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pat-bot-ip{
+  color: black;
+    margin: 1% 1%;
+    font-size: 100%;
+
+}
+.top-left-inputs-666 {
+  display: flex;
+  /* gap: 1rem; */
+  margin-bottom: -60px;
+  margin-top: 10px;
+  margin-left: 1%;
+  padding: 1%;
+  font-size: 100%;
+  width: 90%;
+  }
+  
+  .date-adjustments06 {
+    width: 50%;
+    border-radius: 6%;
+    font-size: 1rem;
+    height: 30px;  
+  }
+  .input-group-666 {
+    margin-left: 0%;
+  }
+  .search-bar567 {
+    width: 80%;
+    padding: 0%;
+   
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 45%;
+    margin-right: 50%;
+  }
+  .inut789 {
+    width: 27%;
+    margin: 1%;
+    padding: 1%;
+    height: 5%;
+  
+  }
+  .data-table-666 {
+    width: 98%;
+    border-collapse: collapse;
+    margin-left: 2%;
+    color: white;
+  
+  }
+  .action-buttons-left-666 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+    margin-top: 1%;
+    /* margin-left: 0%; */
+    background-color: #007bff;
+    height: 10%;
+    margin-left: 10%;
+  }
+  .data-table-666 td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .data-table-666 th{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+  }
+
+  
+  .data-table-666 th {
+    background-color:#007bff;
+  
+  }
+  .action-buttons-666:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+    /* height: 5%; */
+  }
+  .action-buttons-666 {
+    color: white;
+    border: none;
+    padding: 5px 6px;
+    height: 5%;
+    /* margin-top: ; */
+    text-align: center;
+    background-color: #007bff;
+    cursor: pointer;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  .button-666:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+  }
+  .button-666 {
+    padding: 5% 0%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 100%;
+    margin-bottom: 5%;
+  }
+  .search-icon-65 {
+    background-color: red;
+    width: 3%;
+    height: 19px;
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: -1%;
+    color: white;
+    border-radius: 4%;
+  }
+  @media screen and (max-width: 768px) {
+    
+    
+  
+    .date-adjustments06 {
+      width: 15%;
+      border-radius: 6%;
+      font-size: 1rem;
+      height: 30px;
+  
+    }
+  
+    .input-group-666 {
+      margin-left: 0;
+    }
+  
+    .inut789 {
+      width: 27%;
+      margin: 1%;
+      padding: 1%;
+      height: 5%;
+    }
+  
+    .data-table-666 th,
+    .data-table-666 td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      margin-left: 10
+    }
+  
+    .action-buttons-left-666 {
+      display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+    margin-top: 0%;
+    margin-right: 10%;
+    
+    background-color: #0077bf;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    
+    .action-buttons-666 {
+      color: white;
+      /* margin-left: 60%; */
+    background-color: #0077bf;
+    margin-right: 10%;
+
+  
+    }
+  }
+  
+  
+  .patientdocument-head-666{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0%;
+    height: 50px;
+    width: 101%;
+    
+    background-color:rgb(219, 228, 231);
+  }
+  .patient-icon-666{
+    margin-top: 1%;
+    margin-left: 2%;
+  }
+  .patient-heading-666{
+    font-size: 100%;
+    margin-left: 1%;
+    font-weight: bold;
+  }

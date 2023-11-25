@@ -1,0 +1,205 @@
+.maincontva1{
+  margin-left: 9.3%;
+  padding-top: 1%;
+  width: 90.5%;
+}
+.but-mf{
+background-color: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+}
+.pat-bot-mf{
+color: black;
+margin: 1% 1%;
+font-size: 13px;
+}
+.pat-mf{
+display: flex; 
+  align-items: center;
+margin-left: 1%;
+  padding-left: 1%; 
+  margin-top: -1%;
+}
+.patientdocument-headva11{
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 2.5%;
+height: 8vh;
+width: 100%;
+background-color:rgb(219, 228, 231);
+}
+.patient-iconva11{
+margin-top: 0.5%;
+margin-left: 5%;
+}
+.patient-headingva11{
+font-size: 15px;
+margin-left: 1%;
+font-weight: bold;
+}
+
+
+.ref-Body {
+max-width: 100%;
+margin: 0 auto;
+padding: 2%;
+font-family: Arial, sans-serif;
+}
+
+.icon1 {
+font-size: 24px;
+margin-right: 10px;
+}
+
+
+
+.search-bar-ref{
+height: 5vh;
+width: 55%;
+margin-left: 3%;
+margin-top: 2.3%;
+border-right: none;
+border: 1px solid grey;
+outline-width: 0px;
+}
+.search-container-ref{
+display: flex;
+width: 50%;
+}
+.search-btn-ref{
+height: 5.7vh;
+width: 6%;
+margin-top: 2.2%;
+border: none;
+background-color: red;
+color: #fff;
+font-size: 17px;
+display: flex ;
+align-items: center;
+justify-content: center;
+}
+
+
+.ref-table table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 1%;
+border-collapse: collapse;
+}
+
+/* ManageReferences.css */
+.ref-table th,
+.ref-table td {
+padding: 1%;
+text-align: left;
+border-bottom: 1px solid hsl(0, 6%, 10%);
+border-collapse: collapse;
+border: 1px solid #ccc; 
+}
+
+.ref-table th {
+background-color: #007bff;
+font-weight: bold;
+/* text-align: white; */
+color: #fff;
+}
+
+
+
+.ref-excel {
+background-color: #007bff;
+color: #fff;
+padding: 1% 2%;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+width: 10%;
+bottom: 6px; 
+/* z-index: 1; */
+
+margin-left: 55%; 
+}
+
+.ref-excel:hover {
+background-color: #0056b3;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+.ref-excel {
+  right: 10px; 
+  /* bottom: 10px;  */
+}
+}
+
+
+.ref-search-1 {
+    margin-left: 0; 
+}
+
+.ref-man {
+    margin-left: 0; 
+   
+}
+
+
+
+.ref-popup {
+position: fixed;
+top: 7%;
+left: 04%;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+}
+
+.ref-popup-content {
+background-color: #fff;
+padding: 2%;
+border-radius: 8px;
+text-align: center;
+width: 40%;
+}
+
+.ref-popup input {
+width: 70%; 
+ padding: 2%;
+margin-bottom: 2%;
+}
+.ref-popup-save:hover{
+background-color: #3d50ae;
+color: whitesmoke;
+}
+.ref-popup-save {
+background-color: #007bff;
+color: #fff;
+padding: 2% 4%;
+border: none;
+cursor: pointer;
+margin-right: 1%;
+}
+
+.ref-popup-close11 {
+padding: 1% 2%;
+border: none;
+cursor: pointer;
+background-color: white;
+margin-left: 85%;
+}
+
+
+.ref-popup-close11:hover{
+background-color: white;
+}
+
+/* @media (max-width: 468px) {
+.ref-popup-close11{
+  margin-left: 20px;
+}
+} */

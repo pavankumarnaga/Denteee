@@ -1,0 +1,145 @@
+.maincont-ipog-89{
+  margin-left: 10%;
+  padding-top: 2.7%;
+  width: 90%;
+}
+.pat-dyc{
+  display: flex; 
+  align-items: center;
+  padding-left: 10px; 
+}
+.but-dyc{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pat-bot-dyc{
+  color: black;
+  margin: 9px 10px;
+  font-size: 13px;
+}
+.dynamc-ipog-00923{
+  background-color: #007bff;
+  color: white;
+}
+.search-bar-ipog-89{
+  height: 35px;
+  width: 650px;
+  margin-left: 30px;
+  margin-top: 15px;
+  border-right: none;
+  border: 1px solid grey;
+}
+.search-container-ipog-89{
+  display: flex;
+  width: 40%;
+}
+.search-btn-ipog-89{
+  height: 39px;
+  width: 65px;
+  margin-top: 14.5px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 17px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+.main-head-ipog-89{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  height: 50px;
+  margin-left: -0.5%;
+  width: 101%;
+  background-color:rgb(219, 228, 231);
+}
+.mainhead-icon-ipog-89{
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.main-heading-ipog-89{
+  font-size: 15px;
+  margin-left: 20px;
+  width: 18%;
+  font-weight: bold;
+}
+
+.search-input-ipog-89 {
+  display: flex;
+  align-items: center;
+  background-color: #fbfafa;
+  border: 1px solid #0c0b0b;
+  border-radius: 5px;
+  padding: 5px;
+  width: 40%;
+}
+
+.search-input-ipog-89 input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-input-ipog-89 svg {
+  margin-right: 5px;
+  color: #1f1e1e;
+  font-size: 20px;
+}
+
+.dynamicbutton-ipog-89 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-left:480px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 170px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dynamicbutton-ipog-89:hover {
+  background-color: #3d50ae;  
+}
+.dynamic-ipog-89 {
+  width: 100%;
+  height: 90px;
+  margin-top: 50px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.dynamc-ipog-009{
+  margin: 0px;
+  background-color: #007bff;
+  color: white;
+}
+.dynamc-ipog-079{
+text-align: center;
+height: 30px;
+border: 1px solid #ddd;
+
+}
+
+.dynamic-ipog-099 {
+  text-align: center;
+  padding: 18px;
+  border: 1px solid #ddd;
+}
+
+.dynamic-ipog-99 {
+  background-color: #007bff;
+  color: white;
+  height: 35px;
+}
+.form-ipog-89{
+font-size: 20px;
+
+}

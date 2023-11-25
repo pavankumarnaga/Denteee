@@ -1,0 +1,150 @@
+.kar {
+    z-index: 1000; 
+  }
+
+.asd{
+    height: 10 0vh;
+    width: 670px;
+    border: 1px solid black;
+    text-align: center;
+}
+.vbn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.zx{
+ margin-left: 20px;
+ color: black;  
+}
+.kb{
+    margin-left: 50px;
+    width: 500px;
+    height: 45px;
+    margin-top: 10px;
+}
+.fg{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.cv{
+
+margin-left: 20px;
+ color: black; 
+}
+
+
+.nk{
+    margin-left: 20px;
+    margin-top: 10px;
+    color:black; 
+
+}
+.gh{
+    margin-left: 20px;
+    color:black;
+}
+.mp{
+    display: flex;
+    flex-direction: row;
+}
+.xc{
+    margin-left: 20px;
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+}
+.bn{
+    display: flex;
+    flex-direction: row;
+}
+.df{
+    margin-left: 20px;
+ color: black;
+}
+.af{
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 500px;
+    height: 45px;
+}
+.hn{
+    margin-left: 55px;
+    margin-top: 10px;
+    width: 495px;
+    height: 45px;
+
+}
+.kl{
+    display: flex;
+    flex-direction: row;
+}
+
+.rf{
+    margin-left: 25px;
+    color: black;
+}
+.lf{
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 500px;
+    height: 90px;
+}
+.rty{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.iu{
+    padding-left:10px ;
+}
+.jkl{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+   margin-top: 10px;
+  
+}
+.ty{
+    padding-left: 10px;
+}
+.xz{
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 500px;
+}
+.sh{
+  color:blue;
+  margin-left: 50px;
+  border: none;
+  background-color: white;
+  
+}
+.va{
+    color:black;
+  margin-left: 20px;
+  border: none;
+  background-color: white;
+
+}
+
+.wrt{
+    height: 45px;
+    width: 330px;
+    margin-left: 25px;
+    margin-top: 10px;
+  
+}
+.yo{
+    margin-top: 10px;
+    height: 40px;
+    width: 114px;
+
+}
+.time-icon{
+    height: 45px ;
+    width: 50px;
+    border:none;
+}

@@ -1,0 +1,215 @@
+
+  .maincont-ad-11{
+    margin-left: 10%;
+    padding-top: 2.5%;
+    width: 90.5;
+  }
+  .mc-mc{
+    padding-right: 0px;
+    text-align: justify;
+  }
+  .pat-mc{
+    display: flex; 
+    align-items: center;
+    margin-left: 120px;
+    padding-left: 10px;
+  }
+  .but-mc{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+ .pat-bot-mc{
+  color: black;
+  margin: 9px 10px;
+  font-size: 13px;
+  }
+.main-headmanage{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 33px;
+  height: 50px;
+  width: 101%;
+  margin-left: -0.5%;
+  background-color:rgb(219, 228, 231);
+}
+.mainhead-iconmanage{
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.main-headingmanage{
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.Manage-add-button43 {
+  /* Existing styles... */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer; 
+  margin: 10px;
+ 
+}
+.Manage-add-button43:hover{
+ background-color: #3d50ae;
+ color: whitesmoke;
+}
+.Manage-add-button41:hover{
+  background-color: #3d50ae;
+  color: whitesmoke;
+}
+.Manage-add-button41 {
+  background-color:#007bff;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+ 
+}
+/* .ManageClinicChair {
+  background-color: hwb(0 66% 33%);
+  color: hsl(0, 10%, 6%);
+  padding: 10px;
+  text-align: start;
+  background-color: hwb(210 91% 8%);
+} */
+
+/* .Manage-heading-admin4 {
+  font-size: 20px;
+} */
+
+/* .Manage-button-flexrow, */
+/* .Delet-chair {
+  text-align: right;
+  margin-top: -50px;
+  margin-left: 70px;
+} */
+
+
+
+.Manage-Delet-chair {
+  margin-top: 10px;
+  display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.Manage-table-container {
+  margin-top: 20px; 
+}
+
+.Manage-table {
+  width: 97%;
+  border-collapse: collapse;
+
+}
+.Manage-table th{
+  background-color: #0077fb;
+  height: 40px;
+  color: white;
+}
+
+
+.Manage-table td {
+  border: 1px solid rgb(246, 243, 243);
+  /* padding: 14px; */
+  
+}
+
+
+.Manage-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Manage-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 600px;
+  top: 0%;
+  height: 50%;
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+}
+
+.Manage-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Manage-close-button:hover{
+  background-color: white;
+}
+
+.Manage-close-button:focus {
+  outline: none;
+}
+
+.vamanage11 {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.manage1va {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.manage1vaa1[type="text"],
+textarea {
+  width: 24%; 
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.but-va-11[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.but-va-11[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.Manage-data123 {
+  width: 95%;
+  font-size: 20px;
+}
+
+.Manage-popup.hidden {
+  display: none;
+}

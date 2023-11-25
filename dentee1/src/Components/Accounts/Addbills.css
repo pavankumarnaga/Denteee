@@ -1,0 +1,567 @@
+.new-bill-body{
+    margin-top: 6%;
+    margin-left: 10.2%;
+    background-color: white;
+    width: 89%;
+}
+.new-bill-head {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+    border-bottom: 1px solid rgb(181, 176, 176);
+}
+
+
+
+.main-headnew3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    height: 50px;
+    width: 100%;
+    background-color:rgb(219, 228, 231);
+}
+.mainhead-iconnew3{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.main-headingnew3{
+    font-size: 100%;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+
+
+.search-barnew3{
+    height: 39px;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 3%;
+    border-right: none;
+    border: 1px solid grey;
+}
+.search-containernew3{
+    display: flex;
+    width: 50%;
+}
+.search-btnnew3{
+    height: 43px;
+    width: 11%;
+    margin-top: 3%;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 128%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* .new-bill-icon {
+    margin-top: 5px;
+    margin-left: 50px;
+} */
+
+/* .new-bill-acc-1 {
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+} */
+
+.new-bill-content {
+    height: 14vh;
+    border-radius: 7px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0, 0, 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+.new-bill-content{
+    display: flex;
+    flex-direction: row;
+}
+/* 
+.new-bill-search {
+    height: 10px;
+} */
+
+.new-bill-top-contents {
+    display: flex;
+    padding: 1% 3%;
+}
+
+.new-bill-date {
+    padding: 4px;
+    width: 14vw;
+    height: 35px;
+    margin-top: 1.3%;
+    background: transparent;
+    border: 1px solid rgb(220, 215, 215);
+}
+
+/* .new-bill-button {
+    display: flex;
+    padding: 6px 6px;
+    border: 1px solid grey;
+    background-color: #fff;
+    margin-left: 20px;
+    background: transparent;
+    border-right: transparent;
+    cursor: pointer;
+} */
+/* 
+.search-dropdown {
+    width: 13px;
+    border: transparent;
+    margin: 2px 5px;
+    background-color: rgb(245, 243, 243);
+} */
+
+.note-popup {
+    height: 100px;
+    width: 300px;
+}
+
+.popup-btnaddbills1234 {
+    border: none;
+    cursor: pointer;
+}
+
+/* .new-bill-ser {
+    padding-top: 5px;
+    padding-left: 250px;
+    margin-bottom: 1px;
+    border: 1px solid grey;
+    border-left: transparent;
+} */
+
+.newbill-select {
+    margin-left: 6%;
+    margin-top: 1.4%;
+    padding: 0%;
+    width: 30vw;
+    height: 40px;
+}
+.thadd1234{
+    background-color: black;
+}
+.add-bill-table {
+    width: 60%;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.addbill-table-data_13 td {
+    border-collapse: collapse;
+}
+
+
+.popup-btn{
+    border: none;
+    margin-top: 33%;
+}
+.add-bill-table {
+    width: 99%;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    font-size: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.add-bill-header th {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #007bff;
+    color: white;
+}
+
+.text {
+    padding: 4% 7%;
+    margin: 8% 2%;
+}
+
+.spanaddbill1234 {
+    /* color: rgb(39, 113, 142); */
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.noteicon {
+    font-size: 23px;
+    margin-left: 8px;
+    margin-top: 2%;
+    color: rgb(101, 211, 101);
+}
+
+.new-total {
+    padding-left: 85%;
+    font-weight: bold;
+    color: rgb(59, 134, 164);
+    font-size: 90%;
+}
+
+.new-bill-btm-btn {
+    padding: 1% 1%;
+    margin: 1%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+
+.new-bill-btm-btn:hover {
+    background-color: #3d50ae;
+    cursor: pointer;
+}
+
+.treatment-type-link {
+    color: rgb(18, 180, 244);
+    font-size: 90%;
+    margin: 1% 1%;
+    cursor: pointer;
+}
+
+.popup-btnaddbills1234-link {
+    border: none;
+    cursor: pointer;
+}
+
+.link-popup {
+    height: 40vh;
+    width: 45vw;
+    background-color: rgb(235, 233, 233);
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+/* .pop-up-header {
+    margin: 20px 20px;
+    display: flex;
+} */
+
+/* .pencil-icon {
+    margin-right: 10px;
+    font-size: 16px;
+} */
+
+/* .cancel-icon_13 {
+    margin-left: 450px;
+} */
+
+.pop-up-inputs_13 {
+    display: flex;
+}
+
+/* .text_13 {
+    padding: 7px 30px;
+    margin: 0px 30px;
+} */
+
+.Add-btn_13 {
+    border: none;
+    padding: 4px 10px;
+    /* margin-left: -27%; */
+    color: #fff;
+    background-color: rgb(70, 157, 191);
+    cursor: pointer;
+}
+
+.ok-btn_13 {
+    padding: 7px 10px;
+    margin-top: 60px;
+    margin-left: 90%;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ok-btn_13:hover{
+    background-color: #3d50ae;
+}
+
+.zero {
+    margin-top: -33px;
+    margin-left: 160px;
+}
+
+.discount-popup {
+    height: 80px;
+    width: 65%;
+    padding: 5% 5%;
+    display: flex;
+    border: 1px solid grey;
+    box-shadow: 5px 10px 8px #888888;
+    cursor: pointer;
+}
+
+.radio-btn {
+    height: 20px;
+    width: 20%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.discount-pop {
+    margin-top: 0%;
+    margin-left: 5%;
+}
+
+.popup {
+    height: 250px;
+    width: 700px;
+    margin-left: -12%;
+    background-color: rgb(251, 249, 249);
+    border: 1px solid grey;
+}
+
+.add-tooth-popup2 {
+    height: 370px;
+    width: 900px;
+    margin-top: -15%;
+    background-color: rgb(251, 249, 249);
+    border: 1px solid grey;
+}
+
+.addtooth-popup-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(234, 230, 230);
+    margin-top: -5%;
+    border: 1px solid grey;
+}
+
+.check-btn2 {
+    height: 15px;
+    width: 16%;
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+.add-t-popup-head {
+    margin-left: 0%;
+}
+
+.Tooths {
+    display: flex;
+    justify-content: center;
+}
+
+.Tooths_sunil {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 180px;
+}
+
+.Tooths2 {
+    display: flex;
+    justify-content: center;
+}
+
+.left-tooth {
+    border-right: 1px solid black;
+    padding: 2%;
+}
+
+.left-tooth_sunil {
+    border-right: 1px solid black;
+    padding: 2%;
+}
+
+.no-btn button {
+    height: 20px;
+    width: 10.5%;
+    margin-left: 2%;
+    background-color: rgb(4, 77, 109);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn_sunil button {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn2 button {
+    height: 20px;
+    width: 10.5%;
+    margin-left: 2%;
+    margin-top: 4%;
+    background-color: rgb(4, 77, 109);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn2_sunil button {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn3 button {
+    height: 20px;
+    width: 10.5%;
+    margin-left: 2%;
+    margin-top: 6%;
+    background-color: rgb(4, 77, 109);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn3_sunil button {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 12px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn4 button {
+    height: 20px;
+    width: 10.5%;
+    margin-left: 2%;
+    margin-top: 6%;
+    background-color: rgb(4, 77, 109);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn4_sunil button {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.right-text {
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+.right-text_sunil {
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+.left-text {
+    margin-bottom: 7%;
+}
+
+.left-text_sunil {
+    margin-bottom: 7%;
+}
+
+.lower-left {
+    margin-left: 10%;
+}
+
+.tooth-add-btn {
+    padding: 1% 12%;
+    margin: 1% 35%;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    color: white;
+}
+
+.tooth-add-btn:hover{
+background-color: #3d50ae;
+}
+
+.tooth-add-btn2 {
+    padding: 1% 12%;
+    margin: 1% 35%;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    color: white;
+}
+
+.tooth-add-btn2:hover{
+    background-color: #3d50ae;
+}
+
+.Add-alltooth-btn {
+    padding: 11px 100px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    margin: 10px 35%;
+    cursor: pointer;
+}
+
+.Add-alltooth-btn:hover{
+    background-color: #3d50ae;
+}
+.container_sunil {
+    width: 700px;
+    height: 290px;
+    margin-left: -39.2%;
+    margin-top: -1.5%;
+    background-color: rgb(255, 254, 254);
+    border: 1px solid grey;
+}
+
+.last-text_sunil {
+    display: flex;
+    justify-content: center;
+}
+
+.close-btn {
+    margin-left: 450px;
+    /* border: ; */
+}
+
+.close-btn2 {
+    margin-left: 250px;
+    border: none;
+}
+
+.close-btn3 {
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .new-bill-table-head12 {
+        width: 100vw;
+    }
+}

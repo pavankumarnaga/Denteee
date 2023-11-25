@@ -1,0 +1,374 @@
+.useroleed{
+    margin-top: 5.9%;
+    margin-left: 10%;
+    width: 90.3%;
+}
+
+
+.Admin-head{
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247); 
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 99%;
+    height:48px;
+}
+
+.Admin-Column{
+    display: flex;
+    flex-direction: column;
+}
+.Admin-icon1{
+    height: 50px;
+    width: 100.7%;
+    margin-top: 70px;
+    margin-left: -0.5%;
+    background-color: rgb(224, 228, 228);    
+    border: 1px solid rgb(226, 217, 217);
+    display: flex;
+    flex-direction: row;
+}
+.Admin-icon2{
+        font-size: 20px;
+        margin-top: 11px;
+        background-color: rgb(224, 228, 228);
+        color: rgb(9, 9, 9);
+        border: none;
+        margin-left: 0px;
+}
+.Admin-text1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+.Admin-body{
+   margin: 20px;
+   
+}
+.Admin-Dropdown{
+    width: 250px;
+    height: 41px;
+    border: 1px solid grey;
+}
+.Admin-Row{
+    display: flex;
+    flex-direction: row;
+}
+.Admin-search{
+    margin: 20px 0px 20px 0px;
+}
+.Admin-search1{
+    height: 38px;
+    width: 250px;
+    border: 1px solid grey;
+}
+.Admin-icon3{
+    border: none;
+    height: 41px;
+    width: 40px;
+    background-color: red;
+}
+.Admin-icon4{
+    color: white;
+}
+.Admin-icon5{
+    padding-top: 20px;
+}
+.Admin-table1{
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 100px;
+    width: 95%;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+.Admin-text3{
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.Admin-text4{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.Admin-text5{
+    margin-top: 70px;
+    margin-left: 100px;
+
+}
+.Admin-text8{
+    margin-top: 70px;
+    margin-left: 130px;
+
+}
+.Admin-text9{
+    margin-top: 70px;
+    margin-left: 190px;
+
+}
+.React-icon7{
+    padding-left: 5px;
+    padding-top: 2px;
+}
+.React-text{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.icon9{
+    color: rgb(33, 24, 163);
+    height: 40px;
+    width: 25px;
+    cursor: pointer;
+}
+.Admin-Popup{
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247); 
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 120px;
+    height: 40px;
+    /* margin-right: 10%; */
+}
+.Admin-button6{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.React-icons123{
+    height: 23px;
+    width: 50px;
+    /* margin-right: 5%; */
+    color: rgb(36, 11, 128);
+}
+.Qw{
+    border: none;
+    background-color: white;
+}
+.Admin-table2{
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-top: none;
+    height: 100px;
+    width: 95%;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+.Admin-text10{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.Admin-text11{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.Admin-text12{
+    margin-top: 70px;
+    margin-left: 100px;
+
+}
+.Admin-text13{
+    margin-top: 70px;
+    margin-left: 100px;
+
+}
+.Admin-text14{
+    margin-top: 70px;
+    margin-left: 100px;
+
+}
+.Admin-text15{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.Admin-text16{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.Admin-text17{
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.Admin-button7{
+    background-color: rgb(115, 186, 226);
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+.Admin-button8{
+    background-color: rgb(99, 18, 190);
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+}
+.Admin-button9{
+    background-color: rgb(221, 134, 34);
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+}
+.Admin-button10{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+}
+.Admin-button11{
+    background-color: rgb(223, 165, 40);
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+}
+
+/* /* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .Admin-head {
+        width: 100%;
+        height: auto;
+    }
+
+    .useroleed {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .Admin-text1,
+    .Admin-icon1 {
+        padding-left: 10px;
+    }
+
+    .Admin-text3,
+    .Admin-text4,
+    .Admin-text5,
+    .Admin-text8,
+    .Admin-text9 {
+        margin-left: 10px;
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 480px) {
+    .Admin-head {
+        width: 100%;
+        height: auto;
+    }
+    .Admin-search1{
+        height: 26px;
+        width: 80px;
+    }
+    .Admin-Dropdown{
+        width: 150px;
+        height: 30px;
+    }
+    .useroleed {
+        margin-top: 3%;
+        margin-left: 3%;
+        width: 94%;
+    }
+
+    .Admin-text1,
+    .Admin-icon1 {
+        padding-left: 5px;
+    }
+
+    .Admin-text3,
+    .Admin-text4,
+    .Admin-text5,
+    .Admin-text8,
+    .Admin-text9 {
+        margin-left: 5px;
+    }
+}
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .Admin-head {
+        width: 100%;
+        height: auto;
+    }
+    .Admin-search1{
+        height: 26px;
+        width:150px;
+    }
+    .Admin-Dropdown{
+        width: 150px;
+        height: 30px;
+    }
+
+    .useroleed {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .Admin-text1,
+    .Admin-icon1 {
+        padding-left: 10px;
+    }
+
+    .Admin-text3,
+    .Admin-text4,
+    .Admin-text5,
+    .Admin-text8,
+    .Admin-text9,
+    .Admin-text10,
+    .Admin-text11,
+    .Admin-text12,
+    .Admin-text13,
+    .Admin-text14,
+    .Admin-text15,
+    .Admin-text16,
+    .Admin-text17 {
+        margin-left: 10px;
+    }
+
+    .Admin-table1,
+    .Admin-table2 {
+        margin-left: 10px;
+        width: 90%;
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 480px) {
+    .Admin-head {
+        width: 100%;
+        height: auto;
+    }
+
+    .useroleed {
+        margin-top: 3%;
+        margin-left: 3%;
+        width: 94%;
+    }
+
+    .Admin-text1,
+    .Admin-icon1 {
+        padding-left: 5px;
+    }
+
+    .Admin-text3,
+    .Admin-text4,
+    .Admin-text5,
+    .Admin-text8,
+    .Admin-text9,
+    .Admin-text10,
+    .Admin-text11,
+    .Admin-text12,
+    .Admin-text13,
+    .Admin-text14,
+    .Admin-text15,
+    .Admin-text16,
+    .Admin-text17 {
+        margin-left: 5px;
+    }
+
+    .Admin-table1,
+    .Admin-table2 {
+        margin-left: 5px;
+        width: 94%;
+    }
+}

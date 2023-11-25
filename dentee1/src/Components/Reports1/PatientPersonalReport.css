@@ -1,0 +1,187 @@
+.maincontpatient{
+    margin-top: 6%;
+    margin-left: 10.2%;
+    width: 89.8%;
+}
+
+
+
+
+.main-headpdocument{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color:rgb(219, 228, 231);
+}
+/* .mainhead-iconpdocument{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.main-headingpdocument{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+} */
+
+.personal-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7%;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0px 5px 5px rgb(205, 202, 202);
+}
+.personalreport-icon{
+    margin-top: 5%;
+    margin-left: 31%;
+    color: #000;
+}
+.personalreport-acc-1{
+    font-size: 83%;
+    margin-left: 3%;
+    font-weight: bold;
+}
+.personalreport-total{
+    margin: 1%;
+    margin-top: 3%;
+}
+.personalreport-buttons{
+    margin: 10px;
+    margin-left: 8%;
+    display: flex;
+    margin-top: 2%;
+}
+
+.search-btnpersonal{
+    height: 42.4px;
+    width: 5%;
+    /* margin-top: 14.5px; */
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 92%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.personalreport-search{
+    padding: 0.8%;
+    width: 30%;
+    height: 25px;
+    background-color: white;
+    border: 1px solid grey;
+}
+/* .personalview-select{
+    width: 12%;
+    height: 35px;
+    margin-left: 30px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    box-shadow:rgba(0, 0, 0, 1.2 grey) ;
+} */
+/* .personalreport-view{
+    width: 12%;
+    height: 35px;
+    background-color: #007bff;
+    border: none;
+    color:white;
+    font-weight: bold;
+    margin-left: 25px;
+} */
+.personalpetty-table-tnx{
+    width:100%;
+    border: 1px solid rgb(203, 207, 209);
+    border-collapse: collapse;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.th-nx{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    background-color: #007bff;
+    color: white;
+    padding: 1% 2%;
+    font-size: 99%;
+}
+.dt-yz77 {
+    border-collapse: collapse;
+    padding: 2% 6%;
+}
+.th-nx,
+.dt-yz77 {
+    align-items: center;  
+}
+.personalpetty-table-tnx {
+    width: 100%;
+    float: none;
+    margin-left: -1%;
+}
+.personalpetty-table-tnx .th-nx, .personalpetty-table-tnx .dt-yz77 { 
+    text-align:center;
+    
+}
+.personalview-select {
+    width: 12%;
+    height: 35px;
+    margin-left: 3%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 1.2) grey;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .personalview-select:hover {
+    background-color: #3d50ae;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .personalreport-view {
+    width: 12%;
+    height: 35px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 2%;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .personalreport-view:hover {
+    background-color: #3d50ae;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+  .Amg-sch{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pat-bag-21{
+    color: black;
+    margin: 1% 1%;
+    font-size: 92%;
+  }
+  .Pichi-1{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+  }

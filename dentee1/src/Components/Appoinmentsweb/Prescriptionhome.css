@@ -1,0 +1,162 @@
+.precriptionbody {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    height: 40vh;
+  }
+  .prescription-container{
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 98%;
+  }
+  
+  .back-button{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    margin-left: 20%;
+    
+  }
+  .headerbuttons button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prescription-add-btn {
+    margin-left: 700px;
+    padding: 8px 20px;
+    border: none;
+    margin-top: 25px;
+    gap: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .prescription-add-btn:hover {
+    background-color: #3d50ae;
+    color: white;
+    /* transform: scale(1.1); */
+  }
+  
+  .prescription-delete-btn {
+    margin-left: 30px;
+    padding: 8px 20px;
+    border: none;
+    margin-top: 25px;
+    gap: 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  .prescription-delete-btn:hover {
+    background-color: #3d50ae;
+
+  }
+
+
+  
+  #prescription-q-icon {
+    font-size: 18px;
+    margin-left: 1%;
+    margin-top: 30px;
+    color: grey;
+  }
+  
+  .prescription-btm-para {
+    height: 66px;
+    width: 99%; 
+    background-color: #f9f9f9;
+    margin-top: 25px;
+    margin-left: 10; 
+    border: 1px solid grey;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  .prescription-btm-statement {
+    text-align: center; 
+    font-size: 18px;
+  }
+  .popup-div{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    border: 2px solid grey;
+  }
+/* Prescription Container */
+.prescription-container {
+  position: relative;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 110px;
+  right: -300px; /* Initial hidden position on the right side */
+  width: 300px;
+  height: 80%;
+  background-color: #f1f1f1;
+  transition: right 0.3s ease-in-out; /* Slide in from the right with a smooth transition */
+  z-index: 999;
+}
+
+.sidebar.open {
+  right: 0; /* Slide in from the right */
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+.sidebar-input{
+  padding: 6px 40px;
+  border-radius: 5px;
+  border:0.5px solid grey;
+}
+
+/* Style for the question icon */
+#prescription-q-icon {
+  cursor: pointer;
+  float: right;
+  margin-right: 50px;
+  font-size: 21px;
+}
+
+
+.popup-div {
+  padding: 10px;
+}
+
+.prescriptioncancel-button {
+  /* background-color: #ff5555; */
+  color: #fff;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border:none;
+  border-radius: 3px;
+  color:rgb(38, 113, 142);
+  font-size: 17px;
+}
+
+  @media (max-width: 768px) {
+    .precriptionbody {
+      margin-top: 60px; 
+    }
+  
+    .prescription-add-btn {
+      margin-left: 10%;
+    }
+  
+    .prescription-delete-btn {
+      margin-left: 10%; 
+    }
+  
+    #prescription-q-icon {
+      margin-left: 10%; 
+    }
+  }

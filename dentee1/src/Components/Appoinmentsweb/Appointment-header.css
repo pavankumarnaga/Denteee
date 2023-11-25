@@ -1,0 +1,1164 @@
+/* .ntr-appo-total{
+    margin-left: 8%;
+    margin-top: 8%;
+} */
+.icon-font23{
+    font-size: 23px;
+    color: #3d50ae;
+  }
+  
+
+  .patient-image775557{
+    width: 100%; 
+    height: 100%; 
+    /* margin-left: -6%; */
+  }
+
+  .ntr-img-upload{
+    height: 90px;
+    width: 80px; 
+    /* margin-left: -70%;   */
+}
+.ntr-img-upload-1{
+    display: none;
+}
+  .logo4557{
+        text-decoration: none;
+
+  }
+.logo4557 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    /* margin-right: 40px; */
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 6px;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 15px;
+    padding-top: 8px;
+  }
+.ntr-dentee{
+    display: flex;
+    flex-direction: row;
+    border: 2px;
+    align-items: center;
+    border-bottom-width: 100%;
+    border-bottom:3px solid #04aaf6;
+    
+}
+.ntr-dentee-logo{
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.ntr-dentee-logo-1{
+    height: 50px;
+    width: 130px;
+}
+/* .ntr-den-option{
+   margin-left: 80%;
+   background:transparent;
+   border: none;
+} */
+/* .nte-den-option-1{
+    font-size: 22px;
+    color: gray;
+} */
+.ntr-screen-adjust{
+    margin-left: 84%;
+    background:transparent;
+    border: none;
+}
+.ntr-screen-adjust-1{
+    font-size: 22px;
+    color: gray;
+}
+.ntr-appo-headpart{
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ntr-left-upload{
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+/* 
+.ntr-patient-de{
+    margin-left: 5%;
+} */
+.ntr-patient-de-1{
+    background-color: #cbebf8;
+  
+}
+/* .ntr-patient-de-head{
+
+} */
+.ntr-table-data{
+    font-size: 15px;
+}
+.ntr-table-data-1{
+    font-size: 15px;
+}
+.ntr-patient-gender{
+    color: #038dce;
+}
+.ntr-patient-age{
+    color: #038dce;
+}
+.ntr-patient-mno{
+    color: #038dce;
+}
+.ntr-patient-gender{
+    color: #038dce;
+}
+.ntr-patient-mail{
+    color: #038dce;
+}
+.ntr-portal-new{
+    display: flex;
+}
+.ntr-portal-acc {
+    text-decoration: underline;
+    cursor: pointer;
+    color:#038dce;
+}
+.ntr-portal-btn{
+    height: 20px;
+    width: 60px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+
+
+/* .ntr-patient-contact{
+    margin-left: 5%;
+} */
+
+.ntr-patient-contact-1{
+    display: flex;
+}
+.ntr-wtsapp{
+    height: 25px;
+    align-items: center;
+    border-color: limegreen;
+    border: 0.5px solid limegreen;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ntr-wtsapp-icon{
+    color: limegreen;
+}
+
+/* ----------------------whatsapp popup ------------------ ------------------------*/
+
+
+.ntr-modal-whatsapp{
+    height: 50%;
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0px 0px 10px;
+}
+.ntr-modal-whatsapp-head{
+    display: flex;
+    /* border-bottom-width: 100%; */
+    border-bottom:0.5px solid gray;
+}
+.ntr-whatsapp-1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-bottom: 15px;
+
+}
+.ntr-whatsapp-2{
+   height: 20px;
+   width: 20px;
+   margin-top: 10px;
+   margin-left: 40%;
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+}
+.ntr-whatsapp-pano{
+    margin-left: 20px;
+}
+.ntr-whatspp-pano-1{
+    height: 30px;
+    width: 80%;
+    margin-left: 20px;
+    outline: 0;
+    border:0.5px solid gray;
+}
+.ntr-whatsapp-message{
+    margin-left: 20px;
+}
+.ntr-whatspp-message-1{
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    width: 100%;
+}
+.ntr-whatspp-message-2{
+    height: 10vw;
+    width: 24.2vw;
+    margin-left: 20px;
+    outline: 0;
+    border:0.5px solid gray;
+    background-color: white;
+}
+.ntr-whatsapp-mesend{
+    height: 30px;
+    width: 50px;
+    border:0.5px solid transparent;
+    background-color: red;
+    color: white;
+    margin-top: 3%;
+    margin-left: 73%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+
+
+
+/* ------------------------------------------------whatsappover------------------------ */
+.ntr-sms{
+    margin-left: 15px;
+    height: 25px;
+    border-color: #038dce;
+    border: 0.5px solid #038dce;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ntr-sms-icon{
+    color: #038dce;
+}
+
+.ntr-modal-sms{
+    height: 40%;
+    width: 40vw;
+    background-color:white;
+    box-shadow: 0px 0px 10px;
+}
+.ntr-modal-sms-head{
+    display: flex;
+    border-bottom:0.5px solid gray;
+}
+/* -------------------------------smspopup0--------------------------------------- */
+.ntr-sms-text{
+    margin-left: 8%;
+    font-weight: bold;
+}
+.ntr-sms-1{
+    margin-left: 8%;
+}
+.ntr-sms-2{
+    /* margin-left: 0px; */
+    color:aqua;
+    font-size: 11px;
+    font-weight: bold;
+}
+.ntr-sms-3{
+    margin-left: 0px;
+}
+.ntr-sms-5{
+    margin-left: 1vw;
+}
+.ntr-sms-6{
+    margin-left: 1.8vw;
+    color: lightgreen;
+    font-size: 11px;
+    font-weight: bold;
+}
+.ntr-sms-7{
+    margin-left: 2vw;
+}
+.ntr-sms-10{
+    margin-left: 1vw;
+}
+.ntr-sms-11{
+    margin-left: 1.8vw;
+    color: rgba(255, 166, 0, 0.815);
+    font-size: 11px;
+    font-weight: bold;
+}
+.ntr-sms-12{
+    margin-left: 2vw;
+}
+.ntr-sms-15{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 8vw;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ntr-sms-body{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.ntr-sms-b-2{
+    margin-left: 5px;
+    color: rgb(3, 211, 3);
+}
+.ntr-sms-b-3{
+    margin-left: 20px;
+}
+.ntr-sms-b-4{
+    margin-left: 5px;
+    color: red;
+}
+.ntr-sms-body-1{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.ntr-sms-b-5{
+    height: 10vw;
+    width: 30vw;
+    margin-left: 20px;
+    outline: 0;
+    border:0.5px solid gray;
+    background-color: white;
+}
+.ntr-sms-b-6{
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    width: 100%;
+}
+
+.ntr-sms-mesend{
+    height: 30px;
+    width: 50px;
+    border:0.5px solid transparent;
+    background-color: red;
+    color: white;
+    margin-top: 3%;
+    margin-left: 80.3%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+/* -----------------------------------sms-popupend------------------------------------------- */
+
+
+
+
+.ntr-mail{
+    margin-left: 15px;
+    height: 25px;
+    border-color:red;
+    border: 0.5px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ntr-mail-icon{
+    color: red;
+}
+
+
+/* ----------------------------- Mail Popupstart-------------------------------------------- */
+
+
+
+.ntr-modal-mail{
+    height: 400px;
+    width: 500px;
+    background-color: rgb(196, 164, 164);
+    box-shadow: 0px 0px 10px;
+}
+.ntr-modal-mail-head{
+    display: flex;
+    border-bottom:0.5px solid gray;
+}
+
+.ntr-mail-1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+
+}
+.ntr-mail-2{
+   height: 20px;
+   width: 20px;
+   margin-top: 10px;
+   margin-left: 240px;
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+
+
+
+
+/* ----------------------------- Mail Popupover-------------------------------------------- */
+
+
+
+
+.ntr-print{
+    display: flex;
+    background-color:none;
+    margin-top: 13px;
+    border-radius: 5px;
+    border: solid 0.1px;
+    height: 23px;
+    width: 79.5%;
+}
+.ntr-print button{
+    border: none;
+    background:transparent;
+}
+.ntr-print-icon{
+    font-size: 22px;
+    margin-left: 30px;
+    color: rgb(71, 69, 69);
+}
+.ntr-print-2{
+    margin-left: 20px;
+    color: rgb(71, 69, 69);
+}
+
+/* ----------------------------Printsummary-popup---------------------- */
+
+
+.ntr-modal-patientsummary{
+    height: 60%;
+    width: 36vw;
+    background-color:white;
+    box-shadow: 0px 0px 10px;
+}
+.ntr-modal-ps-head{
+    display: flex;
+    border-bottom:0.5px solid gray;
+}
+
+.ntr-ps-1{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+
+}
+.ntr-ps-2{
+   height: 20px;
+   width: 20px;
+   margin-top: 10px;
+   margin-left: 30%;
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+}
+.ntr-ps-date-select{
+    display: flex;
+    height: 60px;
+    width: 30vw;
+    margin-left: 27px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 0.5px solid gray;
+    align-items: center;
+}
+.ntr-ps-date-text{
+    margin-left: 15px;
+}
+.ntr-ps-date-from{
+    height: 30px;
+    width: 100px;
+    border: 1px solid lightgrey;
+    outline: 0;
+    margin-left: 2%;
+}
+.ntr-ps-date-text-1{
+    margin-left: 20px;
+}
+.ntr-ps-date-to{
+    height: 30px;
+    width: 100px;
+    border: 1px solid lightgrey;
+    outline: 0;
+    margin-left: 25px;
+}
+.ntr-ps-fil-select{
+    height: 30%;
+    width: 30.1vw;
+    background-color:white;
+    box-shadow: 0px 0px 5px;
+    margin-left: 27px;
+    margin-top: 14px;
+    display: flex;
+}
+.ntr-ps-fil-select-1{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.ntr-ps-cb{
+    color: #038dce;
+}
+/* .ntr-ps-cb-text{
+    font-size: 13px;
+    font-weight: bold;
+} */
+
+.ntr-ps-fil-select-2{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.ntr-ps-submit{
+    margin-top: 15px;
+    margin-left: 10.5vw;
+
+}
+.ntr-ps-email{
+    height: 40px;
+    width: 80px;
+    border:0.5px solid transparent;
+    background-color:#007bff;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.ntr-ps-printp{
+    margin-left: 12px;
+    height: 40px;
+    width: 100px;
+    border:0.5px solid transparent;
+    background-color:#007bff;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.ntr-ps-print{
+    margin-left: 12px;
+    height: 40px;
+    width: 80px;
+    border:0.5px solid transparent;
+    background-color:#007bff;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+
+.ntr-ps-email:hover, .ntr-ps-printp:hover, .ntr-ps-print:hover{
+    background-color: #3d50ae;
+}
+/* -------------------------------patientsummary-overrrrrr-------------------------------- */
+
+
+
+
+
+.ntr-addinvest{
+    display: flex;
+    background-color:none;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 0.1px;
+    height: 23px;
+    width: 235px;
+}
+.ntr-addinvest button{
+    border: none;
+    background:transparent;
+ }
+.ntr-addinvest-icon{
+    font-size: 22px;
+    margin-left: 30px;
+    color: rgb(71, 69, 69);
+}
+.ntr-addinvest-2{
+    margin-left: 20px;
+    color: rgb(71, 69, 69);
+}
+
+
+/* ------------------------------------Addinvestigation popupstart--------------------------- */
+
+
+.ntr-modal-addinvestigation{
+    height: 40%;
+    width: 65vw;
+    background-color:white;
+    box-shadow: 0px 0px 10px;
+}
+.ntr-modal-addin-head{
+    display: flex;
+    border-bottom:0.5px solid gray;
+}
+
+.ntr-addin-1{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 2%;
+    margin-bottom: 15px;
+
+}
+.ntr-addin-2{
+   height: 20px;
+   width: 20px;
+   margin-top: 10px;
+   margin-left: 75%;
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+}
+.ntr-addin-date-sele{
+    height: 10%;
+    width: 80.3%;
+    border: 0.5px solid gray;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+.ntr-addin-text-1{
+    margin-left: 60%;
+}
+.ntr-addin-text{
+    color: black;
+}
+.ntr-addin-date{
+    height: 2vw;
+    width: 8vw;
+    border: 1px solid lightgrey;
+    outline: 0;
+    margin-left: 2%;
+    background-color: transparent;
+}
+.ntr-addin-body{
+    margin-top: 15px;
+    margin-left: 10%;
+    height: 40%;
+    width: 80.5%;
+    background-color:white;
+    box-shadow: 0px 0px 5px;
+    margin-bottom: 5%;
+}
+.ntr-addin-body-1{
+    border-bottom:0.5px solid gray;
+}
+.ntr-addin-attri{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.ntr-addin-leftatt-1{
+    margin-top: 5px;
+}
+.ntr-addin-temp{
+    height: 2vw;
+    width: 50%;
+    margin-left: 11.4%;
+}
+.ntr-addin-leftatt-2{
+    margin-top: 5%;
+}
+.ntr-addin-bp{
+    height: 2vw;
+    width: 50%;
+    margin-left: 5%;
+}
+.ntr-addin-leftatt-3{
+    margin-top: 5%;
+}
+.ntr-addin-bs{
+    height: 2vw;
+    width: 50%;
+    margin-left: 11.6%;
+}
+.ntr-addin-attri-2{
+    margin-left: 5%;
+}
+.ntr-addin-right-1{
+    margin-top: 5px;
+}
+.ntr-addin-weight{
+    height: 2vw;
+    width: 50%;
+    margin-left: 27.5%;
+}
+.ntr-addin-right-2{
+    margin-top: 5%;
+}
+.ntr-addin-oxs{
+    height: 2vw;
+    width: 50%;
+    margin-left: 0%;
+}
+.ntr-addin-saveinvest{
+    margin-left: 66%;
+    margin-top: 15px;
+    height: 3vw;
+    width: 30%;
+    border:0.5px solid transparent;
+    background-color:#007bff;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.ntr-addin-saveinvest:hover{
+    background-color: #3d50ae;
+}
+
+
+/* -------------------------------Add investigation over ------------------------------ */
+
+
+
+.ntr-covid-20{
+    display: flex;
+    
+}
+.ntr-covid19{
+    display: flex;
+    background-color:none;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 0.1px;
+    height: 23px;
+    width: 235px;
+}
+.ntr-covid19 button{
+    border: none;
+    background:transparent;
+}
+.ntr-covid19-icon{
+    font-size: 22px;
+    margin-left: 30px;
+    color: rgb(71, 69, 69);
+}
+.ntr-covid19-2{
+    margin-left: 20px;
+    color: rgb(71, 69, 69);
+}
+
+
+/* -------------------------------covid-19consent-popup--------------------- */
+
+
+
+.ntr-modal-c19-consent{
+    height: 13vw;
+    width: 20vw;
+    background-color:white;
+    box-shadow: 0px 0px 10px;
+}
+.ntr-modal-c19-c-head{
+    display: flex;
+    border-bottom:0.5px solid gray;
+    background-color: #038dce;
+    color: white;
+}
+
+.ntr-c19-c-1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 5px;
+
+}
+.ntr-c19-c-2{
+   height: 5%;
+   width: 10%;
+   margin-top: 10px;
+   margin-left: 50%;
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+}
+.ntr-c19-c-text{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.ntr-c19-c-confirm{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.ntr-c19-c-yes{
+    /* margin-left: 20px; */
+    /* margin-top: 15px; */
+    height: 40px;
+    width: 70px;
+    border:0.5px solid gray;
+    background-color:#ffffff;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.ntr-c19-c-no{
+    margin-left: 15px;
+    /* margin-top: 15px; */
+    height: 40px;
+    width: 70px;
+    border:0.5px solid gray;
+    background-color:#ffffff;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/* -------------------------------------covid-19 popup over------------------------------ */
+
+.ntr-covid-20-2{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ntr-covid-20-3{
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    border-width: 0.1px;
+    background: transparent;
+}
+/* .ntr-patient-sum{
+    margin-left: 3%;
+
+} */
+.ntr-patient-sum-15{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.ntr-patient-sum-22{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.ntr-patient-tips-20{
+    display: flex;
+    margin-left: 10px;
+}
+.ntr-date-123{
+    height: 21px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+.ntr-patient-tips-19{
+    display: flex;
+    background-color:none;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid  rgba(255, 230, 0, 0.699) 0.1px;
+    height: 23px;
+    width: 110px;
+    margin-left: 10px;
+}
+.ntr-patient-tips-19 button{
+    border: none;
+    background:transparent;
+ }
+.ntr-patient-tips-1-icon{
+    font-size: 18px;
+    color: rgb(185, 175, 88);
+}
+.ntr-patient-tips-1-2{
+    color: rgb(71, 69, 69);
+}
+
+
+.ntr-patient-notes{
+    display: flex;
+    background-color:none;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: solid  rgb(69, 163, 201) 0.1px;
+    height: 23px;
+    width: 225px;
+    margin-left: 10px;
+}
+.ntr-patient-notes button{
+    border: none;
+    background:transparent;
+ }
+.ntr-patient-notes-icon{
+    font-size: 18px;
+    margin-left: 50px;
+    color: rgb(69, 163, 201);
+}
+.ntr-patient-notes-2{
+    margin-left: px;
+    color: rgb(71, 69, 69);
+}
+
+/* ------------------------------** Filed selection bar **--------------------------------------- */
+
+
+.ntr-appo-selectionbar ul li:hover{
+    background-color: #007bff;
+      /* border-bottom: 2px solid skyblue;     */
+}
+.ntr-appo-profile{
+    background-color: #007bff;
+    color: white;
+}
+
+
+.ntr-nav-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid rgb(8, 8, 8);
+  border-bottom: 1.5px solid rgb(8, 8, 8);
+  margin-top: 3%;
+  flex-wrap: wrap;
+  }
+  
+  .ntr-nav-btns button {
+    padding: 10px;
+    color:black ;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition effect */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .ntr-nav-btns button:hover{
+    background-color: #3d50ae;
+    color: white;
+    /* border-bottom: 2px solid #038dce; */
+    transform: scale(1.2);
+  }
+
+  .ntr-other-popup-contents span{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 80%;
+    width: 20vw;
+    background-color: rgb(226, 225, 225);
+  }
+  .ntr-other-popup-contents-pop{
+    font-size: 18px;
+  }
+  .ntr-other-popup-contents-s1{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .link455{
+    text-decoration: none;
+  }
+
+  .ntr-other-popup-contents-1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 80%;
+    width: 20vw;
+    background-color: rgb(226, 225, 225);
+}
+/* .ntr-other-popup-contents-1-pop{
+    font-size: 20px;
+} */
+
+@media (max-width: 768px) {
+    /* .ntr-appo-total{
+        margin-left: 12%;
+        margin-top: 8%;
+    } */
+  
+    
+    .ntr-den-option{
+        margin-left: 45%;
+     }
+     .ntr-left-upload{
+        margin-left: 30px;
+    }
+    .ntr-patient-contact{
+        margin-left: 10%;
+    }
+    .ntr-modal-whatsapp{
+        height: 40%;
+        width: 60vw;
+    }
+    .ntr-whatsapp-1{
+        font-size: 13px; 
+        margin-left: 3%;
+    }
+    .ntr-whatsapp-2{
+       margin-left: 43%;
+    }
+    .ntr-whatspp-message-2{
+        height: 20vw;
+        width: 49vw;
+    }
+    .ntr-whatsapp-mesend{
+        margin-top: 3%;
+        margin-left: 71%;
+    }
+    .ntr-modal-sms{
+        height: 60%;
+        width: 70vw;
+    }
+    /* .ntr-sms-15{
+        
+    } */
+    .ntr-sms-b-5{
+        height: 20vw;
+        width: 45vw;
+    }
+    .ntr-sms-mesend{
+        margin-top: 3%;
+        margin-left: 73%;
+    }
+    .ntr-modal-patientsummary{
+        height: 90vw;
+        width: 80vw;
+    }
+    .ntr-ps-1{
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-left: 5%;
+    
+    }
+    .ntr-ps-2{
+        height: 20px;
+        width: 20px;
+        margin-top: 10px;
+        margin-left: 15%;
+     }
+    .ntr-ps-date-select{
+        display: flex;
+        height: 10%;
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .ntr-ps-date-text{
+        margin-left: 10px;
+    }
+    .ntr-ps-date-from{
+        height: 30px;
+        width: 30%;
+        border: 1px solid lightgrey;
+        outline: 0;
+        margin-left: 0%;
+    }
+    .ntr-ps-date-text-1{
+        margin-left: 8px;
+    }
+    .ntr-ps-date-to{
+        height: 30px;
+        width: 30%;
+        border: 1px solid lightgrey;
+        outline: 0;
+        margin-left: 1%;
+    }
+    .ntr-ps-fil-select{
+        height: 50%;
+        width: 90%;
+        margin-left: 5.2%;
+    }
+    .ntr-ps-fil-select-2{
+        margin-left: 1%;
+    }
+    .ntr-ps-submit{
+        margin-left: 12%;
+    }
+    
+    .ntr-modal-addinvestigation{
+    height: 90vw;
+    width: 65vw;
+    }
+    .ntr-addin-body{
+        margin-top: 15px;
+        margin-left: 10%;
+        height: 65%;
+        width: 80.5%;
+        margin-bottom: 5%;
+    }
+    .ntr-addin-text-1{
+        margin-left: 5%;
+    }
+    .ntr-addin-date{
+        height: 5vw;
+        width: 15vw;
+    }
+    .ntr-addin-2{
+        margin-left: 50%;
+     }
+     .ntr-addin-temp{
+        height: 3vw;
+        width: 80%;
+        margin-left: 1%;
+    }
+    .ntr-addin-bp{
+        height: 3vw;
+        width: 80%;
+        margin-left: 1%;
+    }
+    .ntr-addin-bs{
+        height: 3vw;
+        width: 80%;
+        margin-left: 1%;
+    }
+    .ntr-addin-weight{
+        height: 3vw;
+        width: 80%;
+        margin-left: 1%;
+    }
+    .ntr-addin-oxs{
+        height: 3vw;
+        width: 80%;
+        margin-left: 1%;
+    }
+    .ntr-addin-saveinvest{
+        margin-left: 54%;
+        margin-top: 15px;
+        height: 10vw;
+        width: 40%;
+    }
+    .ntr-modal-c19-consent{
+        height: 40vw;
+        width: 55vw;
+    }
+    .ntr-patient-sum{
+        margin-left: 8%;
+    }
+
+
+
+
+
+  
+
+}

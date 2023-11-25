@@ -1,0 +1,420 @@
+.manage-backarrow{
+    height: 42px;
+    width: 99%;
+    margin-right: 10px;
+    font-size: 25px;
+    background-color:rgb(221, 221, 221);
+}
+.doctordss {
+margin-top: 5.9%;
+margin-left: 10%;
+width: 90%;
+}
+
+
+.main-head-manage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    height: 50px;
+    width: 101.2%;
+    margin-left: -0.5%;
+    background-color:rgb(224, 228, 228);
+}
+.mainhead-icon-manage{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.main-heading-manage{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+.search-bar-manage{
+    height: 39px;
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-right: none;
+    border: 1px solid grey;
+}
+.search-container-manage{
+    display: flex;
+    width: 50%;
+}
+.search-btn-manage{
+    height: 42.5px;
+    width: 40px;
+    margin-top: 14.5px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.manage-searchbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+}
+.manage-input {
+    /* flex: 1; */
+    padding: 10px;
+    margin-top: 10px;
+    width: 35%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+.Row{
+    display: flex;
+    flex-direction: row;
+}
+.icon01{
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-left: -140x;
+}
+.mangage-searchicon{
+    border: 0px solid;
+    background-color: red;
+    color: white;
+    margin-left: 0px;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+   align-items: normal;
+}
+.manage-addbutton{
+    background-color:  #007bff;
+    color: white;
+   margin-left: 100%;
+   margin-top: 10px;
+   height: 25px;
+   cursor: pointer;
+   width: 100px;
+   border: none;
+}
+.manage-addbutton:hover{
+    background-color: blue;
+}
+.manage-notetext{
+    margin-left: 500px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+.manage-content{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    border: 1px solid black;
+    height: 30vh;
+    width: 93%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.manage-icon{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.manage-name{
+    margin-left: 5px;
+    padding: 5px;
+    flex: 1;
+    margin-top: 10px;
+}
+.manage-mail{
+    margin-left: 10px;
+    padding: 5px;
+    flex: 2;
+    margin-top: 10px;
+}
+.manage-ph{
+    margin-left: 0px;
+    padding: 5px;
+    flex: 2;
+    margin-top: 10px;
+}
+.manage-number{
+    margin-left: 0px;
+    padding: 5px;
+    flex: 1;
+    margin-top: 10px;  
+}
+.manage-activebtn{
+    background-color: rgb(13, 130, 145);
+    color: white;
+    margin-top: 15px;
+   margin-left: 50px;
+    height: 20px;
+    width: 50px;
+    border: none;
+  /* border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px; */
+   
+}
+.manage-pbtn{
+    background-color: blueviolet;
+    color: white;
+    height: 25px;
+    width: 30px;
+    border-radius: 3px;
+    margin-left: 20px;
+    border: none;
+    margin-top: 15px;
+}
+.manage-cbtn{
+    background-color: orange;
+    color: white;
+    height: 25px;
+    width: 30px;
+    border-radius: 3px;
+    margin-left: 20px;
+    border: none;
+    margin-top: 15px;
+}
+.manage-abtn{
+    background-color: red;
+    color: white;
+    height: 25px;
+    width: 30px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.manage-outbtn{
+    border-radius: 20px;
+    background-color:red;
+    color: white;
+    height: 40px;
+    width: 38px;
+    border: none;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+.manage-column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+.manage-adminbtn{
+  height: 35px;
+  width: 100px;
+   color:white;
+   background-color: rgb(223, 165,40);
+   margin-left: -150px;
+   margin-top: 5px;
+   border: none;
+}
+.-manage-edit{
+    height: 100px;
+    width: 200px;
+    border: 2px solid grey;
+}
+.manage-settingicons{
+  height: 30px;
+  width: 50px;
+color: rgb(15, 15, 220);
+margin: 10px;
+padding-right: 0px;
+margin-left: -300px;
+}
+.Admin-popup{
+    border: none;
+    height: 40px;
+    width: 50px;
+    background-color: white;
+    margin-left:30px;
+    margin-top: 10px;
+}
+
+@media (max-width:768px){
+    .manage-backarrow{
+        height: 42px;
+        width: 100%;
+        font-size: 15px;
+        background-color:rgb(231, 232, 233);
+    }
+   
+    
+    .manage-input{
+        height: 15px;
+        width:100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .mangage-searchicon{
+        border: 0px solid;
+        background-color: red;
+        color: white;
+        margin-left: 0px;
+        height: 21px;
+        width: 31px;
+        margin-top: 10px;
+       align-items:center;
+    }
+    .manage-icon{
+         margin: 5px;    
+        height: 10px;
+        width: 10px;
+        align-items: center;
+        
+    }
+    .manage-addbutton{
+        background-color:  rgb(13, 130, 145);;
+        color: white;
+       margin-left: 160px;
+       margin-top: 10px;
+       height: 20px;
+       font-size: 9px;
+       padding: 8px -1px;
+       width: 80px;
+       border: none;
+    }
+    .manage-notetext{
+        margin-left: 180px;
+        margin-top: 5px;
+        font-size: 10px;
+        
+    }
+    .manage-name{
+        margin-left: 5px;
+        margin-top: 10px;
+        font-size: 7px;
+    }
+    .manage-mail{
+        margin-left: 5px;
+        font-size: 7px;
+        margin-top: 10px;
+    }
+    .manage-ph{
+        margin-left: 5px;
+        margin-top: 10px;
+        font-size: 7px;
+
+    }
+    .manage-number{
+        margin-left: 5px;
+        margin-top: 10px;
+        font-size: 7px;
+    }
+    .manage-activebtn{
+        background-color: rgb(13, 130, 145);
+        color: white;
+        margin-top: 15px;
+       margin-left: 10px;
+        height: 15px;
+        width: 35px;
+        font-size: 10px;
+        border: none;
+       
+    }
+    .manage-pbtn{
+        background-color: blueviolet;
+        color: white;
+        height: 15px;
+        width: 20px;
+        font-size: 10px;
+        border-radius: 3px;
+        margin-left: 10px;
+        border: none;
+        margin-top: 15px;
+    }
+    .manage-cbtn{
+        background-color: orange;
+        color: white;
+        height: 15px;
+        width: 20px;
+        font-size: 10px;
+        border-radius: 3px;
+        margin-left: 10px;
+        border: none;
+        margin-top: 15px;
+    }
+    .manage-abtn{
+        background-color: red;
+        color: white;
+        height: 15px;
+        width: 20px;
+        font-size: 10px;
+        border-radius: 3px;
+        border: none;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .manage-outbtn{
+        border-radius: 50px;
+        background-color:red;
+        color: white;
+        height: 30px;
+        width: 30px;
+        border: none;
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .manage-adminbtn{
+  
+        color:white;
+        background-color: rgb(223, 165,40);
+        margin-left: 8px;
+        margin-top: 5px;
+        height: 16px;
+        width: 35px;
+        font-size: 7px;
+        border: none;
+     }
+     .-manage-edit{
+         height: 100px;
+         width: 200px;
+         border: 2px solid rgb(228, 227, 227);
+
+     }
+     .manage-column{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1px;
+    }
+    .manage-settingicons{
+      height: 30px;
+      width: 50px;
+    color: rgb(15, 15, 220);
+    margin: 10px;
+    padding-right: 10px;
+   margin-left: -10px;
+      
+      }
+      .Admin-popup{
+          border: none;
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          margin-left: 10px;
+      }
+      .icon01{
+        height: 10px;
+        width: 10px;
+        margin-top: 0px;
+
+      }
+      .text123{
+        margin-top: 4px;
+        font-size: 10px;
+      }
+     
+}

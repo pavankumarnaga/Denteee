@@ -1,0 +1,100 @@
+.add-bank-account-an12 {
+  margin-top: 8%;
+  margin-left: 2.5%;
+  width: 90%;
+}
+
+.top-right-heading-an12 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container-an12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.input-field567-an12 {
+  width: 300px;
+  padding: 12px;
+}
+
+.grid-columns-3-an12 {
+  box-shadow: 2px 3px 6px #ccc;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-top: 4px solid #ccc;
+}
+
+.inputs-grids456-an12 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.field .label-an12 {
+  font-weight: bold;
+}
+
+.field .input-field567-an12 {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons-456-an12 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.buttons-456 .button-an12 {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons-456-an12 .button-an12:last-child {
+  margin-right: 0;
+}
+
+.buttons-456-an12 .button-an12:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  /* Reset some styles to make it more mobile-friendly */
+  .input-field567-an12 {
+    width: 80%;
+  }
+  .inputs-grids456-an12 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .buttons-456-an12 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buttons-456-an12 .button-an12 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media Query for screens smaller than 576px */
+@media (max-width: 576px) {
+  .grid-columns-3-an12 {
+    padding: 10px;
+  }
+}

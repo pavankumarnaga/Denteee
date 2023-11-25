@@ -1,0 +1,183 @@
+.Formsq1{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -1.5%;
+    /* height: 50%; */
+  }
+.contact-main{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.144);
+    border-width: 1px;
+    /* height: 280px; */
+    margin-top: 2%;
+    width: 95%;
+}
+.contact-column{
+    display: flex;
+    flex-direction: column;
+}
+.contact-row{
+    display: flex;
+     flex-direction: row;
+     height: 30%;
+}
+.contact-flat1{
+    margin: 5%;
+}
+.contact-flat2{
+    height: 30px;
+    width: 23vw;
+}
+.contact-road1{
+    margin-top: 5%;
+}
+.contact-road2{
+    height: 30px;
+    width: 23vw;
+}
+.contact-city1{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.contact-city2{
+    height: 30px;
+    width: 23vw;
+}
+.contact-select2{
+    height: 35px;
+    width: 23.5vw;
+}
+.contact-select1{
+    /* margin-top: 5%; */
+   margin-left: 5%;
+    
+}
+.contact-country2{
+    height: 35px;
+    width: 23.5vw;
+}
+.contact-country1{
+    margin-left: 5%;
+    /* margin-top: 5%; */
+
+}
+.contact-pincode2{
+    height: 30px;
+    width: 23vw;
+}
+.contact-pincode1{
+    margin-left: 5%;
+
+} 
+.contact-button3{
+    margin-left: 90%;
+    margin-top: 20px;
+}
+.contact-button4{
+    height: 25px;
+    margin-top: -2%;
+    width: 80%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-button4:hover{
+    background-color: #3d50ae;
+}
+/* .contact-flat10{
+    height: 20px;
+    width: 20vw;
+} */
+
+
+@media(max-width:768px){
+
+    .contact-main{
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.144);
+        border-width: 1px;
+        height: 30vh;
+        width: 95%;
+        margin: 10px;
+    }
+    .contact-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-row{
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+    }
+    .contact-flat1{
+        margin: 3%;
+    }
+    .contact-flat2{
+        height: 13px;
+        width: 23vw;
+        font-size: 50%;
+    }
+    .contact-road1{
+        margin-top:3% ;
+        /* margin-left: 3%; */
+    }
+    .contact-road2{
+        height: 13px;
+        width: 23vw;
+        font-size: 50%;
+    }
+    .contact-city1{
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    .contact-city2{
+        height: 13px;
+        width: 23vw;
+        font-size: 50%;
+    }
+    .contact-select2{
+        height: 14px;
+        width: 24vw;
+        font-size: 10px;
+    }
+    .contact-select1{
+        margin-top: 3.5%;
+       margin-left: 3%;
+        
+    }
+    .contact-country2{
+        height: 14px;
+        font-size: 10px;
+        width: 24vw;
+    }
+    .contact-country1{
+        margin-left: 3%;
+        margin-top: 3.5%;
+    
+    }
+    .contact-pincode2{
+        height: 13px;
+        width: 23vw;
+        font-size: 50%;
+    }
+    .contact-pincode1{
+        margin-left: 3%;
+        margin-top: 3%;
+    
+    }
+    .contact-button3{
+        margin-left: 90%;
+        margin-top: 20px;
+    } 
+    .contact-button4{
+        height: 20px;
+        width: 80%;
+        background-color: #007bff;
+        border: none;
+        font-size: 10px;
+        color: white;
+    }
+
+}

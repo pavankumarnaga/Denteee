@@ -1,0 +1,197 @@
+/* Base styles for non-responsive elements */
+
+
+.maincont222{
+  margin-left: 8.9%;
+  padding-top: 4.7%;
+  width: 91%;
+}
+.container-222 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2%;
+  width: 95%;
+}
+
+.heading-222 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.heading-text-222 {
+  font-size: 20px;
+}
+
+.buttons-222 {
+  display: flex;
+  margin-left: 700px;; /* Remove margin for larger screens */
+}
+.send-button-222:hover{
+  background-color: #3d50ae;
+  color: whitesmoke;
+}
+.send-button-222 {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  height: 5vh;
+  border: none;
+  width: 10%;
+}
+.view-report-button-222 :hover{
+  background-color: #3d50ae;
+  color: whitesmoke;
+}
+.view-report-button-222 {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  height: 5vh;
+  cursor: pointer;  
+  border: none;
+  width: 100%;
+
+}
+
+.divider-222   {
+  width: 100%;
+  height: 2vh;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.radio-group-222 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10%;
+}
+
+.send-fields-222 {
+  flex-direction: column;
+}
+
+.send-fields-222 label {
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+.send-fields-222 input[type="text"] {
+  width: 100%;
+  padding: 3%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 1%;
+
+}
+
+.Remarks-page-tnx-222 {
+  flex-direction: row;
+   
+  width: 30%;
+  margin-left: 40%;
+  margin-top:-10%; /* Reset margin for smaller screens */
+}
+
+.rectangle-box-222 {
+  display: flex;
+  background-color: white;
+  width:140%;
+  margin-top: 50%;
+  margin-right: 190%;
+  height:10vh;   
+}
+
+.attach-20-222 {
+  margin-left: 50% /* Reset margin for smaller screens */
+}
+.file-upload-label-222:hover{
+  background-color: #3d50ae;
+  color: whitesmoke;
+}
+.file-upload-label-222 {
+  display: inline-block;
+  padding: 8% 16%;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.file-upload-input-222 {
+  display: none;
+}
+
+.patientdocument-head-222 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+  height: 9vh;
+  width: 100%;
+  background-color:rgb(219, 228, 231);
+} /* Add padding for spacing */
+
+
+.patient-icon-222 {
+  margin-top: 1%;
+  margin-left: 0px; /* Adjust the left margin */
+}
+
+.patient-heading-222 {
+  font-size: 15px;
+  margin-left: 0px;
+  font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container-222 {
+      width: 170%; /* Full width for smaller screens */
+  }
+
+  .buttons-222 {
+      justify-content: flex-start; /* Adjust alignment for smaller screens */
+      margin-left: 20px; /* Reset margin for smaller screens */
+  }
+
+  .Remarks-page-tnx-222 {
+      margin-left: 0; /* Reset margin for smaller screens */
+      margin-top: 0; /* Reset margin for smaller screens */
+  }
+
+  .attach-20-222 {
+      margin-left: 0; /* Reset margin for smaller screens */
+  }
+}
+
+@media (max-width: 468px) {
+  .patientdocument-head-222 {
+    width: 55%;
+  }
+
+  .patient-heading-333 {
+      font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
+
+
+.divider-222 {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0; /* Add vertical margin for spacing */
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+      margin: 10px 0;
+      width: 55%; /* Reduce margin for smaller screens */
+  }
+}

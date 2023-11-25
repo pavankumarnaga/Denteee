@@ -1,0 +1,98 @@
+.consultant-head{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(250, 246, 246);
+    box-shadow: 0px 5px 5px rgb(205, 202, 202);
+}
+.consultant-icon{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.consultant-acc-1{
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.consultant-total{
+    margin: 20px;
+    display: flex;
+}
+.consultant-select{
+    height: 44px;
+    width: 200px;
+    margin-left: 30px;
+    padding: 4px 17px;
+    border-color: rgb(75, 174, 213);
+    font-weight: bold; 
+}
+.consultant-select2{
+    margin-left: 35%;
+    background-color: rgb(10, 116, 237);
+    color: white;
+    width: 200px;
+    font-weight: bold;
+}
+.consultant-button{
+    margin-left: 500px;
+    padding: 3.8px 10px;
+    border: none;
+    background-color: white;
+    color: green;
+}
+.consultant-icon2{
+    font-size: 30px;
+    width:100px;
+    
+}
+.consultant-search{
+    margin-left: 50px;
+    border-radius: 40px;
+    padding:11px;
+    width: 250px;
+    border-color: rgb(72, 67, 67);
+    border-width: 0.1px;
+}
+.consultant-body{
+    overflow: scroll;
+    color: black;
+    width: 100%;
+}
+.consultant-table{
+    width: 100%;
+    float: none;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* overflow-y: scroll; */
+}
+.consultant-table-head{
+    border: 1px solid rgb(169, 168, 168);
+    border-collapse: collapse;
+    background-color: rgb(169, 168, 168);;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 10%;
+}
+/* .consultant-1{
+    background-color: blue;
+} */
+.consultant-1 .td1 {
+    border-collapse: collapse;
+    padding: 10px 80px;
+    text-align: center;
+}
+.icon-2{
+    color: rgb(182, 177, 177);
+    padding-left: 25px;
+}
+.consultant-icon{
+    display: flex;
+}
+.consultant-icon3{
+    margin-left: 60%;
+}

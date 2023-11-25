@@ -1,0 +1,74 @@
+.Patientfds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+  }
+  
+  .patientdts {
+    background-color: white;
+    padding: 20px;
+    margin-right: -5%;
+    border-radius: 5px;
+    margin-bottom: 165px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+  }
+  
+  .Clinic-ygh {
+    margin-top: 20px;
+  }
+  
+  .Clinic-Detailsgh {
+    padding: 20px;
+  }
+  
+  .Clinic-Rowgh {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Clinic-Patientgh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .Clinic-qgh {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .Clinic-inputsgh {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .Clinic-Updategh {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -14px;
+  }
+  
+  .Clinic-Button2gh {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Clinic-Button2gh:hover {
+    background-color: #1aa6fc;
+    color: black;
+  }
+  

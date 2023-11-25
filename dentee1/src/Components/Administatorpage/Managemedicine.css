@@ -1,0 +1,204 @@
+/* .medicine-table-container-an411 {
+  margin-left: 8.6%;
+  margin-top: 1%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  overflow-x: auto; 
+} */
+.pat-md{
+  display: flex; 
+  align-items: center;
+  padding-left: 10.5%;
+}
+.but-md{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}  
+.pat-bot-md{
+  color: black;
+  margin: 1.7% 1.7%; /* Adjusted from margin: 9px 10px; */
+  font-size: 13px;
+}
+.patientdocument-head-an41{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 6%;
+  height: 50px;
+  width: 93.5%;
+  margin-left:7%;
+  background-color:rgb(219, 228, 231);
+}
+.patient-icon-an41{
+  margin-top: 0.5%;
+  margin-left: 5%;
+}
+.patient-heading-an41{
+  font-size: 15px;
+  margin-left: 2%;
+  font-weight: bold;
+}
+
+
+
+
+.search-baran41{
+height: 35px;
+width: 60%;
+margin-left: 3%;
+margin-top: 0.9%;
+border-right: none;
+border: 1px solid grey;
+}
+.search-containeran41{
+display: flex;
+width: 50%;
+}
+.search-btnan41{
+height: 38px;
+width: 7%;
+margin-top: 0.9%;
+border: none;
+background-color: red;
+color: #fff;
+font-size: 17px;
+display: flex ;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+
+
+.search-bar-an41 {
+  margin: 20px 0;
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-an41 {
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.search-button-an41 {
+  background-color: red;
+  color: #fff;
+  height: 39px;
+  width: 5%;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 1%;
+}
+
+.table-container-an41 {
+  overflow-x: auto;
+}
+
+.medicine-table-an41 {
+  width: 90%;
+  margin-left: 10%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.medicine-table-an41 .th-an41,
+.medicine-table-an41 .td-an41 {
+  padding: 1%;
+  border: 1px solid #ddd;
+}
+
+.medicine-table-an41 .th-an41 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+.add-button-an41 {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 8px;
+  border: none;
+  width: 13%;
+  margin-top: 0%;
+  margin-left: 80%;
+  text-align: right;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  
+}
+
+.add-button-an41:hover {
+  background-color: #0056b3;
+}
+
+.edit-button-an41,
+.delete-button-an41 {
+  padding: 1% 2%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 0.5%;
+}
+
+.delete-button-an41 {
+  background-color: white;
+}
+
+.frequency-dropdown-an41 {
+  padding: 0.5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 8%;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .medicine-table-container-an411 {
+    padding: 10px;
+  }
+
+  .search-input-an41 {
+    width: 100%;
+  }
+
+  .search-button-an41 {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .medicine-table-an41 .th-an41,
+  .medicine-table-an41 .td-an41 {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .add-button-an41,
+  .edit-button-an41,
+  .delete-button-an41 {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .frequency-dropdown-an41 {
+    padding: 4px;
+    width: 60px;
+  }
+  
+}

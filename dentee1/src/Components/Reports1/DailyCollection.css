@@ -1,0 +1,228 @@
+dwsmaincont{
+    margin-top: 4.5%;
+    margin-left: 8.8%;
+    width: 92.7%;
+}
+
+
+.maincontdaily{
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 89.8%;
+}
+
+
+.daily-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6%;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(248, 244, 244);
+    box-shadow: 0px 5px 5px rgb(205, 202, 202);
+}
+.daily-icon{
+    margin-top: 5%;
+    margin-left: 50%;
+}
+.daily-acc-1{
+    font-size: 95%;
+    margin-left: 1%;
+    font-weight: bold;
+}
+.daily-buttonmenu{
+    margin-left: 75%;
+    height: 30px;
+
+}
+.daily-total{
+    margin: 2%;
+    display: flex;
+}
+.daily-select{
+    height: 35px;
+    width: 10%;
+    margin-left: 1%;
+    padding: 0% 1%;
+}
+.dailydate-1{
+    margin-left: 3%;
+    height: 30px;
+    width: 10%;
+}
+.dailydate-2{
+    padding-left: 1%;
+    height: 30px;
+    width: 10%;
+}
+.daily-to{
+    padding: 1%;
+}
+.daily-button{
+    margin-left: 4%;
+    width: 3%;
+    font-size: 79%;
+    height: 34px;
+}
+.daily-table{
+    width:100%;
+    height: 40px;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid whitesmoke; 
+    /* background-color: red; */
+}
+.daily-thead{
+    border: 1px solid whitesmoke; 
+    border-collapse: collapse;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+
+}
+.daily-tablebody{
+    border-collapse: collapse;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    align-items: center;
+    border: 1px solid whitesmoke; 
+  
+}
+.daily-headrow .th1{
+    margin: 2% 5%;
+border: 1px solid whitesmoke; 
+
+}
+.icon-2{
+    color: rgb(182, 177, 177);
+    padding-left: 15%;
+
+}
+.daily-refresh{
+    padding-left: 30px;
+    /* padding-top: 20px; */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .daily-head {
+        margin-top: 10px; /* Further reduced margin for smaller screens */
+    }
+
+    .daily-icon {
+        margin-left: 10px; /* Further adjusted margin for smaller screens */
+    }
+
+    .daily-acc-1 {
+        font-size: 14px; /* Smaller font size for smaller screens */
+        margin-left: 5px; /* Further adjusted margin for smaller screens */
+    }
+
+    .daily-buttonmenu {
+        margin-left:65% ; /* Pushed to the right on smaller screens */
+    }
+
+    .daily-total {
+        margin: 5px; /* Further reduced margin for smaller screens */
+    }
+
+    .daily-select,
+    .dailydate-1,
+    .dailydate-2 {
+        width: 45%; /* Adjusted width for smaller screens */
+        margin-left: 5px; /* Further adjusted margin for smaller screens */
+        padding: 4px 5px; /* Further adjusted padding for smaller screens */
+    }
+
+    .daily-button {
+        width: 25px;
+        font-size: 14px; /* Smaller font size for smaller screens */
+        margin-left: 5px;
+         /* Further adjusted margin for smaller screens */
+    }
+
+    .daily-headrow .th1 {
+        margin: 5px 5px; /* Further adjusted margin for smaller screens */
+    }
+
+    .icon-2 {
+        padding-left: 5px; /* Further adjusted padding for smaller screens */
+    }
+
+    .daily-refresh {
+        padding-left: 10px; /* Further adjusted padding for smaller screens */
+    }
+    .daily-buttonmenu{
+        margin-left: 32%;
+        height: 30px;
+    
+    }
+    .daily-select{
+        margin-top: 5px;
+        height: 35px;
+        width: 60px;
+        margin-left: 5px;
+        /* padding: 4px 17px;  */
+    }
+    .dailydate-1{
+        margin-top: 5px;
+        height: 23px;
+        width: 80px;
+        margin-left: 10px;
+    }
+    .dailydate-2{
+        margin-top: 5px;
+        height: 23px;
+        width: 75px;
+        margin-left: 7px;
+    }
+    .daily-to{
+      margin-left: 7px;
+      margin-top: 3px;
+    }
+    .daily-button{
+        margin-left: 25px;
+        width: 33px;
+        font-size: 18px;
+        height: 35px;
+        margin-top: 5px;
+    }
+   
+}
+
+
+
+
+.loyola{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Ram-chadara{
+    color: black;
+    margin: 2% 1%;
+    font-size: 90%;
+  }
+  .Venky-11{
+    display: flex; 
+    align-items: center;
+    padding-left: 1%; 
+  }
+
+
+  .daily-thead,
+.daily-tablebody {
+    border: 1px solid whitesmoke; /* Add the white smoke border */
+    border-collapse: collapse;
+    font-size: 91%;
+    height: 40px;
+    width: 100%;
+}

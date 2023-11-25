@@ -1,0 +1,280 @@
+.maincontroutine-nk{
+    
+
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 89.7%;
+  
+  }
+  .true-6668{
+      background-color: #007bff;
+      color: white;
+  }
+  .routine-TotalBody-nd{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  
+  }
+  .routine-head{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 40px;
+      height: 10vh;
+      width: 101.5%;
+      margin-left: -0.5%;
+      background-color: rgb(234, 231, 231);
+      border-bottom: 1px solid grey;
+  }
+  .routine-icon{
+      margin-top: 5px;
+      margin-left: 50px;
+  }
+  .routine-heading{
+      font-size: 15px;
+      margin-left: 20px;
+      font-weight: bold;
+  }
+  
+  .routine-body{
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+  .routine-date-1{
+      margin-top: 6px;
+      height: 30px;
+      width: 105px;
+      margin-left: 10px;
+      font-size: 15px;
+  }
+  .routine-selection-1{
+      margin-top: 5px;
+      margin-left: 10px;
+      height: 34px;
+      width: 150px;
+  }
+  .routine-view-report{
+      margin-top: 5px;
+      margin-left: 10px;
+      height: 34px;
+      width: 100px;
+      background-color:rgb(23, 182, 169);
+      color: white;
+      border: none;   
+  }
+  
+  .routine-excel-icon{
+      font-size: 35px; 
+      color: green;
+      background-color: #fff;
+      border: none;
+      margin-left: 370px;
+      margin-top: 20px;
+     
+  }
+  .routine-se-1{
+      display: flex;
+      flex-direction: row;
+  }
+  
+  
+  
+  .search-barremainder{
+      height: 39px;
+      width: 350px;
+      margin-left: 30px;
+      margin-top: 15px;
+      border-right: none;
+      border: 1px solid grey;
+  }
+  .search-containerremainder{
+      display: flex;
+      width: 50%;
+  }
+  .search-btnremainder{
+      height: 43px;
+      width: 40px;
+      margin-top: 14.5px;
+      border: none;
+      background-color: red;
+      color: #fff;
+      font-size: 17px;
+      display: flex ;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  
+  
+  
+  
+  .butpagenation-ak55{
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+   .pat-bottom-num55pat2{
+      color: black;
+      margin: 9px 10px;
+      font-size: 13px;
+  }
+   .pat-footer55pat1{
+      display: flex; 
+      align-items: center;
+      padding-left: 10px; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .routine-table-detail{
+      width: 100%;
+      float: none;
+      border: 1px solid rgb(209, 203, 203);
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .routine-table-head{
+      border-collapse: collapse;
+      background-color: #778899;
+      padding: 9px;
+      font-size: 11px;
+      color: #fff;
+      
+  }
+  .routine-some .td-so {
+      border-collapse: collapse;
+     
+  } 
+
+  .routine-table-detail td {
+    border: 1px solid whitesmoke;
+}
+
+  .th-routine-table-head
+  .td-so {
+      align-items: center;  
+      
+  }
+  .routine-footer-nikhil{
+      display: flex; 
+      align-items: center; 
+  }
+  .routine-bottom-icons{
+      color: grey;
+      margin: 10px 30px;
+  }
+  .routine-bottom-num{
+      color: grey;
+      margin: 9px 15px;
+      font-size: 13px;
+  }
+  .routine-btm-righticon{
+      color: grey;
+      margin: 10px 30px;  
+  }
+  .routine-btm-items{
+      font-size: 13px;
+      margin: 8px 10px;
+  }
+  .routine-btm-items2{
+      font-size: 14px;
+      margin: 8px 0px 8px 500px;
+      color: rgb(174, 170, 170);
+  }
+  .routine-re-icon{
+      font-size: 15px;
+      margin-bottom: -3px;
+  }
+  .th-routine-table-head{
+      text-align: center;
+      padding: 6px;
+      border: 1px solid #ccc;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+      .routine-search-bar{
+          height: 45px;
+          width: 200px;
+          margin: 40px 30px 0 15px;
+          border-radius: 50px;
+          outline: 0px;
+          border: 1px solid grey;
+      }
+      .routine-excel-icon-c{
+          background-color: #fff;
+          border: none;
+          margin-left: 120px;
+          margin-top: 40px;
+      }
+      .routine-table-detail{
+          width: 50%;
+          float: none;
+          border: 1px solid rgb(209, 203, 203);
+          border-collapse: collapse;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      .routine-table-head{
+          border-collapse: collapse;
+          background-color: #778899;
+          padding: 10px;
+          font-size: 14px;
+          color: #fff;
+      }
+      .routine-some .td-s0 {
+          border-collapse: collapse;
+         padding: 10px 10px 10px 50px;
+         margin-left: 30px;
+      } 
+      .th-routine-table-head
+      .td-so {
+          align-items: center;  
+      }
+      .routine-footer-nikhil{
+          display: flex; 
+          align-items: center; 
+      }
+      .routine-bottom-icons{
+          color: grey;
+          margin: 10px 15px 10px 5px;
+      }
+      .routine-bottom-num{
+          color: grey;
+          margin: 10px 15px 10px 5px;
+          font-size: 13px;
+      }
+      .routine-btm-righticon{
+          color: grey;
+          margin: 10px 5px 10px 5px; 
+      }
+      .routine-btm-items{
+          font-size: 13px;
+          margin: 10px 5px 10px 5px; 
+      }
+      .routine-btm-items2{
+          font-size: 14px;
+          margin: 8px 0px 8px 100px;
+          color: rgb(174, 170, 170);
+      }
+      .routine-re-icon{
+          font-size: 15px;
+          margin-bottom: -3px;
+      }
+  
+  }

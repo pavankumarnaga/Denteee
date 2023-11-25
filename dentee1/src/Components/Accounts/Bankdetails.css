@@ -1,0 +1,315 @@
+/* Common Styles */
+.wrapperwa {
+  margin-top: 5.8%;
+  margin-left: -10%;
+  width: 89%;
+}
+
+.main-headwra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(219, 228, 231);
+}
+
+.mainhead-iconwra {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.main-headingwra {
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+
+
+.search-barbank{
+  height: 41px;
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 1px;
+  border-right: none;
+  border: 1px solid grey;
+}
+.search-containerbank{
+  display: flex;
+  width: 50%;
+}
+.search-btnbank{
+  height: 45px;
+  width: 45px;
+  margin-top: 1px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 17px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#sidebar-wrapper {
+  width: 250px;
+  min-height: 100vh;
+  max-height: auto;
+  background-color: white;
+  overflow-y: auto;
+}
+
+/* #sidebar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} */
+/* 
+#sidebar .sidebar-item {
+  line-height: 1rem;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+} */
+
+/* .sidebar-toggle {
+  height: 20px;
+  width: 20px;
+  margin: 1rem;
+  cursor: pointer;
+} */
+
+#content-wrapper {
+  flex: 1;
+  width: 100%;
+  padding-left: 250px;
+}
+
+.dashboardaccountHeading {
+  margin-right: 80%;
+}
+
+.tototo {
+  margin-top: 1%;
+}
+
+.dashboardrowdate {
+  display: flex;
+}
+
+.inputField[type="date"],
+.inputField[type="text"] {
+  height: 30px;
+  width: 280px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.searchButtonva{
+  height: 40px;
+  width: 50px;
+  background-color: #007bff;
+  color: white;
+  margin-left: 1%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.actionButtonva,
+.actionButtonvaa1 {
+  height: 40px;
+  width: 150px;
+  background-color: #007bff;
+  color: white;
+  margin-left: 1%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.searchButtonva {
+  width: 40px;
+  background-color: red;
+}
+
+/* Bank Styles */
+.Bank {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+/* Table Styles */
+.table11 {
+  margin-top: 55px;
+  width: 100%;
+  /* border-collapse: none; */
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapperwa {
+    margin-left: 10.5%;
+    margin-top: 8%;
+  }
+
+  #content-wrapper {
+    padding-left: 0;
+  }
+
+  .dashboardaccountHeading,
+  .dashboardrowdate {
+    margin-right: 10%;
+  }
+
+  .inputField[type="date"],
+  .inputField[type="text"],
+  .actionButtonva
+  .actionButtonvaa1 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .actionButtonvaa1 {
+    width: 100%;
+    /* margin-right: 0; */
+   /* margin-left: 2%; */
+    margin-bottom: 10px;
+  }
+  
+}
+.searchButtonva
+ {
+    width: 6%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+@media screen and (max-width: 768px) {
+  #sidebar-wrapper {
+    width: 100%;
+  }
+
+  #content-wrapper {
+    padding-left: 0;
+  }
+
+  .dashboardaccountHeading,
+  .dashboardrowdate {
+    margin-right: 10%;
+  }
+
+  .inputField[type="date"],
+  .inputField[type="text"]
+  {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .actionButtonva{
+    width: 100px;
+    height: 70%;
+    margin-right: 1px;
+    margin-bottom: 10px;
+  }
+  .actionButtonvaa1{
+    width: 100px;
+    height: 70%;
+    margin-right: 0;
+    margin-bottom: 10px; 
+  }
+}
+.actionButtonvaa1:hover,
+.actionButtonva:hover {
+  background-color: #3d50ae;
+  color: white;
+}
+.trtablebank {
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+
+.table11 {
+  margin-top: 55px;
+  width: 100%;
+  border-collapse: collapse; /* Add this property to control border-collapse */
+}
+
+.table11 th,
+.table11 td {
+  border: 1px solid whitesmoke; /* Set the border for both th and td */
+  padding: 10px;
+  text-align: left; /* Adjust text alignment if needed */
+}
+
+/* Optional: You can style the table header separately */
+.table11 th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Optional: Style hover effect on rows */
+.table11 tr:hover {
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Add these styles for responsiveness */
+  .table11 th,
+  .table11 td {
+    font-size: 14px; /* Adjust font size for smaller screens if needed */
+  }
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-label {
+  margin-bottom: 5px;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.popup-buttons button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background-color: #ddd;
+}

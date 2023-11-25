@@ -1,0 +1,280 @@
+.maincontconsul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+
+.ConsultantTotalBody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 8px;
+
+}
+.consultant-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 10vh;
+    width: 110.5%;
+    background-color: rgb(234, 231, 231);
+    border-bottom: 1px solid grey;
+}
+.consultant-icon{
+    margin-top: 5px;
+    /* margin-left: 50px; */
+    color: #000;
+}
+.consultant-heading{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.consultant-bill-contents{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.consultant-bill-select{
+    display: flex;
+    
+    height: 40px;
+    width: 300px;
+    /* margin: 15px 50px 10px -208px; */
+}
+.consultant-view-report {
+    /* Your existing styles */
+    height: 46px;
+    width: 150px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: none;
+    margin: 5px 4px;
+  }
+  
+  .consultant-view-report:hover {
+    background-color: #3d50ae; /* Change to the desired hover color (red) */
+    cursor: pointer; /* Add pointer cursor on hover for better user experience */
+  }
+  
+
+.consultant-view-report.hover{
+background-color: #3d50ae;
+}
+.consultant-excel-icon{
+    color: rgb(39, 215, 39);
+    font-size: 33px;
+    margin-left: 10%;
+}
+.trtr{
+    background-color: #007bff;
+    /* margin-left: 10%; */
+}
+/* .consultant-search-bar{
+    height: 45px;
+    width: 400px;
+    margin: 40px 30px 0 15px;
+    outline: 0px;
+    border: 1px solid grey;
+    padding-left: 20px;
+} */
+
+.search-barbreport{
+    height: 38px;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 3px;
+    border-right: none;
+    border: 1px solid grey;
+}
+.search-containerbreport{
+    display: inline-flex;
+    width: 50%;
+}
+.search-btnbreport{
+    height: 41px;
+    width: 40px;
+    margin-top: 3px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.patient-table-sunil{
+    width:110%;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.consultant-table-sunil{
+    width: 100%;
+    float: none;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.consultant-table-head{
+    border-collapse: collapse;
+    background-color: #007bff;
+    padding: 10px;    font-size: 14px;
+    color: #fff;
+    padding-right: 6%;
+   
+}
+.consultant-table-head1{
+    border-collapse: collapse;
+    background-color: #007bff;
+    padding: 10px;    font-size: 14px;
+    color: #fff;
+    padding-right: 9%;
+}
+.consultantsome .tdtd {
+    border-collapse: collapse;
+   padding: 10px 10px 10px 50px;
+   margin-left: 30px;
+} 
+.consultant-table-head
+.tdtd {
+    align-items: center;  
+}
+
+.consultant-table-head{
+    margin-left: 10%;
+}
+.consultant-footer_sunil{
+    display: flex; 
+    align-items: center; 
+}
+.consultant-bottom-icons{
+    color: grey;
+    margin: 10px 30px;
+}
+.consultant-bottom-num{
+    color: grey;
+    margin: 9px 15px;
+    font-size: 13px;
+}
+.consultant-btm-righticon{
+    color: grey;
+    margin: 10px 30px;  
+}
+.consultant-btm-items{
+    font-size: 13px;
+    margin: 8px 10px;
+}
+.consultant-btm-items2{
+    font-size: 14px;
+    margin: 8px 250px;
+    color: rgb(174, 170, 170);
+}
+.refresh-icon{
+    font-size: 15px;
+    margin-bottom: -3px;
+}
+
+
+@media (max-width: 768px) {
+    .consultant-view-report{
+        /* padding: 30px 40px; */
+        height: 36px;
+        width: 150px;
+        margin: 6px 28px;
+        background-color: rgb(112, 173, 197);
+        color: #fff;
+        font-weight: bold;
+    }
+    .consultant-excel-icon{
+        color: rgb(39, 215, 39);
+        font-size: 40px;
+        margin-left: 0px;
+        
+    }
+    .consultant-search-bar{
+        height: 45px;
+        width: 270px;
+        margin: 20px 30px 0 25px;
+        border-radius: 50px;
+        outline: 0px;
+        border: 1px solid grey;
+    }
+    .consultant-bill-contents{
+        display: flex;
+    
+        
+         /* margin-left: 30%; */
+    }
+    .consultant-bottom-icons{
+        color: grey;
+        margin: 10px 5px 10px 5px;
+    }
+    .consultant-bottom-num{
+        color: grey;
+        margin: 10px 5px 10px 5px;
+        font-size: 10px;
+    }
+    .consultant-btm-righticon{
+        color: grey;
+        margin: 10px 5px 10px 5px;  
+    }
+    .consultant-btm-items{
+        font-size: 10px;
+        margin: 10px 5px 10px 5px;
+    }
+    .consultant-btm-items2{
+        font-size: 10px;
+        margin: 10px 0px 10px 70px;
+        color: rgb(174, 170, 170);
+    }
+    .refresh-icon{
+        font-size: 10px;
+        margin-bottom: -3px;
+    }
+
+}
+
+
+
+
+
+.vanitha{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  }
+  
+  .Rohani{
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+  }
+  .lovaraju{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+  }
+  .petty{
+    /* font-size: 80%; */
+    font-size: 181%;
+    margin-left: 10px;
+  }

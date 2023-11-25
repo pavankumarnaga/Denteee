@@ -1,0 +1,164 @@
+.maincont333{
+  margin-left: 8.4%;
+  padding-top: 4.2%;
+  width: 92%;
+}
+
+.promotional-email-report-333 {
+  text-align: left;
+  margin: 2%;
+}
+.but-mail{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pat-mail{
+  display: flex; 
+  align-items: center;
+  padding-left: 1%; 
+}
+.pat-mali{
+  color: black;
+  margin: 1% 2%;
+  font-size: 13px;
+}
+
+
+.search-bar-333{
+  height: 6vh;
+  width: 350%;
+  margin-left: 30%;
+  margin-top: 2%;
+  border-right: none;
+  border: 1px solid grey;
+}
+.search-container-333{
+  display: flex;
+  width: 50%;
+}
+.search-btn-333{
+  height: 6.6vh;
+  width: 15%;
+  margin-top: 2%;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 17px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+/* .search-bar-333 {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 50%;
+  height: 55px;
+}
+
+.input-333[type="text"] {
+  padding: 5px;
+  width: 350px;
+}
+
+.button-333 {
+  padding: 7px 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  border-radius: 7%;
+  height: 35px;
+  width: 43px;
+} */
+
+/* Container for the table to make it responsive */
+.table-container {
+  overflow-x: auto;
+}
+
+.email-table-333 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.email-table-333 th,
+.email-table-333 td {
+  border: 1px solid #ccc;
+  padding: 1%;
+}
+
+.email-table-333 th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.patientdocument-head-333 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+  height: 9vh;
+  width: 100%;
+  background-color: rgb(219, 228, 231);
+}
+
+.patient-icon-333 {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+.patient-heading-333 {
+  font-size: 15px;
+  margin-left: 1%;
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+
+/* Make the table and heading responsive */
+@media (max-width: 468px) {
+  .email-table-333 th,
+  .email-table-333 td {
+      padding: 0px;
+      font-size: 8px;
+  }
+
+  .patient-heading-333 {
+      font-size: 14px;
+  }
+}
+
+/* Hide the patient icon and adjust the heading font size further for smaller screens */
+@media (max-width: 468px) {
+ 
+
+  .patient-heading-333 {
+      font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .search-container {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .search-icon-333 {
+      margin-right: 0; /* Remove right margin for smaller screens */
+      margin-bottom: 10px; /* Add some spacing below the icon for smaller screens */
+  }
+
+  .input-333[type="text"] {
+      width: 70%; /* Full width input on smaller screens */
+  }
+}

@@ -1,0 +1,82 @@
+.maincontclinic{
+    
+  margin-top: 6%;
+  margin-left: 10.2%;
+  width: 89.7%;
+
+}
+
+
+.clinic-head{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    height: 50px;
+    background-color:rgb(219, 228, 231);
+    /* box-shadow: 0px 5px 5px rgb(205, 202, 202); */
+}
+.clinic-icon{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.clinic-acc-1{
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.clinic-total{
+    margin: 20px;
+    display: flex;
+}
+.clinic-select{
+    width: 15%;
+}
+.clinicdate-1{
+    margin-left: 30px;
+    width:15%;
+    background-color: white;
+    border: 1px solid;
+}
+.clinic-to{
+    margin: 8px;
+}
+.clinicdate-2{
+    width:15%;
+    background-color: white;
+    border: 1px solid;
+}
+.clinic-report{
+    margin-left: 30px;
+    width: 26%;
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+.clinic-button{
+    margin-left: 480px;
+    border: none;
+    background-color: white;
+}
+.clinic-icon2{
+    font-size: 30px;
+    color: rgb(5, 3, 3);
+}
+.clinic-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+}
+.clinic-table-head{
+    background-color: #007bff;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+
+}
+.clinic-1 td {
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+}

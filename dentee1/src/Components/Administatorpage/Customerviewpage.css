@@ -1,0 +1,270 @@
+
+.maincontcustomer{
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 90%;
+}
+.main-headcustomva{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color:rgb(219, 228, 231);
+}
+.mainhead-iconcustomva{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.main-headingcustomva{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.tbadd1 {
+    width: 97%;
+    border: 1px solid rgb(199, 192, 192);
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.Varaadd1 {
+    height: 30px;
+    width: 60px;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px 20px;
+}
+
+.vatabuttonadd1 {
+    
+    margin-left: 75%;
+    border: none;
+    padding: 20px;
+}
+.vaadd12:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+}
+.vaadd12{
+    width: 60px;
+    color: white;
+    padding: 5px;
+    background-color: #007bff;
+    border: none;
+    text-decoration: none;
+}
+.vaadd1:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+}
+.vaadd1 {
+    width: 60px;
+    color: white;
+    padding: 5px;
+    border: none;
+    background-color:#007bff;
+}
+
+.vara2add1 {
+    display: flex;
+   
+}
+
+.varacategoryadd1{
+    margin-bottom: -53px;
+    padding-right: 85%;
+}
+.varaname {
+    font-size: 15px;
+    padding-left: 50px;
+    margin-bottom: -63px;
+}
+
+.vara1 {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.varahadd1 {
+    height: 30px;
+    width: 314px;
+    margin: -100px auto 0 auto;
+    margin-right: 480px;
+}
+
+.varaname1add1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.varacadd1 {
+    font-weight: bold;
+    padding-right: 500px;
+    padding-top: 10px;
+    color: rgb(105, 97, 97);
+    font-size: 18px;
+}
+
+.vara11 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.varawhenadd1 {
+    height: 30px;
+    width: 90px;
+    margin-left: 120px;
+    /* border-color: skyblue; */
+    margin-top: 10px;
+}
+
+.tn {
+    /* border-color: skyblue; */
+    margin: 10px ;
+    width:300px;
+    height:-20px ;
+    margin-bottom: -1px;
+}
+
+.varaicon {
+    color: blue;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.varaavi,
+.varaaa {
+    font-size: 12px;
+    color: gray;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.tr {
+    font-size: 10px;
+}
+
+.varaempadd1 {
+    font-size: 8px;
+    text-align: end;
+    margin-left: 49%;
+}
+
+.varaseladd1{
+    margin-left: 40%;
+}
+.ts {
+    font-size: 12px;
+    color: gray;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.table-bar {
+    height: 20px;
+    width: 470px;
+    background-color: rgb(207, 197, 197);
+    margin: 10px auto;
+    text-align: center;
+}
+
+.icon-button {
+    color: rgb(73, 67, 67);
+    font-size: 13px;
+}
+
+.icon-1 {
+    text-align: center;
+    background-color: rgb(207, 197, 197);
+}
+
+.varalastadd1 {
+    padding-left: 5px;
+}
+
+.varafitadd1 {
+    height: 100px;
+    width: 100%;
+    max-width: 560px;
+    border: 1px solid rgb(158, 155, 155);
+    margin: 10px auto;
+    font-size: 14px;
+    color: black;
+    overflow-y: scroll;
+    max-height: 300px;
+    margin-left: 18px;
+}
+
+.table-container {
+    padding: 0 10px;
+}
+
+.varaav {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.varaicon {
+    text-align: start;
+    margin-left: 22px;
+}
+
+.thadd1 {
+    height: 22px;
+    margin-left: 18px;
+    width: 315px;
+}
+
+
+
+.icon-11 {
+    text-align: center;
+    height: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .tbadd1 {
+        margin: 10px;
+    }
+    .vatabuttonadd1 {
+        margin-left: 0;
+        padding: 20px 10px;
+    }
+    .vara2add1 {
+        /* flex-direction: column; */
+
+        display: flex;
+    }
+    .varaname,
+    .varacategoryadd1 {
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .tn {
+        margin: 10px;
+    }
+    .varaseladd1,
+    .ts {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .varaicon {
+        text-align: left;
+    }
+    .varaavi,
+    .varaaa {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .varahadd1{
+        width: 10px;
+        
+    }
+}

@@ -1,0 +1,147 @@
+.bill2-total {
+    height: 210px;
+    /* width: 91%; */
+    width: 98%;
+    border: 1px solid whitesmoke; /* Updated border color */
+    margin-top: 0.5%;
+    margin-left: 1%;
+  }
+  
+  .billborderin2-total {
+    margin: 10px;
+  }
+  
+  .bill2-printbutton {
+    margin-left: 80%;
+    height: 27px;
+    width: 80px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .bill2-printbutton:hover {
+    background-color: #3d50ae;
+  }
+  
+  .bill2-genbillbutton {
+    margin-left: 10px;
+    height: 27px;
+    width: 130px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .bill2-genbillbutton:hover {
+    background-color: #3d50ae;
+  }
+  
+  .bill2-table {
+    width: 97%;
+    height: 40px;
+    border: 1px solid whitesmoke; /* Updated border color */
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  
+  .bill2-thead {
+    border: 1px solid whitesmoke; /* Updated border color */
+    border-collapse: collapse;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    width: 90%;
+  }
+  
+  .bill2-tableselectall {
+    padding-right: 20px;
+  }
+  
+  .bill2-tablebody {
+    border-collapse: collapse;
+    border: 1px solid whitesmoke; /* Updated border for td */
+    height: 40px;
+    width: 90%;
+  }
+  
+  .bill2-headrow {
+    margin: 10px 30px;
+  }
+  
+  .bill2-td {
+    border: 1px solid whitesmoke; /* Updated border for td */
+    padding: 5px; /* Add padding for td */
+  }
+  
+  .billicon2-2 {
+    color: rgb(182, 177, 177);
+    padding-left: 15px;
+  }
+  
+  .sf {
+    width: 40px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .bill2-total {
+      height: 170px;
+      /* width: 91%; */
+      width: 90%;
+      border: 1px solid whitesmoke; /* Updated border color */
+      margin-left: 5px;
+    }
+  
+    .bill2-printbutton {
+      margin-left: 40%;
+      height: 27px;
+      width: 80px;
+      color: white;
+      font-weight: bold;
+      background-color: rgb(7, 219, 219);
+      border: none;
+    }
+  
+    .bill2-table {
+      width: 95%;
+      height: 40px;
+      border: 1px solid whitesmoke; /* Updated border color */
+      border-collapse: collapse;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  
+    .bill2-thead {
+      border: 1px solid whitesmoke; /* Updated border color */
+      border-collapse: collapse;
+      background-color: rgb(140, 140, 140);
+      height: 40px;
+      width: 60%;
+    }
+  
+    .bill2-tableselectall {
+      padding-right: 20px;
+    }
+  
+    .bill2-tablebody {
+      border-collapse: collapse;
+      border: 1px solid whitesmoke; /* Updated border for td */
+      height: 40px;
+      width: 60%;
+    }
+    
+    .bill2-td {
+      border: 1px solid whitesmoke; /* Updated border for td */
+      padding: 5px; /* Add padding for td */
+    }
+  }
+  

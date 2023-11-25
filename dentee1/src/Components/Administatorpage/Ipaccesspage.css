@@ -1,0 +1,102 @@
+.maincontipo33{
+  margin-left: 9%;
+  padding-top: 6%;
+  width: 92.5%;
+}
+.ip-settings-container-ipo33 {
+    width: 90%;
+
+   
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    position: relative;
+  }
+  
+  .ip-settings-container-ipo33::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+  }
+  
+  .top-row-ipo33 {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements when the screen size is small */
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .input-group-ipo33 {
+    margin-bottom: 15px;
+    flex: 1;
+    width: 100%; /* Expand input fields to full width on small screens */
+  }
+  
+  .label-ipo33 {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .input-ipo33 {
+    width: 90%; /* Make input fields full-width */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .bottom-row-ipo33 {
+    margin-top: 20px;
+  }
+  
+  .button-group-ipo33 {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .save-button-ipo33{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .back-button-ipo33 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .save-button-ipo33:hover,
+  .back-button-ipo33:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .ip-settings-container-ipo33 {
+      padding: 10px;
+    }
+  
+    .top-row-ipo33 {
+      flex-direction: column; /* Stack elements vertically on small screens */
+    }
+  
+    .input-group-ipo33 {
+      margin-bottom: 10px;
+    }
+  }

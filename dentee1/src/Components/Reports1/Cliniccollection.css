@@ -1,0 +1,249 @@
+.collection-body{
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 89%;
+}
+.collection-ka{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 237, 237);
+    border: 1px solid rgb(226, 217, 217);
+    display: flex;
+    flex-direction: row;
+}
+.collection-kb{
+    border: none;
+    background-color: rgb(241, 237, 237);
+    margin-left: 20px;
+}
+.collection-kc{
+    font-size: 20px;
+    color: rgb(78, 76, 76);
+}
+.collection-kd{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+.collection-ke{
+    height: 35px;
+    width: 145px;
+    border-color: #0077bf;
+    margin: 20px 80px;
+}
+.collection-kf{
+    height: 35px;
+    width: 150px;
+    background-color: #0077bf; 
+    color: white;
+    border: none; 
+    font-size: 16px;
+}
+.collection-kg{
+    display: flex;
+    flex-direction: column;
+}
+.collection-kh{
+    height: 100px;
+    width: 145px;
+    background-color:  rgb(241, 237, 237);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: gray;
+}
+.collection-kh:hover{
+    background-color: #0077bf;
+    color: white;
+}
+.collection-ki{
+    font-size: 50px;
+    padding-left: 45px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.collection-kj{
+    font-size: 20px;
+    padding-left: 40px;
+}
+.collection-kk{
+    font-size: 16px;
+    padding-left: 30px;
+}
+.collection-kl{
+    padding-left:35px ;
+    font-size: 16px;
+}
+.collection-input-a{
+    width: 140px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.collection-data{
+    display: flex;
+    flex-direction: column;
+}
+.collection-k2{
+    display: flex;
+    /* flex-direction: row; */
+}
+.collection-heading{
+    background-color: #0077bf;
+    color: white;
+    height: 40px;
+    width: 1000px;
+    text-align: start;
+    padding-left: 10px;
+}
+.collection-head{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.collection-one{
+    height: 15px;
+    /* width: 100%; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 10px; */
+}
+.collection-two{
+    height: 30px;
+    /* width: 100%; */
+    background-color: rgb(250, 248, 248);
+    border: 1px solid rgb(224, 222, 222);
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+.collection-main{
+    height: 40vh;
+    width: 100%;
+    border: 1px solid rgb(197, 185, 185);
+}
+.kfgh15{
+    padding-left: 82%;
+}
+.kfgh16{
+    padding-left: 80%;
+}
+.kfgh17{
+    padding-left: 82.2%;
+}
+.kfgh18{
+    padding-left: 85.6%;
+}
+.kfgh19{
+    padding-left: 79.9%;
+}
+.kfgh20{
+    padding-left: 72.5%;
+}
+.kfgh21{
+    padding-left: 73.6%;
+}
+.kfgh22{
+    padding-left: 83.5%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .collection-ke{
+        /* margin: 20px 80px; */
+        margin: 10px 200px 10px 10px;
+        outline-width: 0px;
+    }   
+    .collection-input-a{
+        margin-left: 10px;
+        height: 32px;
+        outline-width: 0px;
+    }
+    .collection-input-a1{
+        margin-left: 10px;
+        height: 32px;
+        outline-width: 0px;
+    }
+    .collection-kf{
+        height: 33px;
+        width: 130px; 
+        font-size: 13px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .collection-kh{
+        height: 60px;
+        width: 60px;
+        background-color:  rgb(241, 237, 237);
+        margin-left: 10px;
+        /* display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-radius: 5px;
+        color: gray; */
+    }
+    .collection-ki{
+        font-size: 20px;
+        padding-left: 18px;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    .collection-kj{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .collection-kk{
+        font-size: 10px;
+        padding-left: 1px;
+    }
+    .collection-kl{
+        padding-left:3px ;
+        font-size: 12px;
+    }
+    .collection-head{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .collection-one{
+        height: 15px;
+        /* width: 100%; */
+    }
+    .collection-two{
+        height: 30px;
+        /* width: 100%; */
+    }
+    .collection-main{
+        height: 50vh;
+        width: 100%;
+        font-size: 10px;
+    }
+    .kfgh15{
+        padding-left: 68%;
+    }
+    .kfgh16{
+        padding-left: 64%;
+    }
+    .kfgh17{
+        padding-left: 68%;
+    }
+    .kfgh18{
+        padding-left: 74%;
+    }
+    .kfgh19{
+        padding-left: 63.5%;
+    }
+    .kfgh20{
+        padding-left: 49.5%;
+    }
+    .kfgh21{
+        padding-left: 52%;
+    }
+    .kfgh22{
+        padding-left: 70%;
+    }
+
+}

@@ -1,0 +1,521 @@
+.Addtreatment-total-body{
+    width: 97%;
+    height: 95%;
+    margin-top: 0.1%;
+    border: 1px solid grey;
+}
+.Add-treatment-head13 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 40px; */
+    height: 40px;
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+    border-bottom: 1px solid rgb(181, 176, 176);
+}
+
+.Add-treatment-icon13 {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.Add-treatment-heading-13 {
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.addtreatment-head-contents{
+    display: flex;
+    flex-direction: row;
+}
+.addtteatment-dateinput{
+    height: 5vh;
+    width: 15vw;
+    margin: 1% 2%;
+}
+.addtreatment-headform{
+    display: flex;
+    flex: row;
+    align-items: center;
+    /* height: 5.5vh; */
+    width: 35vw;
+    margin: 1% 2%;
+    border: 1px solid grey; 
+}
+.addtreatment-form-dd{
+    border: none;
+    width: 6%;
+}
+.Add-treatment_head-dd{
+    height: 5.5vh;
+    width: 30vw;
+    margin: 1% 2%;
+}
+.form-searchtext{
+    border: none;
+    outline: none;
+    
+}
+.Add-treatment-table{
+    width: 100%;
+    height: 100%;
+}
+.Add-treatment-table-head{
+    width: 100%;
+}
+.Add-treatment-table-head-row{
+    /* font-size: 15px; */
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+}
+.addtreatment-table-data-dd{
+    height: 5.5vh;
+    width: 15vw;  
+}
+.addtreatment-table-data{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 5vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.Addtreatment-table-tada-td{
+    display: flex;
+    /* flex-wrap: wrap; */
+    row-gap: 1rem;
+    column-gap: 3vw;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 1%;  
+}
+.Add-treatment-table-td-input{
+    /* height: 4.5vh; */
+    width: 14vw;
+    border: none;
+    outline: none;
+    /* margin: 0 3.5vw; */
+}
+.notebook-icon{
+    font-size: 20px;
+    color:rgb(58, 214, 58);
+    cursor: pointer;
+}
+.Addtreatment-AddTooth{
+    color: rgb(75, 152, 183);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.addtretament-table-data-form{
+    border: 1px solid grey;
+    width: auto;
+}
+.Treatment-type-list{
+    font-size: 14px;
+    color: #3d50ae;
+    /* margin: 1.5% 1.5%; */
+    margin-top: -0.5%;
+    /* margin-right: 40%; */
+    font-weight: 500;
+    cursor: pointer;
+}
+.addtreatment-total-cost{
+    color: rgb(42, 131, 166);
+    margin-left: 70%;
+    font-weight: 700;
+}
+
+/* ---------------AddTooth--Popop--------------- */
+.Addtooth-popup {
+    height: 45vh;
+    width:50vw ;
+    background-color: #fff;
+    z-index: 1000;
+    border: 1px solid grey;
+}
+
+.addtteatment-btm-btns23{
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 23px;
+    width: 60px;
+    /* margin-left: 20%; */
+    /* margin-top: -5%; */
+}
+
+.addtteatment-btm-btns2323{
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 23px;
+    width: 60px;
+    margin-left: 70%;
+    /* margin-top: -5%; */
+}
+.addtteatment-btm-btns2323:hover{
+    background-color: #3d50ae;
+
+}
+
+.addtteatment-btm-btns23:hover{
+    background-color: #3d50ae;
+}
+
+.addtooth-popup-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(232, 230, 230);
+}
+.popup-tooths{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    margin-top: 2%;
+    cursor: pointer;
+}
+.upperright-teeths1{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: 2%;
+   margin-top: 1%;
+   cursor: pointer;
+   color: aqua;
+}
+.upperright-teeths1 button{
+    background-color: rgb(89, 109, 117);
+    cursor: pointer;
+    color: white;
+}
+.lowertext{
+    margin-left: 5%;
+}
+.teeth-add-btn{
+    border: none;
+    background-color: rgb(70, 167, 206);
+    cursor: pointer;
+    height: 5vh;
+    width: 14vw;
+    color: #fff;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+/* -------------addtooth-2-------------- */
+.addtooth-selectprimary-teeth-popup {
+    height: 66vh;
+    width: 50vw;
+
+    background-color: #fff;
+    border: 1px solid grey;
+}
+.addtooth-secondpopu-header{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(232, 230, 230);
+    
+}
+.popup-tooths2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    cursor: pointer; 
+}
+.upperright-teeths2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: 2%;
+   margin-top: 1%;
+   cursor: pointer;
+   color: aqua;
+}
+.upperteeth-texts{
+    display: flex;
+    margin-left: 2%;
+   margin-top: 1%;   
+}
+.teeth-add-btn2{
+    border: none;
+    background-color: rgb(70, 167, 206);
+    cursor: pointer;
+    height: 5vh;
+    width: 14vw;
+    color: #fff;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+/* -----------select-all-tooth------------ */
+.addtooth-all-teeth-popup {
+    height: 55vh;
+    width: 50vw;
+    background-color: #fff;
+    border: 1px solid grey;
+}
+.upperright-teeths2 button{
+  background-color: green;
+  color: white;
+}
+.multiply-cost-statement{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+.alltooth-popup-chckbox{
+   margin-left: 15%;
+   cursor: pointer;
+}
+/* -----------discount-popup----------- */
+.discount-pop12 {
+    height: auto;
+    width: auto;
+    margin-top: -30%;
+    max-width: 300px;
+    cursor: pointer;
+    background-color: rgb(218, 216, 216);
+    border: 1px solid grey;
+}
+.discoun-popup-content{
+    display: flex;
+}
+/* -------------note-popup--------------- */
+.note-popup {
+    /* height: 15vh;
+    width: 20vw;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    box-shadow: 1px 2px 2px grey; */
+}
+.note-input-popup{
+    outline: none;
+    border:none;
+    height: 15vh;
+    width: 20vw;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    box-shadow: 1px 2px 2px grey;
+}
+.note-popup-btn{
+    margin-left: -2vw;
+}
+/* -------------treatment-not-in-list-popup-------------- */
+.Treatment-not-inlist-popup {
+    height: 40vh;
+    width: 60vw;
+    border: 1px solid grey;
+    background-color: #fff;
+    box-shadow: 5px 10px 8px #888888;
+}
+  .not-in-list-cncl-btn13 {
+    float: right;
+    height: 25px;
+    width: 25px;
+    font-weight: bold;
+    margin-left: 73%;
+    /* border: 1px solid grey; */
+    border: none;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .add-new-Treatment-popup-header13 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .add-Treatment-header13 {
+    margin-left: 10px;
+    color: rgb(101, 99, 99);
+  }
+  
+  .pen-icon13 {
+    color: rgb(101, 99, 99);
+  }
+  
+  .add-Treatment-popup-inputs13 {
+    height: 25px;
+    width: 200px;
+    outline: 0;
+    border: none;
+  }
+  
+  .inputs-div13 {
+    height: 6vh;
+    width: 18vw;
+    border: 2px solid skyblue;
+    display: flex;
+    align-items: center;
+    margin: 2vh 1vw;
+  }
+  
+  .inputs-div13 {
+    height: 6vh;
+    width: 18vw;
+    border: 2px solid skyblue;
+    display: flex;
+    align-items: center;
+    margin: 2vh 4vw;
+  }
+  
+  .selectpopup-div13 {
+    height: 6.5vh;
+    width: 18vw;
+    border: 2px solid #007bff;
+    display: flex;
+    align-items: center;
+    margin: 2vh 4vw;
+  }
+  
+  .Treatment-add-btn13 {
+    height: 6vh;
+    width: 4vw;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+    margin-left: 1vw;
+  }
+
+  .Treatment-add-btn13:hover {
+    background-color: #3d50ae;
+  }
+  
+  .add-Treatment-ok-btn13 {
+    height: 6vh;
+    width: 4vw;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    float: right;
+    margin-right: 4vw;
+    margin-top: 8vh;
+  }
+
+  .add-Treatment-ok-btn13:hover {
+  background-color: #3d50ae;
+}
+  
+  .add-icon13 {
+    font-size: 23px;
+    color: grey;
+  }
+  
+  .add-Treatment-inputs-body13 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    height: auto;
+  }
+  /* -----------media-query------------- */
+  @media (max-with:768px){
+    .Add-treatment-table-head{
+        width: 100%;
+    }
+    .Add-treatment-table-head-row{
+        /* font-size: 15px; */
+        height: 3vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        font-weight: bold;
+        background-color: rgb(243, 240, 240);
+    }
+    .addtteatment-dateinput{
+        height: 5vh;
+        width: 10vw;
+    }
+    .addtreatment-headform{
+        display: flex;
+        flex: row;
+        align-items: center;
+        height: 5.5vh;
+        width: 20vw;
+        border: 1px solid grey; 
+    }
+    
+    .addtreatment-form-dd{
+        border: none;
+        width: auto;
+    }
+    .form-searchtext{
+        border: none;
+        outline: none;
+        width: auto;  
+    }
+    .addtreatment-table-data-dd{
+        height: 5.5vh;
+        width: auto;  
+    }
+    .addtreatment-table-data{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        height: 5vh; 
+    }
+    .Addtreatment-table-tada-td{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1vw;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center; 
+    }
+    .Addtreatment-AddTooth {
+        color: rgb(75, 152, 183);
+        cursor: pointer;
+        font-size: 8px;
+    }
+    .addtretament-table-data-form{
+        border: 1px solid grey;
+        width: auto;
+    }
+    .Addtooth-popup {
+        height: 45vh;
+        width:55vw;
+        background-color: #fff;
+        z-index: 1000;
+        border: 1px solid grey;
+    }
+    .upperright-teeths1{
+        display: flex;
+       cursor: pointer;
+       color: aqua;
+    }
+    .upperright-teeths1 button{
+        background-color: rgb(89, 109, 117);
+        cursor: pointer;
+        color: white;
+        font-size: 4px;
+    }
+
+  }

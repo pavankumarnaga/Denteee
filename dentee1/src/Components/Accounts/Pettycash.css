@@ -1,0 +1,207 @@
+.maincontpetty {
+  margin-top: 5.8%;
+  margin-left: 10.1%;
+  width: 89.7%;
+}
+/* .popup56{
+  background-color: red;
+} */
+.petty-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(209, 203, 203);
+}
+
+.petty-icon {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.threadpetty {
+  background-color: #007bff;
+  font-size: medium;
+}
+
+.trpetty {
+  background-color: #007bff;
+  font-size: medium;
+}
+
+.petty-acc-1 {
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.petty-selc {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.petty-date-from,
+.petty-d-2,
+.petty-date-to {
+  padding: 4px 25px;
+}
+
+.petty-Voacher,
+.petty-search,
+.petty-View-data {
+  padding: 4px 20px;
+  margin-left: 10px;
+  border-width: 0.1px;
+  border-color: rgb(154, 150, 150);
+}
+
+.petty-print,
+.petty-pdf,
+.petty-excel {
+  margin-left: 10px;
+  /* padding: 3.8px 10px; */
+  border: none;
+  background-color: white;
+  height: 30px;
+  width: 50px;
+}
+
+.pe8 {
+  margin-top: 15px;
+  display: flex;
+  margin-left: 20px;
+}
+
+.pe10 {
+  margin-left: 60%;
+}
+.petty-table-tnx {
+  width: 100%;
+  max-width: 100vw;
+  border: 1px solid rgb(209, 203, 203);
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.petty-table-tnx th {
+  background-color: #007bff; /* Background color for table header cells */
+  color: white; /* Text color for table header cells */
+}
+
+
+
+.petty4 {
+  border: 1px solid rgb(209, 203, 203);
+  border-collapse: collapse;
+  background-color: rgb(209, 203, 203);
+  padding: 10px 10px;
+  font-size: medium;
+  text-align: center;
+}
+
+.petty5 {
+  border-collapse: collapse;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+  .maincontpetty {
+    margin-top: 15.8%;
+    margin-left: 9.5%;
+    width: 90%;
+  }
+
+  .petty-head {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .petty-icon {
+    margin-left: 20px;
+  }
+
+  .petty-selc {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .petty-Voacher,
+  .petty-search,
+  .petty-View-data,
+  .petty-print,
+  .petty-pdf,
+  .petty-excel {
+    padding: 4px 10px;
+    margin-left: 10px;
+  }
+
+  .pe8 {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .pe10 {
+    margin-left: 20px;
+  }
+
+  .petty-table-tnx th,
+  .petty-table-tnx td {
+    text-align: center;
+  }
+
+  .view-select {
+    margin-left: 10px;
+    padding: 4px 10px;
+  }
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-label {
+  margin-bottom: 5px;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.popup-buttons button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background-color: #ddd;
+}

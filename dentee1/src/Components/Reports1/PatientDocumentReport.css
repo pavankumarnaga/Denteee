@@ -1,0 +1,158 @@
+.mainconttotal{
+  margin-top: 6%;
+  margin-left: 8.8%;
+  width: 90.8%;
+}
+
+
+.Totalbody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.patientdocument-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color:rgb(219, 228, 231);
+}
+.patient-icon{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.patient-heading{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.patient-contents{
+    display: flex;
+}
+.patient-select1{
+    height: 40px;
+    width: 250px;
+    margin: 15px 30px;
+}
+.patient-select2{
+    height: 40px;
+    width: 250px;
+    margin: 15px 30px;
+}
+.patient-view-btn{
+    height: 40px;
+    width: 150px;
+    margin: 15px 30px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.patient-view-btn:hover{
+    background-color: #3d50ae;
+}
+.patient-search-bar{
+    height: 25px;
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-right: none;
+    border: 1px solid grey;
+}
+.patient-search-container{
+    display: flex;
+}
+.patient-search-btn{
+    height: 29px;
+    width: 35px;
+    margin-top: 14.5px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.patient-table-sunil{
+    width:60vw;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tr-ue{
+    background-color: #007bff;
+    color: white;
+}
+.patient-table-sunil{
+    width:95%;
+    float: none;
+    border: 1px solid rgb(209, 203, 203);
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.patient-table-head{
+    border-collapse: collapse;
+    background-color: #007bff;
+    
+    font-size: 14px;
+    color: #fff;
+}
+.patientsome .ttd {
+    border-collapse: collapse;
+   padding: 10px 10px 10px 50px;
+   margin-left: 30px;
+} 
+.patient-table-head
+.ttd {
+    align-items: center;  
+}
+.patient-total{
+   margin-left: 75%;
+}
+.patient-footer_sunil{
+    display: flex; 
+    align-items: center; 
+}
+.patient-bottom-icons{
+    color: grey;
+    margin: 10px 30px;
+}
+.patient-bottom-num{
+    color: grey;
+    margin: 9px 15px;
+    font-size: 13px;
+}
+.patient-btm-righticon{
+    color: grey;
+    margin: 10px 30px;  
+}
+.patient-btm-items{
+    font-size: 13px;
+    margin: 8px 10px;
+}
+
+
+
+.sati{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bapu{
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+  }
+  .raka{
+    display: flex; 
+    align-items: center;
+    padding-left: 10px; 
+  }

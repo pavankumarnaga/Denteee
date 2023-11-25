@@ -1,0 +1,23 @@
+.header-button{
+  background-color: #007bff;
+  color: white;
+  height: 45px;
+  border: 0px;
+}
+ .Shalm-1{
+  border-collapse: collapse;
+  width: 68%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  margin-right: 750px;
+  margin-top: -295px;
+  cursor: pointer;
+}
+.Shalm{
+ background-color: #f2f2f2;
+
+}
+.weekth,.weektd ,.weektr{ 
+ border: 1px solid #dddddd;
+ text-align: left;
+}

@@ -1,0 +1,152 @@
+.maincontrefer {
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 89.8%;
+  }
+  
+  .ReferReport-header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(213, 210, 210);
+    height: 50px;
+    margin: 20px 0;
+  }
+  
+  .refer-icon {
+    font-size: 21px;
+    color: #000;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .refer-heading {
+    font-size: 24px;
+  }
+  
+  .doctor-form-group14 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-form-control14 {
+    height: 30px;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .button-refer {
+    height: 30px;
+    width: 10%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .button-refer:hover {
+    background-color: #3d50ae;
+  }
+  
+  .search-barrefer {
+    height: 15px;
+    width: 200px;
+    
+    margin-left: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+  }
+  
+  .search-btnrefer {
+    height: 33px;
+    width: 40px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    margin-left: -5px;
+    border: none;
+
+    background-color: #ff1500;
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .table123 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .refer-table-head .thsize {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .refer-table-data .td-ata {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .sarala {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .janu {
+    color: black;
+    margin: 9px 10px;
+    font-size: 13px;
+  }
+  
+  .raji {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .doctor-form-control14 {
+      width: 100%;
+    }
+  
+    .ReferReport-header {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .refer-heading {
+      font-size: 20px;
+    }
+  
+    .search-barrefer {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 5%;
+      height: 15px;
+  
+    }
+  
+    .raji {
+      margin-top: 10px;
+    }
+  }

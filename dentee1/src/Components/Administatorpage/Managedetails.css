@@ -1,0 +1,439 @@
+.Detaidskl {
+    margin-top: -7.5%;
+    width: 97%;
+}
+.Clinic-Butkl{
+    background-color: #007bff;
+    color: white;
+    margin-top: 15px;
+    margin-left: -80px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.Clinic-Butkl:hover{
+background-color: #3d50ae;
+color: whitesmoke;
+}
+.Clinic-buttrkl{
+margin-top: 60px;
+margin-left: 100px;
+}
+.Clinic-ykl {
+    margin-left: 58px;
+    border-style: solid;
+    border-width: 0.1px;
+    margin-top: 12px;
+    height: 350px;
+    width: 95%;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.detailsddkl {
+    margin-top: 7.5%;
+    margin-left: 6%;
+    width: 90%;
+}
+
+.Clinic-Firstkl {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.247);
+    box-shadow: 10px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 98.5%;
+    height: 40px;
+}
+
+.Clinic-inputskl {
+    outline-width: 0;
+    border: none;
+}
+
+.Clinic-c-codekl {
+    outline-width: 0;
+    border: none;
+    width: 25px;
+}
+
+.AiOutlineArrowLeftkl {
+    padding-top: 10px;
+}
+
+.Clinic-Headkl {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.Clinic-Button1kl {
+    background-color: rgba(255, 255, 255, 0.212);
+    border-width: 0.001px;
+    border-color: rgba(0, 0, 0, 0.247);
+    width: 170px;
+    height: 40px;
+}
+
+.Clinic-Button1:hoverkl {
+    color: white;
+    background-color: rgb(118, 176, 243);
+}
+
+.Clinic-Buttonkl {
+    padding-left: 30px;
+}
+
+.Clinic-Clinickl {
+    border-style: solid;
+    border-width: 0.1px;
+    height: 150px;
+    width: 93%;
+    border-color: rgba(0, 0, 0, 0.247);
+    margin: 30px;
+}
+
+.Clinic-Patientkl {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 600px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-qkl {
+    margin: 8px;
+}
+
+.Clinic-wkl {
+    margin-top: 6px;
+}
+
+.Clinic-Rowkl {
+    display: flex;
+    flex-direction: row;
+}
+
+.Clinic-Button2kl {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 200px;
+    border-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    background-color: rgb(118, 176, 243);
+}
+
+.Clinic-Textkl {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Clinic-Text1kl {
+    padding-left: 10px;
+    color: rgb(55,55,241);
+}
+
+.Clinic-Detailskl {
+    border-style: solid;
+    border-width: 0.1px;
+    height: 100px;
+    width: 93%;
+    border-color: rgba(0, 0, 0, 0.247);
+    margin: 30px;
+}
+
+.Clinic-Button3kl {
+    margin-top: 70px;
+    margin-left: 300px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 60px;
+    border-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    background-color: rgb(34, 117, 212);
+}
+
+.Clinic-Signaturekl {
+    border-style: solid;
+    border-width: 0.1px;
+    height: 120px;
+    width: 93%;
+    border-color: rgba(0, 0, 0, 0.247);
+    margin: 30px;
+}
+
+.Clinic-Kisko1kl {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 530px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-Kisko2kl {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 530px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-form-selectkl {
+    height: 40px;
+    width: 265px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.onekl {
+    height: 50px;
+    width: 100px;
+}
+
+.Clinic-Columnkl {
+    display: flex;
+    flex-direction: column;
+}
+
+.Clinic-pavankl {
+    margin-top: 20px;
+    margin-left: 40px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 265px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-Localitykl {
+    margin-top: 20px;
+    margin-left: 40px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 265px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-Indiakl {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.Clinic-Fostkl,
+.Clinic-Banganapallikl,
+.Clinic-Phonenumkl {
+    margin-top: 20px;
+    margin-left: 40px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 265px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-statekl,
+.Clinic-Timekl {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.Clinic-Pincodekl {
+    margin-left: 40px;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 265px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-Mailkl {
+    margin-top: 20px;
+    margin-left: 40px;
+    border-style: solid;
+    border-width: 0.1px;
+    height: 40px;
+    width: 265px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-Boxkl {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.Clinic-Tablekl {
+    border-style: solid;
+    border-width: 0.1px;
+    height: 230px;
+    width: 200px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-Dashkl {
+    margin: 9px;
+    border-style: dashed;
+    border-width: 3px;
+    height: 150px;
+    width: 180px;
+    border-color: rgba(0, 0, 0, 0.247);
+}
+
+.Clinic-emptykl {
+    margin: 9px;
+    border-style: dashed;
+    border-width: 2px;
+    height: 130px;
+    width: 160px;
+    border-color: rgb(55,55,241);
+}
+
+.Clinic-Shadowkl {
+    margin-top: 5px;
+    margin-left: 40px;
+    height: 10px;
+    width: 60px;
+    background-color: rgb(55, 55, 241);
+}
+
+.Clinic-Logokl {
+    padding-left: 10px;
+    font-size: 25px;
+    color: rgb(55,55,241);
+}
+
+.Clinic-bomkl {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.Clinic-Botkl {
+    padding: 5px 40px;
+    color: white;
+    background-color: rgb(99, 221, 158);
+    border: none;
+}
+.Clinic-Botkl:hover{
+background-color: #1aa6fc ;
+color: white;
+}
+.Clinic-Text4kl {
+    padding-left: 40px;
+}
+
+.Clinic-Button1kl {
+    background-color: rgba(255, 255, 255, 0.212);
+    border-width: 0.001px;
+    border-color: rgba(0, 0, 0, 0.247);
+    width: 170px;
+    height: 40px;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .Clinic-ykl {
+        margin-left: 10px;
+        width: 95%;
+    }
+    .detailsddkl {
+        width: 95%;
+    }
+    .Clinic-Patientkl,
+    .Clinic-Kisko1kl,
+    .Clinic-Kisko2kl {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .Clinic-Butkl {
+        width: 130%;
+        margin-left: -80px;
+        margin-top: 10px;
+    }
+    .Clinic-form-selectkl{
+        width: 172%;
+        margin-left:0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Clinic-Localitykl{
+        width: 150%;
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Clinic-Pincodekl{
+        width: 150%;
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Clinic-Fostkl,
+    .Clinic-Banganapallikl,
+    .Clinic-Phonenumkl      {
+        width: 150%;
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Clinic-Mailkl{
+        width: 150%;
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Clinic-pavankl{
+        width: 150%;
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+
+    }
+      .Clinic-Rowkl {
+        width: 50%;
+        margin-left:10px;
+        display: flex;
+      flex-direction: column;
+    }
+  
+    .Clinic-inputskl {
+      width: 100%;
+      margin-left: 0px;
+    }
+  
+    .Clinic-c-codekl {
+      width: 100%;
+      margin-left: 0px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .Clinic-ykl {
+        margin-left: 5%;
+        width: 94%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Clinic-ykl {
+        margin-left: 50px;
+        width: 80%;
+    }
+} 
+  

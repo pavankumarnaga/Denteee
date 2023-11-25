@@ -1,0 +1,59 @@
+.Profile-1-container-btn{
+    margin-left: 1%;
+    margin-top: 0.3%;
+    border: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.popupupup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+    
+}
+  
+  .close-button {
+    top: 10px;
+    background: white;
+    color: black;
+    border: none;
+    margin-left: 80%;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+.Profile-1-container-btn button{
+    height: 35px;
+    width: 10%;
+    background-color: #007bff;
+    border: none;
+    margin-left: 1%;
+    cursor: pointer;
+    color: white;
+}
+.Profile-1-container-btn button:hover{
+    background-color:#3d50ae;
+    color: white;
+}
+
+@media(max-width:768px){
+    .Profile-1-container-btn button{
+        height: 35px;
+        width: 35%;
+        /* background-color: rgb(77, 183, 224); */
+        border: none;
+        margin-left: 10%;
+        color: white;
+        margin-top: 4px;
+    }
+}

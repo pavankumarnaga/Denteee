@@ -1,0 +1,113 @@
+
+.mainco1230{
+    display: flex;
+}
+
+
+.mainco1230 {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+
+  .mainco1230201 {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .inpso1230 {
+    padding: 7px;
+    width: 90%;
+    margin: 4px;
+    
+  }
+  
+
+  .inpso123001 {
+    padding: 7px;
+    width: 50%;
+    margin: 4px;
+    
+  }
+
+  .mainco111{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+
+  .mainco222{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .mainco333{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+
+
+  .inpso111{
+    padding: 7px;
+    width: 50%;
+    margin: 4px;
+  }
+
+
+  .selso111{
+    padding: 7px;
+    width: 50%;
+    margin: 4px;
+  }
+
+
+  .inpso222{
+    padding: 7px;
+    width: 30%;
+    margin: 4px;
+  }
+
+  .selso222{
+    padding: 7px;
+    width: 34%;
+    margin: 4px;
+  }
+
+  .inpso333{
+    padding: 7px;
+    width: 30%;
+    margin: 4px;
+  }
+
+  .selso333{
+    padding: 7px;
+    width: 34%;
+    margin: 4px;
+  }
+
+  .mainco1230 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+  .selso1230{
+    padding: 7px;
+    width: 90%;
+    margin: 4px;
+  }
+
+
+  .but1999{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+
+  }
+
+  .but1999:hover{
+    background-color: #3d50ae;
+  }

@@ -1,0 +1,165 @@
+.add-main{
+    height: 7vh;
+    width: 101.3%;
+    background-color: rgb(224, 228, 228);
+    border: 1px solid rgb(226, 217, 217);
+    display: flex;
+    margin-left: -1%;
+    margin-top: 6.5%;
+    flex-direction: row;
+}
+.manageadd{
+    margin-top: 5%;
+    margin-left: 10.3%;
+    width: 90%;
+}
+.add-text{
+    font-size: 130%;
+    font-weight: bold;
+    padding: 0.7% 1.5%;
+}
+.add-button1{
+    border: none;
+    background-color: rgb(224, 228, 228);
+    margin-left: 30%;
+    margin-top: 28%;
+}
+.add-box{
+    height: 48.8vh;
+    /* height: 800%; */
+    width: 80%;
+    border: 1px solid  rgb(223, 218, 218);
+    margin-top: 3.5%;
+    margin-left: 7%;
+    border-top: 5px  solid  rgb(216, 214, 214);
+}
+.add-text1{
+    color:rgb(0, 195, 255);
+    font-weight: 600;
+    margin: 3% 6%;  
+    font-size: 25px;
+}
+.add-row{
+    display: flex;
+    flex-direction: row;
+}
+.add-row1{
+    display: flex;
+    flex-direction: row;
+}
+.add-box1{
+    height: 5vh;
+    width: 4.5vw;
+    background-color: rgb(240, 238, 238);
+    border-style: solid;
+    border-width: 1px;
+    border-color: skyblue;
+    /* margin-left: 50px; */
+    margin-left: 10vw;
+    border-right: none;
+}
+.add-box2{
+    height: 5vh;
+    width: 50%;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: skyblue;
+    border-left: none;
+}
+.add-text2{
+    margin-top: 7%;
+    margin-left: 4%;
+}
+.add-icon3{
+    color: rgb(90, 88, 88);
+    padding-top: 85%;
+    font-size: 13px;
+}
+.add-input1{
+    border: none;
+    width: 10vw;
+    padding-left: 3%;
+    outline-width: 0px;
+    padding-top: 4%;
+}
+.add-box3{
+    height: 5vh;
+    width: 18.5%;
+    border: 1px solid skyblue;
+    margin-left: 3%;
+}
+.add-icon4{
+    padding-left: 3%;
+    padding-top: 3%;
+    color: rgb(75, 72, 72);
+    font-size: 18px;
+}
+.add-input2{
+    border-color: skyblue;
+    width: 17%;
+    padding-left: 1%;
+    outline-width: 0px;
+    padding-top: 0.5%;
+    margin-left: 3%;
+}
+.add-select{
+    width: 20%;
+    height: 5.5vh;
+    border-color: skyblue;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-left: -6%;
+    outline-width: 0px;
+}
+.add-lastbox{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    margin-top: 7.5%;
+}
+.add-save:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+}
+.add-save{
+    height: 4.5vh;
+    width: 6%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 1%;
+    margin-left: 60%;
+}
+.add-cancel:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+}
+.add-cancel{
+    height: 4.5vh;
+    width: 6%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.add-save:hover{
+    background-color: rgb(42, 42, 235);
+}
+.add-cancel:hover{
+    background-color: rgb(42, 42, 235);
+}
+
+
+
+@media (max-width: 768px) {
+ 
+    .add-main{
+        margin-left: 13%;
+        margin-top: 20%;
+        width: 85%;
+    }
+}
