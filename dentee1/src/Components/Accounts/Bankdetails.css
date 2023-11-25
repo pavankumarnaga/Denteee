@@ -11,7 +11,9 @@
   align-items: center;
   margin-top: 40px;
   height: 50px;
-  width: 100%;
+  width: 102.4%;
+  margin-left: -1.2%;
+
   background-color: rgb(219, 228, 231);
 }
 
@@ -242,7 +244,7 @@
 
 
 .table11 {
-  margin-top: 55px;
+  margin-top: 25px;
   width: 100%;
   border-collapse: collapse; /* Add this property to control border-collapse */
 }

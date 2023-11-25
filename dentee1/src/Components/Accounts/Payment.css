@@ -11,9 +11,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 32px;
+  margin-left: -0.7%;
   height: 50px;
-  width: 100%;
+  width: 102.4%;
   background-color: rgb(209, 203, 203);
 }
 
@@ -224,7 +225,7 @@
 
 
 .pay-table-nikhil {
-  width: 100%;
+  width: 101%;
   border: 1px solid whitesmoke; /* Add a white smoke border to the table */
   border-collapse: collapse;
   margin-top: 20px;

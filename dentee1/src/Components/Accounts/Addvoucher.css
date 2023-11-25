@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 6%;
+    margin-top: 5.8%;
     height: 50px;
-    width: 100%;
-    margin-left: 10%;
+    width: 91.6%; 
+    margin-left: 9%;
     background-color: rgb(209, 203, 203);
 }
 .voucher-icon{
@@ -89,15 +89,25 @@
     margin-top: 5%;
 }
 .vouchersave{
-    background-color: skyblue;
+    background-color: #007bff;
     width: 26%;
     height: 30px;
+    color: white;
     border: none;
+}
+.vouchersave:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
+}
+.vouchercancel:hover{
+    background-color: #3d50ae;
+    color: whitesmoke;
 }
 .vouchercancel{
     margin-left: 8%;
-    background-color: skyblue;
+    background-color: #007bff   ;
     width: 21%;
+    color: white;
     height: 30px;
     border: none;
 

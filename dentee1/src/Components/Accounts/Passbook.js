@@ -57,14 +57,14 @@ function Passbook() {
           <div className='pass-table'>
             <table className='passbook-table'>
               <thead>
-                <tr className='trpass123'>
-                  <th className='pass123'>Date</th>
-                  <th className='pass123'>Type</th>
-                  <th className='pass123'>Details</th>
-                  <th className='pass123'>Patient Name</th>
-                  <th className='pass123'>Bill</th>
-                  <th className='pass123'>Payment</th>
-                  <th className='pass123'>Balance Amount</th>
+                <tr className='trpass12'>
+                  <th className='pass12'>Date</th>
+                  <th className='pass12'>Type</th>
+                  <th className='pass12'>Details</th>
+                  <th className='pass12'>Patient Name</th>
+                  <th className='pass12'>Bill</th>
+                  <th className='pass12'>Payment</th>
+                  <th className='pass12'>Balance Amount</th>
                 </tr>
               </thead>
               <tbody>

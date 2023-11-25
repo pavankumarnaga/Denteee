@@ -21,9 +21,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1%;
+    margin-top: -0.4%;
     height: 50px;
-    width: 100%;
+    width: 102.4%;
+    margin-left: -0.8%;
     background-color:rgb(219, 228, 231);
 }
 .mainhead-iconnew3{
@@ -82,7 +83,6 @@
 .new-bill-content {
     height: 14vh;
     border-radius: 7px;
-    background-color: rgb(247, 247, 247);
     box-shadow: 0, 0, 5px rgba(0, 0, 0, 0.2);
     position: relative;
 
