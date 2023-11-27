@@ -5,7 +5,8 @@ const billRoutes = require('./routes/billRoutes');
 const addPaymentRoutes = require('./routes/addPaymentRoutes');
 const vocherRoutes = require('./routes/vocherRoutes');
 const bankdetailsRoutes = require('./routes/bankdetailsRoutes');
-// Include the new payment routes
+const addPatientsRoutes = require('./routes/addPatientsRoutes');
+const  addpatientwebRoutes = require('./routes/addpatientwebRoutes');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -31,6 +32,8 @@ app.use('/api', billRoutes);
 app.use('/api', addPaymentRoutes); 
 app.use('/api', vocherRoutes); 
 app.use('/api', bankdetailsRoutes); 
+app.use('/api', addPatientsRoutes); 
+app.use('/api', addpatientwebRoutes); 
 
 
 const PORT = process.env.PORT || 5000;
