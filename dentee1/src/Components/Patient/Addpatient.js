@@ -67,7 +67,7 @@ function PatientForm() {
       }
       // Make a POST request to your Node.js backend to save patient data
       const response = await axios.post(
-        "http://localhost:5002/Addpatient",
+        "http://localhost:5000/api/Addpatient",
         formData,
         {
           headers: {
@@ -110,7 +110,7 @@ function PatientForm() {
     // Fetch data from the backend when the component mounts
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5002/Addpatient");
+        const response = await axios.get("http://localhost:5000/api/Addpatient");
         console.log("Fetched data:", response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

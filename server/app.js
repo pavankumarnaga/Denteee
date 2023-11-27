@@ -7,7 +7,8 @@ const vocherRoutes = require('./routes/vocherRoutes');
 const bankdetailsRoutes = require('./routes/bankdetailsRoutes');
 const addPatientsRoutes = require('./routes/addPatientsRoutes');
 const  addpatientwebRoutes = require('./routes/addpatientwebRoutes');
-
+const  appointmentheaderRoutes = require('./routes/appointmentheaderRoutes');
+const  invesdtagationRoutes = require('./routes/invesdtagationRoutes');
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -26,6 +27,8 @@ mongoose.connect(`${uri}/${dbName}`, { useNewUrlParser: true, useUnifiedTopology
   .catch((error) => {
     console.error('MongoDB connection error:', error);
   });
+  app.use('/uploads', express.static('uploads'));
+
 
 
 app.use('/api', billRoutes); 
@@ -34,6 +37,8 @@ app.use('/api', vocherRoutes);
 app.use('/api', bankdetailsRoutes); 
 app.use('/api', addPatientsRoutes); 
 app.use('/api', addpatientwebRoutes); 
+app.use('/api', appointmentheaderRoutes); 
+app.use('/api', invesdtagationRoutes); 
 
 
 const PORT = process.env.PORT || 5000;

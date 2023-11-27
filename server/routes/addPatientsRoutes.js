@@ -14,7 +14,13 @@ router.delete('/Addpatient/:id', billingController.deleteBillingRecordById);
 // Add a billing record
 router.post('/Addpatient', billingController.upload.single('image'), billingController.addBillingRecord);
 
+
+router.get('/api/Addpatient', billingController.getAllBillingRecords);
+
+
 // Serve uploaded images
-router.use('/uploads', billingController.serveImages);
+router.use('/uploads', express.static(__dirname + '/uploads'));
+
 
 module.exports = router;
+
