@@ -1,13 +1,15 @@
-.file-main{
+.file-main {
     display: flex;
     flex-direction: row;
 }
-.file-head{
+
+.file-head {
     margin-left: 1%;
     margin-top: 2%;
     width: 90%;
 }
-.document{
+
+.document {
     height: 35px;
     width: 10%;
     background-color: rgb(77, 183, 224);
@@ -17,32 +19,37 @@
     color: white;
     font-weight: 600;
 }
-.consentform{
+
+.consentform {
     height: 35px;
     width: 10%;
-    border: 1px solid rgb(230, 227, 227);;
+    border: 1px solid rgb(230, 227, 227);
     margin-top: 20px;
     font-weight: 600;
 }
-.file-box{
+
+.file-box {
     height: 220px;
     width: 93%;
     border: 1px solid rgb(192, 190, 190);
     margin-left: 50px;
     margin-top: -1.5%;
 }
-.file-icon{
+
+.file-icon {
     margin-left: 70%;
     color: gray;
     margin-top: 20px;
     font-size: 25px;
 }
-.file-show{
+
+.file-show {
     font-weight: 600;
     padding-top: 5%;
     padding-left: 15%;
 }
-.file-upload{
+
+.file-upload {
     height: 35px;
     width: 110%;
     background-color: #007bff;
@@ -55,7 +62,7 @@
     font-size: 16px;
 }
 
-.file-upload22{
+.file-upload22 {
     height: 35px;
     width: 50%;
     background-color: #007bff;
@@ -68,54 +75,62 @@
     font-size: 16px;
 }
 
-.file-upload:hover{
-background-color: #3d50ae;
+.file-upload:hover {
+    background-color: #3d50ae;
 }
 
-.file-upload22:hover{
+.file-upload22:hover {
     background-color: #3d50ae;
-    }
-.file-folder{
+}
+
+.file-folder {
     font-weight: 600;
     padding-top: 5px;
     padding-left: 15%;
 }
-.file-icon1{
+
+.file-icon1 {
     font-size: 22px;
     color: rgb(63, 62, 62);
     margin-left: 15%;
     margin-top: 15px;
 }
-.file-patient{
+
+.file-patient {
     margin-left: 3%;
     margin-top: 15px;
 }
-.file-line{
+
+.file-line {
     height: 1px;
     width: 150%;
     margin-left: 15%;
     margin-top: 10px;
-    /* background-color: rgb(224, 223, 223); */
 }
-.file-scan{
+
+.file-scan {
     margin-left: 1vw;
     margin-top: 5px;
 }
-.file-icon2{
+
+.file-icon2 {
     font-size: 22px;
     color: rgb(63, 62, 62);
     margin-left: 2vw;
     margin-top: 5px;
 }
-.file-col{
+
+.file-col {
     display: flex;
     flex-direction: column;
 }
-.file-there{
+
+.file-there {
     padding-left: 32vw;
     padding-top: 50px;
 }
-.file-upload1{
+
+.file-upload1 {
     height: 35px;
     width: 250px;
     background-color: #007bff;
@@ -128,174 +143,36 @@ background-color: #3d50ae;
     font-size: 16px;
 }
 
-.file-upload1:hover{
+.file-upload1:hover {
     background-color: #3d50ae;
-    }
-.file-img-upload-10{
+}
+
+.file-img-upload-10 {
     display: none;
 }
-/* ----------------------------popup css---------------------------- */
-.file-popup-box{
-    /* height: 280px; */
-    width: 109%;
-    margin-top: -35%;
-    border: 1px solid rgb(231, 223, 223);
-    background-color: whitesmoke;
-    padding-right: 7%;
-}
-
-.file-popup-box234{
-    /* height: 280px; */
-    width: 109%;
-    margin-left: -50%;
-    margin-top: -35%;
-    border: 1px solid rgb(231, 223, 223);
-    background-color: whitesmoke;
-    padding-right: 7%;
-}
-.file-popup-box1{
-    height: 240px;
-    width: 63%;
-    border-style: dotted;
-    border-color: rgb(121, 107, 107);
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.file-icon3{
-    color: rgb(17, 181, 187);
-    font-size: 18px;
-    padding: 10px 10px;
-}
-.file-portlet{
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 10px;
-}
-.file-box2{
-    height: 180px;
-    width: 95%;
-    border: 1px solid rgb(197, 191, 191);
-    cursor: pointer;
-    margin-left: 3%;
-}
-.file-box3{
-    height: 150px;
-    width: 40vw;
-    border: 1px solid rgb(197, 191, 191);
-    margin-left: 3%;
-    margin-top: 15px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    background-color: white;
-}
-
-.file-icon4{
-    font-size: 50px;
-    color: black;
-    cursor: pointer;
-    background-color: white;
-
-}
-.file-button{
-    border: none;
-    background-color: white;
-    margin-top: 15px;
-    cursor: pointer;
-    margin-left: 41%;
-}
-.file-btn-upload{
-    display: none;
-}
-.file-left-upload{
-    margin-left: 3%;
-    margin-top: 2%;
-}
-
-
-
-
-.file-drop{
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(61, 56, 56);
-    margin-left: 31%;
-}
-.file-to{
-    color: rgb(85, 79, 79);
-    margin-left: 1.5%;
-    margin-top: 8px;
-}
-.file-click{
-    margin-left: 45%;
-    margin-top: 8px;
-}
-.file-select1{
-    width: 82%;
-    height: 35px;
-    border-color: skyblue;
-    margin-top: 20px;
-    margin-left: 18%;
-}
-.file-input{
-    width: 20.5vw;
-    height: 35px;
-    border-color: skyblue;
-    margin-top: 20px;
-    margin-left: 5vw;
-    padding-left: 10px;
-    outline-width: 0px;
-}
-.file-save{
-    height: 30px;
-    width: 15%;
-    background-color: #007bff;
-    cursor: pointer;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    margin-top: 40px;
-    margin-left: 20%;  
-}
-.file-cancel{
-    height: 30px;
-    /* width: 17%; */
-    background-color: #007bff;
-    cursor: pointer;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    margin-top: 40px;
-    margin-left: 5%;
-}
-.file-save:hover{
-    background-color:#3d50ae;
-}
-.file-cancel:hover{
-    background-color:#3d50ae;
-}
-
 
 /* DefaultFiles.css */
 
 .file-head {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .file-main {
+}
+
+.file-main {
     display: flex;
     /* Add any additional styling for the main container */
-  }
-  
-  .file-col {
+}
+
+.file-col {
     margin-right: 20px;
     /* Add any additional styling for the column container */
-  }
-  
-  .file-show {
+}
+
+.file-show {
     font-weight: bold;
-  }
-  
-  .file-upload {
+}
+
+.file-upload {
     cursor: pointer;
     padding: 10px;
     background-color: #3498db;
@@ -303,157 +180,164 @@ background-color: #3d50ae;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-  
-  .file-folder {
+}
+
+.file-folder {
     font-weight: bold;
     margin-top: 10px;
-  }
-  
-  .file-main div {
+}
+
+.file-main {
     display: flex;
+    
     align-items: center;
     margin-bottom: 5px;
-  }
-  
-  .file-icon1,
-  .file-icon2,
-  .file-icon3 {
+}
+
+.file-icon1,
+.file-icon2,
+.file-icon3 {
     margin-right: 5px;
-  }
-  
-  .file-there {
+}
+
+.file-there {
     margin-top: 10px;
     color: #e74c3c;
-  }
-  
-  .selected-files {
+}
+
+.selected-files {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-  }
-  
-  .file-row {
+}
+.file-row:hover{
+    background-color: white;
+}
+.file-row {
     display: flex;
     align-items: center;
-    padding: 5px;
-    border: 1px solid #ddd;
+    border: 2px solid #0b0b0b;
     margin-right: 5px;
     margin-bottom: 5px;
-  }
-  
-  .file-name {
+}
+.list789:hover{
+    background-color: white !important;
+}
+.list789{
+  background-color: white;
+}
+.file-name {
     margin-right: 10px;
-  }
-  
-  .file-size {
+}
+
+.file-size {
     margin-left: 10px;
-  }
-  
-  .file-upload1 {
+}
+
+.file-upload {
     cursor: pointer;
-    padding: 10px;
-    background-color: #2ecc71;
+    margin-left: 180%;
+    margin-top: -4%;
+    width: 40%;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-  }
-  
-  /* Add more styling as needed */
-  
-/* ----------------------------------------------------------------- */
+}
 
-@media (max-width: 768px){
-    .file-box{
+@media (max-width: 768px) {
+    .file-box {
         height: 260px;
         width: 90%;
         margin-left: 11%;
     }
-    .file-show{
+    .file-show {
         font-weight: 600;
         padding-top: 10px;
         padding-left: 20px;
         font-size: 10px;
     }
-    .file-upload{
+    .file-upload {
         height: 35px;
         width: 35%;
         font-size: 12px;
     }
-    .document{
-    height: 35px;
-    width: 20%;
-    margin-left: 11%;
-    font-size: 12px;
+    .document {
+        height: 35px;
+        width: 20%;
+        margin-left: 11%;
+        font-size: 12px;
     }
-    .consentform{
+    .consentform {
         height: 35px;
         width: 20%;
         font-size: 10px;
     }
-    .file-icon{
+    .file-icon {
         margin-left: 42%;
     }
-    .file-icon1{
+    .file-icon1 {
         font-size: 20px;
     }
-    .file-patient{
+    .file-patient {
         font-size: 14px;
     }
-    .file-icon2{
+    .file-icon2 {
         font-size: 20px;
         margin-left: 5vw;
     }
-    .file-scan{
+    .file-scan {
         font-size: 14px;
     }
-    .file-line{
+    .file-line {
         height: 1px;
         width: 95%;
         margin-left: 15%;
     }
-    .file-there{
+    .file-there {
         padding-left: 11vw;
     }
-    .file-upload1{
+    .file-upload1 {
         width: 150px;
         margin-left: 25%;
     }
     /* -----------------------------popup css------------------------------------ */
-    .file-popup-box{
+    .file-popup-box {
         width: 90%;
     }
-    .file-portlet{
+    .file-portlet {
         font-size: 16px;
         font-weight: 600;
     }
-    .file-drop{
+    .file-drop {
         font-size: 16px;
-        margin-left: 18%;
+        font-weight: bold;
+        color: rgb(61, 56, 56);
+        margin-left: 5%;
     }
-    .file-to{
+    .file-to {
         margin-left: 2%;
         margin-top: 2px;
     }
-    .file-save{
+    .file-save {
         height: 30px;
         width: 35%;
-        margin-left: 20%;  
+        margin-left: 20%;
     }
-    .file-cancel{
+    .file-cancel {
         height: 30px;
         width: 40%;
         margin-left: 5%;
     }
     /* -------------------------------------------------------------- */
 
-    .file-box2{
+    .file-box2 {
         height: 180px;
         width: 94%;
         border: 1px solid rgb(197, 191, 191);
         margin-left: 3%;
     }
-    .file-box3{
+    .file-box3 {
         height: 150px;
         width: 36vw;
         border: 1px solid rgb(197, 191, 191);
@@ -462,19 +346,19 @@ background-color: #3d50ae;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
         background-color: rgb(223, 220, 220);
     }
-    .file-drop{
+    .file-drop {
         font-size: 15px;
         font-weight: bold;
         color: rgb(61, 56, 56);
         margin-left: 5%;
     }
-    .file-main{
+    .file-main {
         align-items: center;
     }
-    .file-click{
+    .file-click {
         margin-left: 33%;
     }
-    .file-button{
+    .file-button {
         margin-left: 32%;
     }
 }

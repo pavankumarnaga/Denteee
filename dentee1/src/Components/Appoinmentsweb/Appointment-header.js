@@ -137,14 +137,7 @@ const Appointment_header = () => {
       )}
     </button>
     </div>
-                {/* <button className='ntr-img-upload'>            
-                <img src={`http://localhost:5002/${selectedPatient.imagePath}`} alt={`Patient ${selectedPatient.firstName} ${selectedPatient.lastName}`} className="patient-image775557" />
-              </button></div> */}
-              {/* <input type='file'  ref={inputRef} className='ntr-img-upload-1' placeholder='upload'> */}
-
-                {/* </input>  */}
-
-              </div>
+          </div>
               <div className='ntr-patient-de'>
              
 
@@ -188,13 +181,6 @@ const Appointment_header = () => {
           </table>
         )}
 
-
-
-                 {/* <div className='ntr-portal-new'>
-                <Link to='/Manageclinicone'> <p  className="ntr-portal-acc">Patient Portal Access</p></Link> 
-
-                  <Link to='/Treatment' >  <button className='ntr-portal-btn'>23456</button> </Link>
-                 </div> */}
               </div>
              
               <div className='ntr-patient-contact'>
