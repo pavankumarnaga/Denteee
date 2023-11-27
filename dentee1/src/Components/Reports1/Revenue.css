@@ -15,10 +15,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 7%;
+    margin-top: -0.2%;
+    margin-left: -1%;
     height: 50px;
-    width: 100%;
-    background-color:rgb(219, 228, 231);
+    width: 101.9%;
+    background-color:rgb(202, 203, 203);
 }
 .revenuemainhead-icon{
     margin-top: 1%;
@@ -63,8 +64,6 @@
 .revenue-contents {
     height: 50vh;
     border-radius: 2%;
-    background-color: rgb(247, 247, 247);
-    box-shadow: 0, 0, 5px rgba(0, 0, 0, 0.2);
 }
 .revenue-top-contents{
     display: flex;
