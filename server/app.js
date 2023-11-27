@@ -4,6 +4,7 @@ const cors = require('cors');
 const billRoutes = require('./routes/billRoutes');
 const addPaymentRoutes = require('./routes/addPaymentRoutes');
 const vocherRoutes = require('./routes/vocherRoutes');
+const bankdetailsRoutes = require('./routes/bankdetailsRoutes');
 // Include the new payment routes
 
 const app = express();
@@ -29,6 +30,7 @@ mongoose.connect(`${uri}/${dbName}`, { useNewUrlParser: true, useUnifiedTopology
 app.use('/api', billRoutes); 
 app.use('/api', addPaymentRoutes); 
 app.use('/api', vocherRoutes); 
+app.use('/api', bankdetailsRoutes); 
 
 
 const PORT = process.env.PORT || 5000;
