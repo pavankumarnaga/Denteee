@@ -16,7 +16,9 @@ const  patientnoteRoutes = require('./routes/patientnoteRoutes');
 const  addpreciptionRoutes = require('./routes/addpreciptionRoutes');
 const  defaultfileRoutes = require('./routes/defaultfileRoutes');
 const appointmentpageRoutes= require('./routes/appointmentpageRoutes');
-
+const personalRoutes = require('./routes/personalRoutes');
+const contactRoutes = require('./routes/contactRoutes');
+const personalAttributeRoutes = require('./routes/personalAttributeRoutes');
 
 
 
@@ -56,6 +58,9 @@ app.use('/api', patientnoteRoutes);
 app.use('/api', addpreciptionRoutes);
 app.use('/api', defaultfileRoutes);
 app.use('/api', appointmentpageRoutes);
+app.use('/api', personalRoutes);
+app.use('/api', contactRoutes);
+app.use('/api', personalAttributeRoutes);
 
 
 const PORT = process.env.PORT || 5000;
