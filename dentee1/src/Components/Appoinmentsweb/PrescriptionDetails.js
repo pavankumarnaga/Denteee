@@ -5,16 +5,51 @@ import { AiFillCaretDown,AiFillPlusSquare } from "react-icons/ai";
 import { BsFillPlusCircleFill, BsFillXCircleFill,BsFillPencilFill } from "react-icons/bs";
 import Popup from 'reactjs-popup';
 import { Link } from 'react-router-dom';
-// import ReactToPrint, {useReactToPrint} from 'react-to-print'
+
 const PrescriptionDetail = () => {
   const [rowCount, setRowCount] = useState(1);
   const [formData, setFormData] = useState('');
+ 
   // ----------------------printing-------------------
-  const componentref = useRef();
+  const mainComponentRef = useRef();
+
   // const handleprint =useReactToPrint({
   //   content:() => componentref.current,
   // });
 
+  const handleSave = async () => {
+  try {
+    // Prepare the data to be sent
+    const prescriptionData = {
+       dateRequired: date,
+      doctor: document.querySelector('.prescrition-select').value,
+      prescriptionTemplate: document.querySelector('.prescription-text').value,
+      medicines: Array.from(document.querySelectorAll('.choose-medicine')).map(medicineInput => medicineInput.value),
+      dosages: Array.from(document.querySelectorAll('.choose-dosage')).map(dosageInput => dosageInput.value),
+      frequencies: Array.from(document.querySelectorAll('.select-frequencies')).map(frequencyInput => frequencyInput.value),
+      durations: Array.from(document.querySelectorAll('.select-duration')).map(durationInput => durationInput.value),
+      notes: Array.from(document.querySelectorAll('.select-note')).map(noteInput => noteInput.value),
+    };
+
+    const response = await fetch('http://localhost:5000/api/prescriptions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(prescriptionData),
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const data = await response.json();
+    console.log('Prescription saved successfully:', data);
+  } catch (error) {
+    console.error('Error saving prescription:', error.message);
+  }
+};
+  
   const handleAddClick = () => {
     setRowCount(prevCount => prevCount + 1);
   }
@@ -57,6 +92,7 @@ const PrescriptionDetail = () => {
   const [selectedFrequency, setSelectedFrequency] = useState('');
   const [selectedDuration, setSelectedDuration] = useState('');
   const [selectedNote, setSelectedNote] = useState('');
+  const [date, setDate] = useState('');
 
   return (
     <div className='Prescription-detail-body' > 
@@ -80,15 +116,23 @@ const PrescriptionDetail = () => {
               </div>
             </Popup>
           </div>
-         <div className='prescription-deatil-inputs' ref={componentref}>
-          <input id="dateRequired" type="date" name="dateRequired" className='prescription-date-input' required/>
+         <div className='prescription-deatil-inputs' useRef={mainComponentRef}>
+          {/* <input id="dateRequired" type="date" name="dateRequired" className='prescription-date-input' required/> */}
+          <input
+          type='date'
+          value={date}
+          onChange={(e)=>setDate(e.target.value)}
+      
+
+
+          />
           <select className='prescrition-select'>
-            <option>Abhishek</option>
-            <option>Abhishek</option>
+            <option>shyam</option>
+            <option>Prabha</option>
           </select>
           <input type='text' value="Select Prescription Template" className='prescription-text' />
          </div>
-         <div className='prescription-deatil-contents' ref={componentref} >
+         <div className='prescription-deatil-contents' useRef={mainComponentRef} >
           {[...Array(rowCount)].map((_, index) => (
             <div key={index} className='prescription-row'>
 
@@ -97,7 +141,7 @@ const PrescriptionDetail = () => {
               <Popup trigger={
                 <input
                 type='text'
-                placeholder='Select Medicine'
+                placeholder='Select '
                 className='choose-medicine'
                 value={selectedMedicine} // This sets the input value to the selectedMedicine
                 onClick={() => handleMedicineSelect('')} // Pass an empty string for now
@@ -158,7 +202,7 @@ const PrescriptionDetail = () => {
               </Popup>
           {/* -----------end of select-dose popup-------------- */}
               <Popup trigger={<input type='text' placeholder='Select Frequency' 
-              className='select-duration' value={selectedFrequency} onClick={handleFrequencySelect}/>}
+              className='select-frequencies' value={selectedFrequency} onClick={handleFrequencySelect}/>}
                  position={'bottom center'}>
                 <ul className='choose-frequency-popup'>
                 <li onClick={() => handleFrequencySelect('0-0-1')}>0-0-1</li>
@@ -262,7 +306,7 @@ const PrescriptionDetail = () => {
          </div>
          <div className='prescription-btm-btns'>
           {/* <button onClick={handleprint} >Save and Print</button> */}
-          <button>Save</button>
+          <button onClick={handleSave}>Save</button>
          <Link to='/Appointment_header'> <button>Cancel</button></Link>
          </div>
         </div>

@@ -1,54 +1,97 @@
-
-
-
-
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Appointment-Page.css';
 import { FiSettings } from "react-icons/fi";   
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiTime } from 'react-icons/bi';
-
 import Popup from 'reactjs-popup';
 import { SiAppstore } from "react-icons/si";
 import { AiOutlineStepBackward, AiOutlineStepForward } from 'react-icons/ai';
+import  axios from 'axios';
 
-const sampleData = [
-  {
-    appointmentDate: '13-Oct-2023 09:AM',
-    doctor: 'Abishek',
-    status: 'Cancelled',
-    arrivalTime: '10-Oct-2023-11:49AM',
-    operationTime: '-',
-    completeTime: '-',
-    tokenNumber: 1,
-    notes: '-',
-  },
-  {
-    appointmentDate: '13-Oct-2023 09:AM',
-    doctor: 'Abhi',
-    status: 'Cancelled',
-    arrivalTime: '10-Oct-2023-11:49AM',
-    operationTime: '-',
-    completeTime: '-',
-    tokenNumber: 1,
-    notes: '-',
-  },
-   {
-    appointmentDate: '13-Oct-2023 09:AM',
-    doctor: 'Abi',
-    status: 'Cancelled',
-    arrivalTime: '10-Oct-2023-11:49AM',
-    operationTime: '-',
-    completeTime: '-',
-    tokenNumber: 1,
-    notes: '-',
-  },];
 
 const Histroy = () => {
+  const [appointments, setAppointments] = useState([]);
+  const [appointment, setAppointment] = useState({
+    doctor:'select Doctor',
+    date: '',
+    notes: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setAppointment({ ...appointment, [name]: value });
+  };
+
+  const handleSave = () => {
+    axios
+      .post('http://127.0.0.1:5000/api/newappointment', appointment)
+      .then((response) => {
+        console.log('Response from server:', response.data);
+        window.alert('data posted successfully...!');
+        
+        // Handle any further actions, e.g., redirect or show a success message
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
+  
+  const handleDelete = (id) => {
+    axios
+      .delete(`http://127.0.0.1:5000/api//deleteappointment/${id}`)
+      .then((response) => {
+        console.log('Appointment deleted:', response.data);
+        window.alert('data deleted successfully...!');
+        // Update your state or fetch appointments again after deletion
+      })
+      .catch((error) => {
+        console.error('Error deleting appointment:', error);
+      });
+  };
+
+  const handleEdit = (id) => {
+    // You can create an object with the updated data here
+    const updatedData = {
+      // ... (update the fields accordingly)
+      doctor: 'Updated Doctor',
+      date: 'Updated Date',
+      notes: 'Updated Notes',
+    };
+
+    axios
+      .put(`http://127.0.0.1:5000/api/updateappointment/${id}`, updatedData)
+      .then((response) => {
+        console.log('Appointment updated:', response.data);
+        window.alert('data update successfully...!');
+        // Update your state or fetch appointments again after edit
+      })
+      .catch((error) => {
+        console.error('Error updating appointment:', error);
+      });
+  };
+
+
+  useEffect(() => {
+    // Fetch data from backend when the component mounts
+    axios.get('http://localhost:5000/api/newappointment',appointment)
+      .then(response => {
+        console.log(response.data); // Log the data received from the backend
+        setAppointments(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching users:', error);
+        setError(error.message);
+      });
+  }, []);
+
+  const [error,setError] = useState(null);
+  const [sampleData, setSampleData] = useState([]);
+  const [updatedData,setupdatedData]=useState([]);
+
   const [isFormOpen, setIsFormOpen] = useState(true); // Default to open
   const [patientType, setPatientType] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 1;
+  const itemsPerPage = 3;
 
   const handlePatientTypeChange = (event) => {
     setPatientType(event.target.value);
@@ -60,7 +103,7 @@ const Histroy = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentData = sampleData.slice(indexOfFirstItem, indexOfLastItem);
+  const currentData = appointments.slice(indexOfFirstItem, indexOfLastItem);
 
   const handlePageChange = (pageNumber) => {
     window.scrollTo(0, 0);
@@ -68,7 +111,9 @@ const Histroy = () => {
   };
 
   const isFirstPage = currentPage === 1;
-  const isLastPage = indexOfLastItem >= sampleData.length;
+  const isLastPage = indexOfLastItem >= appointments.length;
+
+  
 
   return (
     <div className='appointment-total-app'>
@@ -103,7 +148,7 @@ const Histroy = () => {
                           </div> */}
                      </div>
             <div className='hist-thirdcontent'>
-              <label>
+              {/* <label>
                 <input
                   type='radio'
                   value='existing'
@@ -111,8 +156,8 @@ const Histroy = () => {
                   onChange={handlePatientTypeChange}
                 />
                 Existing patient
-              </label>
-              <label className='hist-one'>
+              </label> */}
+              {/* <label className='hist-one'>
                 <input
                   type='radio'
                   value='new'
@@ -120,32 +165,40 @@ const Histroy = () => {
                   onChange={handlePatientTypeChange}
                 />
                 New patient
-              </label>
+              </label> */}
             </div>
             <div className='hist-fourthcontent-1'>
               <div className='hist-patient'>Doctor</div>
               <div>
-              <select className='hist-count'>
-                <option value='select patient'>Abishek</option>
-                <option value='s'>s</option>
-                <option value='st'>st</option>
-                <option value='t'>t</option>
-                <option value='t'>t</option>
+              <select 
+                className='hist-count'
+                name='doctor'
+                value={appointment.doctor}
+                onChange={handleInputChange}
+                >
+                <option value=''>select Doctor</option>
+                <option value='Abhishek'>Abhishek</option>
+                <option value='s'>sahith</option>  
+                <option value='st'>karishmat</option>
+                <option value='t'>karthikt</option>
+                <option value='t'>vani</option>
               </select>
               </div>
             </div>
-            <div className='hist-fourthcontent-2'>
-              <div className='hist-time'>Date&time</div>
+            <div className='hist-fourthcontent-2'>  
+              <div className='hist-time'>Date&time</div>     
               <div>
               <label className='hist-label'>
                 <input
                   type='date'
-                  value=''
+                  name='date'   
+                  value={appointment.date}          
                   checked={patientType === 'existing'}
-                  onChange={handlePatientTypeChange}
+                  onChange={handleInputChange}
+                  // onChange={handlePatientTypeChange}
                   className='ment-write'
                 />
-                <BiTime className=' hist-time-icon' />
+                {/* <BiTime className=' hist-time-icon' /> */}
               </label>
               </div>
             </div>
@@ -165,7 +218,14 @@ const Histroy = () => {
             </div>
             <div className='hist-seventhcontent'>
               <div className='hist-note'>Notes</div>
-              <input type='text'placeholder='Notes' className='hist-input'></input>
+              <input 
+                type='text'
+                placeholder='Notes' 
+                className='hist-input'
+                name='notes'
+                value={appointment.notes}
+                onChange={handleInputChange}
+                />
             </div>
             
             <div className='hist-seventhcontent-1'>
@@ -201,7 +261,10 @@ const Histroy = () => {
             </div>
               <div className='appointpageclass'>
             
-              <button className='appointpagebut'>SAVE</button>
+              <button 
+                className='appointpagebut'
+                onClick={handleSave} >SAVE</button>
+
               &nbsp;&nbsp;&nbsp;&nbsp;  <button className='appointpagebut' onClick=
                                   {() => close()}>
                 CLOSE
@@ -229,24 +292,48 @@ const Histroy = () => {
             </tr>
           </thead>
           <tbody className='text-body'>
-            {currentData.map((data, index) => (
+            {currentData.map((appointment, index) => (
               <tr key={index}>
-                <td className='texttd'>{data.appointmentDate}</td>
-                <td className='texttd'>{data.doctor}</td>
-                <td className='texttd'>{data.status}</td>
-                <td className='texttd'>{data.arrivalTime}</td>
-                <td className='texttd'>{data.operationTime}</td>
-                <td className='texttd'>{data.completeTime}</td>
-                <td className='texttd'>{data.tokenNumber}</td>
-                <td className='texttd'>{data.notes}</td>
-                <td className='texttd'><FiSettings className='set-icon1' /></td>
+                <td className='texttd'>{appointment.date}</td>
+                <td className='texttd'>{appointment.doctor}</td>
+                <td className='texttd'>{appointment.status}</td>
+                <td className='texttd'>{appointment.arrivalTime}</td>
+                <td className='texttd'>{appointment.operationTime}</td>
+                <td className='texttd'>{appointment.completeTime}</td>
+                <td className='texttd'>{appointment.tokenNumber}</td>
+                <td className='texttd'>{appointment.notes}</td>
+              
+                <Popup
+                    trigger=
+                    {  <td className='texttd'><FiSettings className='set-icon1' /></td>}
+                    position='bottom center'
+                    >
+                      {/* <div className='appointment-box'>
+                         <div className='appointment-edit'>Edit</div> 
+                        
+                        <div className='appointment-edit'>Delete</div> 
+                      
+                      </div> */}
+
+  
+
+<div className='appointment-box'>
+                <div className='appointment-edit' onClick={() => handleEdit(appointment._id, updatedData)}>
+                  Edit
+                </div>
+                <div className='appointment-edit' onClick={() => handleDelete(appointment._id)}>
+                  Delete
+                </div>
+              </div>
+                    </Popup>
+               
               </tr>
             ))}
-          </tbody>
+          </tbody>  
         </table>
       </div>
-
-      <div className="pat-footer33pat">
+ 
+      <div className="pat-footer33pat">  
         <button
           className="butpagenation"
           onClick={() => handlePageChange(currentPage - 1)}

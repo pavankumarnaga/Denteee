@@ -1,6 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const multer = require('multer')
+const upload = multer({ dest: 'uploads/'});
+
 const billRoutes = require('./routes/billRoutes');
 const addPaymentRoutes = require('./routes/addPaymentRoutes');
 const vocherRoutes = require('./routes/vocherRoutes');
@@ -9,6 +12,16 @@ const addPatientsRoutes = require('./routes/addPatientsRoutes');
 const  addpatientwebRoutes = require('./routes/addpatientwebRoutes');
 const  appointmentheaderRoutes = require('./routes/appointmentheaderRoutes');
 const  invesdtagationRoutes = require('./routes/invesdtagationRoutes');
+const  patientnoteRoutes = require('./routes/patientnoteRoutes');
+const  addpreciptionRoutes = require('./routes/addpreciptionRoutes');
+const  defaultfileRoutes = require('./routes/defaultfileRoutes');
+const appointmentpageRoutes= require('./routes/appointmentpageRoutes');
+
+
+
+
+
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -39,6 +52,10 @@ app.use('/api', addPatientsRoutes);
 app.use('/api', addpatientwebRoutes); 
 app.use('/api', appointmentheaderRoutes); 
 app.use('/api', invesdtagationRoutes); 
+app.use('/api', patientnoteRoutes);
+app.use('/api', addpreciptionRoutes);
+app.use('/api', defaultfileRoutes);
+app.use('/api', appointmentpageRoutes);
 
 
 const PORT = process.env.PORT || 5000;

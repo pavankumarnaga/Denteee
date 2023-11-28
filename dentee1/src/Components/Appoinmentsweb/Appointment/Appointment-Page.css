@@ -109,7 +109,6 @@
     width: 100%;
     background-color: whitesmoke;
 }
-
 /* Appointment Form Styling */
 
 .hist-asd {
@@ -118,6 +117,12 @@
     box-shadow: 0px 0px 3px;
     background-color: white;
     text-align: center;
+}
+.ment-write{
+      margin-left: 28%;
+      margin-top: 5%;
+      height: 5.5vh;
+      width: 21vw;
 }
 
 .hist-firstcontent {
@@ -189,7 +194,7 @@
 
 .hist-time {
     margin-left: 18px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     color: black;
 }
 
@@ -330,7 +335,26 @@
     padding-left: 20px;
 }
 
+
+
+.appointment-box{
+    height: 7.5vh;
+    width: 5vw;
+    background-color: #fff;
+    box-shadow: 0px 0px  4px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    margin-top: -25%;
+    cursor: pointer;
+  }
+  .appointment-edit{
+    padding-left: 6%;
+  }
+  .appointment-edit:hover{
+    background-color: rgb(219, 216, 216);
+  }
+
 /* Responsive Styles */
+
 
 @media (max-width: 768px) {
     .text-history {
@@ -353,4 +377,10 @@
         font-size: 10px;
         margin-top: 10px;
     }
+    .ment-write{
+        margin-left: 28%;
+        margin-top: 5%;
+        height: 5.5vh;
+        width: 50vw;
+  }
 }
