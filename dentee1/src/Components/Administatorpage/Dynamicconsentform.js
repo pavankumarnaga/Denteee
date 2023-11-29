@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { AiOutlineArrowLeft } from "react-icons/ai";
+import React, { useState, useEffect } from 'react';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../Navbar';
@@ -7,7 +7,10 @@ import Sidebar from '../Sidebar';
 import './Dynamicconsentform.css';
 
 function ConsentForm() {
+  const [isFormVisible, setIsFormVisible] = useState(true);
   const [formData, setFormData] = useState({
+    title:'',
+    category:'',
     name: '',
     age: 0,
     relativeName: '',
@@ -17,13 +20,16 @@ function ConsentForm() {
     place: '',
     signature: '',
     time: '',
+    action:'',
   });
+
+  const [consentForms, setConsentForms] = useState([]);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5001/add-consent-form', formData);
+      const response = await axios.post('http://localhost:5001/consentform', formData);
 
       if (response.status === 200) {
         console.log('Consent form data added successfully');
@@ -44,6 +50,20 @@ function ConsentForm() {
     });
   };
 
+  const fetchConsentForms = async () => {
+    try {
+      const response = await axios.get('http://localhost:5001/consentform');
+      setConsentForms(response.data);
+    } catch (error) {
+      console.error('Error fetching consent forms:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchConsentForms();
+  }, []); // The empty dependency array ensures that this effect runs once when the component mounts
+
+
   return (
     <>
       <Navbar />
@@ -52,96 +72,121 @@ function ConsentForm() {
       <div className='maincontconsentform'>
         <div className="consent-form-89">
           <div className='main-head-ipog-88'>
-            <div className='mainhead-icon-ipog-89'>
-              <Link to="/Dynamicconsent">
-                <AiOutlineArrowLeft />
-              </Link>
-            </div>
+            <Link to="/Dynamicconsent">
+              <AiOutlineArrowLeft />
+            </Link>
             <div className='main-heading-ipog-89'>Administrator/Dynamic Consent Form</div>
           </div>
-          <h1 className='concent-12'>Consent Form</h1>
+          <input
+            className='Concen'
+            type="text"
+            name="title"
+            value={formData.title}
+            onChange={handleInputChange}
+            placeholder="Title"
+          />
+          <input
+            className='Concen'
+            type="text"
+            name="category"
+            value={formData.category}
+            onChange={handleInputChange}
+            placeholder="Category"
+          />
+          <h3 className='concent-12'>Consent Form</h3>
           <form className='concent-00' onSubmit={handleFormSubmit}>
-            <input className='Concentput'
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              placeholder="Name"
-            />
-            <input  className='Concentput'
-              type="number"
-              name="age"
-              value={formData.age}
-              onChange={handleInputChange}
-              placeholder="Age"
-            />
-            <input className='Concentput'
-              type="text"
-              name="relativeName"
-              value={formData.relativeName}
-              onChange={handleInputChange}
-              placeholder="Relative Name"
-            />
-            <input className='Concentput'
-              type="text"
-              name="treatmentDescription"
-              value={formData.treatmentDescription}
-              onChange={handleInputChange}
-              placeholder="Treatment Description"
-            />
-            {/* <textarea className='Concentput'
-              name="consentText"
-              value={formData.consentText}
-              onChange={handleInputChange}
-              placeholder="Consent Text"
-            /> */}
-            <input className='Concentput'
-              type="text"
-              name="date"
-              value={formData.date}
-              onChange={handleInputChange}
-              placeholder="Date"
-            />
-            <input className='Concentput'
-              type="text"
-              name="place"
-              value={formData.place}
-              onChange={handleInputChange}
-              placeholder="Place"
-            />
-            <input className='Concentput'
-              type="text"
-              name="signature"
-              value={formData.signature}
-              onChange={handleInputChange}
-              placeholder="Signature"
-            />
-            <input className='Concentput'
-              type="text"
-              name="time"
-              value={formData.time}
-              onChange={handleInputChange}
-              placeholder="Time"
-            />
+            <p className='Conn'>I PatientName son/daughter of
+              <input
+                className='Concentput'
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Name"
+              />aged resident of
+              <input
+                className='Concentput'
+                type="number"
+                name="age"
+                value={formData.age}
+                onChange={handleInputChange}
+                placeholder="Age"
+              /> being under the treatment of
+              <input
+                className='Concentput'
+                type="text"
+                name="relativeName"
+                value={formData.relativeName}
+                onChange={handleInputChange}
+                placeholder="Relative Name"
+              /> (state here name of doctor/hospital/nursing home)
+              do hereby give consent to the performance of medical/surgical /anesthesia/
+              diagnostic procedure of (mention nature of procedure / treatment to be performed, etc.) upon myself/upon
+              <input
+                className='Concentput'
+                type="text"
+                name="treatmentDescription"
+                value={formData.treatmentDescription}
+                onChange={handleInputChange}
+                placeholder="Treatment Description"
+              /> aged who is related to me as (mention here relationship, e.g.
+              son, daughter, father, mother, wife, etc.).
+            </p>
             <p className='concent-43'>
               I declare that I am more than 18 years of age. I have been informed that there are inherent risks involved in
               the treatment / procedure. I have signed this consent voluntarily out of my free will without any pressure and
               in my full senses.
             </p>
 
-            <p className='concent-43'>
-              Date : <span contentEditable={true}>_________</span>
-              Place : <span contentEditable={true}>_________</span>
+            <p>
+              Date : <span contentEditable={true}>
+                <input
+                  className='Concentput'
+                  type="text"
+                  name="date"
+                  value={formData.date}
+                  onChange={handleInputChange}
+                  placeholder="Date"
+                />
+              </span>
+              Place : <span contentEditable={true}>
+                <input
+                  className='Concentput'
+                  type="text"
+                  name="place"
+                  value={formData.place}
+                  onChange={handleInputChange}
+                  placeholder="Place"
+                />
+              </span>
+              <p>
+              Signature ( To be signed by parent /guardian in case of minor)
+              Signature : <span contentEditable={true}>
+                <input
+                  className='Concentput'
+                  type="text"
+                  name="signature"
+                  value={formData.signature}
+                  onChange={handleInputChange}
+                  placeholder="Signature"
+                />
+              </span>
+              Time : <span contentEditable={true}>
+                <input
+                  className='Concentput'
+                  type="text"
+                  name="time"
+                  value={formData.time}
+                  onChange={handleInputChange}
+                  placeholder="Time"
+                />
+              </span>
+              </p>
             </p>
-            
-            <p className='concent-43'>
-              Signature ( To be signed by parent /guardian in case of minor): <span contentEditable={true}>_________</span>
-              Time : <span contentEditable={true}>_________</span>
-            </p>
-            
-            <p className='concent-43'>
+
+            <h4 className='concent-43'>
               NOTES :- 
-            </p>
+            </h4>
             <p className='concent-43'>
               1. This Consent Form should be signed before the treatment is started. These formats may be modified as per individual requirements.
             </p>
@@ -149,8 +194,14 @@ function ConsentForm() {
             <p className='concent-43'>
               2. These formats should be in the local language and in certain cases it would be prudent to have a proper witness to the consent signature.
             </p>
-            
-            <button className='concentsave' type="submit">Save</button>
+
+            <button
+              className='concentsave'
+              type="submit"
+              onClick={() => setIsFormVisible(false)}
+            >
+              Save
+            </button>
           </form>
         </div>
       </div>

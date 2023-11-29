@@ -298,13 +298,7 @@
     display: flex;
 }
 /* -------------note-popup--------------- */
-.note-popup {
-    /* height: 15vh;
-    width: 20vw;
-    background-color: lightgrey;
-    border: 1px solid grey;
-    box-shadow: 1px 2px 2px grey; */
-}
+
 .note-input-popup{
     outline: none;
     border:none;
