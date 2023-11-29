@@ -62,9 +62,8 @@
   margin-left: 50px;
 }
 .main-heading-ipog-89{
-  font-size: 15px;
-  margin-left: 20px;
-  width: 18%;
+  font-size: 17px;
+  width: 31%;
   font-weight: bold;
 }
 
@@ -96,9 +95,9 @@
   background-color: #007bff;
   color: white;
   border: none;
-  margin-left:480px;
+  margin-left: 20%;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 4px 70px;
   margin-top: 170px;
   margin-bottom: 20px;
   font-size: 16px;
@@ -108,6 +107,7 @@
 
 .dynamicbutton-ipog-89:hover {
   background-color: #3d50ae;  
+  color: whitesmoke ;
 }
 .dynamic-ipog-89 {
   width: 100%;

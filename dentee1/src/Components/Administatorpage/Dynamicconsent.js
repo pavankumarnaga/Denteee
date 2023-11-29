@@ -1,79 +1,120 @@
-import React, { useState } from 'react';
-import { Button, Form, Table } from 'react-bootstrap';
-import { BiSearch } from 'react-icons/bi';
-import { AiOutlineArrowLeft, AiOutlineStepBackward, AiOutlineStepForward } from "react-icons/ai"; // Import the necessary icons
+import React, { useState, useEffect } from 'react';
+import { Button } from 'react-bootstrap';
+import { AiOutlineArrowLeft, AiOutlineStepBackward, AiOutlineStepForward } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { BiSearch } from 'react-icons/bi';
+import axios from 'axios';
 import './Dynamicconsent.css';
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
 
 function DynamicConsentForm() {
-  const [forms, setForms] = useState([
-    {
-      title: 'Sample Title 1',
-      category: 'Category A',
-      date: '2023-09-08',
-      action: 'Action 1',
-    },
-    {
-      title: 'Sample Title 2',
-      category: 'Category B',
-      date: '2023-09-09',
-      action: 'Action 2',
-    },
-    {
-      title: 'Sample Title 1',
-      category: 'Category A',
-      date: '2023-09-08',
-      action: 'Action 1',
-    },
-    {
-      title: 'Sample Title 2',
-      category: 'Category B',
-      date: '2023-09-09',
-      action: 'Action 2',
-    },
-    {
-      title: 'Sample Title 1',
-      category: 'Category A',
-      date: '2023-09-08',
-      action: 'Action 1',
-    },
-    {
-      title: 'Sample Title 2',
-      category: 'Category B',
-      date: '2023-09-09',
-      action: 'Action 2',
-    },
-  ]);
-
+  const [forms, setForms] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [newForm, setNewForm] = useState({ title: '', category: '', date: '', action: '' });
-
-  // Pagination settings
-  const itemsPerPage = 5;
   const [currentPage, setCurrentPage] = useState(1);
+  const [editingIndex, setEditingIndex] = useState(null);
+  const [editForm, setEditForm] = useState({ title: '', category: '', date: '', action: '' });
 
+  const itemsPerPage = 5;
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentForms = forms.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Handle page change
+  const isFirstPage = currentPage === 1;
+  const isLastPage = indexOfLastItem >= forms.length;
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('http://localhost:5001/consentforms');
+      setForms(response.data);
+    } catch (error) {
+      console.error('Error fetching consent forms:', error);
+    }
+  };
+
   const handlePageChange = (pageNumber) => {
-    // Scroll to the top of the page
     window.scrollTo(0, 0);
     setCurrentPage(pageNumber);
   };
 
-  const isFirstPage = currentPage === 1;
-  const isLastPage = indexOfLastItem >= forms.length;
-
   const handleAddForm = () => {
-    if (newForm.title && newForm.category && newForm.date && newForm.action) {
-      setForms([...forms, newForm]);
-      setNewForm({ title: '', category: '', date: '', action: '' });
+    // Handle adding a new form logic
+  };
+
+  const handleEdit = (index) => {
+    setEditingIndex(index);
+    const editedForm = forms[index];
+    setEditForm({
+      title: editedForm.title,
+      category: editedForm.category,
+      date: editedForm.date,
+      action: editedForm.action,
+    });
+  };
+  
+const handleChangeEdit = (e) => {
+  setEditForm({
+    ...editForm,
+    [e.target.name]: e.target.value,
+  });
+};
+
+
+  const handleUpdateForm = async (index) => {
+    console.log('Updating form at index:', index);
+    const updatedForms = [...forms];
+    updatedForms[index] = { ...editForm };
+  
+    try {
+      // Send a PUT request to update the form on the backend
+      const response = await axios.put(`http://localhost:5001/consentforms/${forms[index]._id}`, editForm);
+      console.log('Update response:', response);
+  
+      // Check if the update was successful
+      if (response.status === 200) {
+        console.log('Form updated successfully');
+        setForms(updatedForms);
+        setEditingIndex(null);
+        setEditForm({ title: '', category: '', date: '', action: '' });
+      } else {
+        console.error('Failed to update form. Server returned:', response);
+      }
+    } catch (error) {
+      console.error('Error updating form:', error);
     }
   };
+ 
+  const handleDeleteForm = async (id) => {
+    console.log('Deleting form with ID:', id);
+  
+    const confirmDelete = window.confirm('Are you sure you want to delete this form?');
+  
+    if (confirmDelete) {
+      try {
+        // Send a DELETE request to remove the form from the backend
+        const response = await axios.delete(`http://localhost:5001/consentforms/${id}`);
+        
+        // Check the response and handle accordingly
+        console.log('Delete response:', response);
+  
+        if (response.status === 200) {
+          // Form deleted successfully
+          const updatedForms = forms.filter(form => form._id !== id);
+          setForms(updatedForms);
+        } else {
+          console.error('Failed to delete form. Server returned:', response);
+        }
+      } catch (error) {
+        console.error('Error deleting form:', error);
+      }
+    }
+  };
+    
 
   return (
     <>
@@ -86,7 +127,7 @@ function DynamicConsentForm() {
               <AiOutlineArrowLeft />
             </Link>
           </div>
-          <div className='main-heading-ipog-89'> Administrator/Dynamic Consent Form</div>
+          <div className='main-heading-ipog-89'> Administrator/Dynamic Consent</div>
           <Link to="/Dynamicconsentform">
             <Button className="dynamicbutton-ipog-89" onClick={handleAddForm}>
               Add Dynamic Consent Form
@@ -95,7 +136,13 @@ function DynamicConsentForm() {
         </div>
         <br />
         <div className='search-container-ipog-89'>
-          <input className='search-bar-ipog-89' type='text' placeholder='Search' />
+          <input
+            className='search-bar-ipog-89'
+            type='text'
+            placeholder='Search'
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
           <button className='search-btn-ipog-89'><BiSearch /></button>
         </div>
         <table className='dynamic-ipog-89' striped bordered hover>
@@ -110,10 +157,56 @@ function DynamicConsentForm() {
           <tbody>
             {currentForms.map((form, index) => (
               <tr key={index}>
-                <td className='dynamc-ipog-079'>{form.title}</td>
-                <td className='dynamc-ipog-079'>{form.category}</td>
-                <td className='dynamc-ipog-079'>{form.date}</td>
-                <td className='dynamc-ipog-079'>{form.action}</td>
+                <td className='dynamc-ipog-079'>
+                  {editingIndex === index ? (
+                    <input
+                      type="text"
+                      name="title"
+                      value={editForm.title}
+                      onChange={handleChangeEdit}
+                    />
+                  ) : (
+                    form.title
+                  )}
+                </td>
+                <td className='dynamc-ipog-079'>
+                  {editingIndex === index ? (
+                    <input
+                      type="text"
+                      name="category"
+                      value={editForm.category}
+                      onChange={handleChangeEdit}
+                    />
+                  ) : (
+                    form.category
+                  )}
+                </td>
+                <td className='dynamc-ipog-079'>
+                  {editingIndex === index ? (
+                    <input
+                      type="text"
+                      name="date"
+                      value={editForm.date}
+                      onChange={handleChangeEdit}
+                    />
+                  ) : (
+                    form.date
+                  )}
+                </td>
+                <td className='dynamc-ipog-079'>
+                  {editingIndex === index ? (
+                    <div>
+                      <button onClick={() => handleUpdateForm(index)}>Update</button>
+                      <button onClick={() => handleDeleteForm(form._id)}>Delete</button>
+
+                    </div>
+                  ) : (
+                    <div>
+                      <button onClick={() => handleEdit(index)}>Edit</button>
+                      <button onClick={() => handleDeleteForm(index)}>Delete</button>
+                    </div>
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>
