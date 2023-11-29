@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
 import './Investigation.css';
 import Popup from 'reactjs-popup';
 import { IoSettings } from 'react-icons/io5';
 import { AiOutlineStepForward, AiOutlineStepBackward } from 'react-icons/ai';
 import { MdOutlineCancel } from 'react-icons/md';
 import { AiOutlineClose, AiOutlineCheckCircle } from 'react-icons/ai';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
 const Investigation = () => {
   const [isFormOpen, setIsFormOpen] = useState(true);
-  const closeForm = () => {
-    setIsFormOpen(false);
-  };
-
   const [investigationData, setInvestigationData] = useState({
     date: '',
     weight: '',
@@ -20,72 +17,174 @@ const Investigation = () => {
     oxygenSaturation: '',
     bloodSugar: '',
   });
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
-  const [dummydata1, setDummyData1] = useState([
-    {
-      date: '03-0ct-2023',
-      weight: '75 kg',
-      temperature: '98.6°F',
-      bloodPressure: '120/80 mmHg',
-      oxygenSaturation: '98%',
-      bloodSugar: '120 mg/dL',
-    },
+  const [editedInvestigation, setEditedInvestigation] = useState({
+    _id: '',
+    date: '',
+    weight: '',
+    temperature: '',
+    bloodPressure: '',
+    oxygenSaturation: '',
+    bloodSugar: '',
+  });
+  const [dummypatient1, setDummyPatient1] = useState([]);
+  const [editMode, setEditMode] = useState(false);
+  const [showEditForm, setShowEditForm] = useState(false);
+  const [selectedItemId, setSelectedItemId] = useState(null);
 
-    {
-        date: '03-0ct-2023',
-        weight: '735 kg',
-        temperature: '98.6°F',
-        bloodPressure: '120/80 mmHg',
-        oxygenSaturation: '98%',
-        bloodSugar: '120 mg/dL',
-      },
-      {
-        date: '03-0ct-2023',
-        weight: '5 kg',
-        temperature: '98.6°F',
-        bloodPressure: '120/80 mmHg',
-        oxygenSaturation: '98%',
-        bloodSugar: '120 mg/dL',
-      },
-      {
-        date: '03-0ct-2023',
-        weight: '7 kg',
-        temperature: '98.6°F',
-        bloodPressure: '120/80 mmHg',
-        oxygenSaturation: '98%',
-        bloodSugar: '120 mg/dL',
-      },
-      
+  // const [editedInvestigation, setEditedInvestigation] = useState({});
+  const [dummydata1, setDummyData1] = useState([]);
+const [currentPage, setCurrentPage] = useState(1);
+const [isFirstPage, setIsFirstPage] = useState(true);
+const [isLastPage, setIsLastPage] = useState(false);
+const itemsPerPage = 3;
+const totalPages = Math.ceil(dummypatient1.length / itemsPerPage);
+const indexOfLastItem = currentPage * itemsPerPage;
+const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+const currentItems = dummypatient1.slice(indexOfFirstItem, indexOfLastItem);
 
-    // Add more data objects here
-  ]);
+const handlePageChange = (pageNumber) => {
+  setCurrentPage(pageNumber);
+};
 
-  const itemsPerPage = 1;
-  const [currentPage, setCurrentPage] = useState(1);
-
+useEffect(() => {
+  const totalPages = Math.ceil(dummypatient1.length / itemsPerPage);
+  setIsFirstPage(currentPage === 1);
+  setIsLastPage(currentPage === totalPages);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const dummypatient1 = dummydata1.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = dummypatient1.slice(indexOfFirstItem, indexOfLastItem);
+}, [currentPage, dummypatient1, itemsPerPage]);
 
-  const handlePageChange = (pageNumber) => {
-    window.scrollTo(0, 0);
-    setCurrentPage(pageNumber);
-  };
 
-  const isFirstPage = currentPage === 1;
-  const isLastPage = indexOfLastItem >= dummydata1.length;
+const closeForm = () => {
+  setIsFormOpen(false);
+};
+
+const fetchInvestigationData = async () => {
+  try {
+    const response = await axios.get('http://localhost:5000/investigation');
+    const fetchedData = response.data;
+    setDummyPatient1(fetchedData);
+  } catch (error) {
+    console.error('Error fetching investigation data:', error);
+  }
+};
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setInvestigationData({ ...investigationData, [name]: value });
   };
 
-  const handleSaveInvestigation = () => {
-    const newInvestigation = { ...investigationData };
-    setDummyData1([...dummydata1, newInvestigation]);
-    setIsFormOpen(false);
+const handleSaveInvestigation = () => {
+  const newInvestigation = {
+    date: investigationData.date,
+    weight: investigationData.weight,
+    temperature: investigationData.temperature,
+    bloodPressure: investigationData.bloodPressure,
+    oxygenSaturation: investigationData.oxygenSaturation,
+    bloodSugar: investigationData.bloodSugar,
   };
 
+  axios.post('http://localhost:5000/Investigation', newInvestigation)
+    .then((response) => {
+      console.log('Investigation data saved successfully');
+      fetchInvestigationData(); 
+    })
+    .catch((error) => {
+      console.error('Error while saving investigation data:', error);
+    });
+
+  setIsFormOpen(false);
+};
+  useEffect(() => {
+    fetchInvestigationData();
+  }, []);
+
+  
+
+  const handleEditDelete = (itemId) => {
+    setSelectedItemId(itemId === selectedItemId ? null : itemId);
+  };
+
+  const handleEditFormSubmit = () => {
+    axios
+      .put(`http://localhost:5000/Investigation/${editedInvestigation._id}`, editedInvestigation)
+      .then((response) => {
+        console.log('Investigation data updated successfully');
+        alert('Investigation data updated successfully');
+        fetchInvestigationData(); // Fetch updated data after successful update
+        setShowEditForm(false); // Close the edit form after successful update
+      })
+      .catch((error) => {
+        console.error('Error while updating investigation data:', error);
+        // Handle errors or display an error message to the user
+      });
+  };
+
+
+  const handleDelete = (itemId) => {
+    axios.delete(`http://localhost:5000/Investigation/${itemId}`)
+      .then((response) => {
+        console.log('Investigation data deleted successfully');
+        fetchInvestigationData();
+        alert('Investigation data deleted successfully'); // Show alert after successful deletion
+      })
+      .catch((error) => {
+        console.error('Error while deleting investigation data:', error);
+        alert('Error while deleting investigation data'); // Show alert if there's an error
+      });
+  };
+
+
+  
+
+  const openEditModal = () => {
+    setIsEditModalOpen(true);
+  };
+
+  const closeEditModal = () => {
+    setIsEditModalOpen(false);
+    setSelectedItemId(null);
+    setEditedInvestigation({
+      _id: '',
+      date: '',
+      weight: '',
+      temperature: '',
+      bloodPressure: '',
+      oxygenSaturation: '',
+      bloodSugar: '',
+    });
+  };
+
+  const handleEdit = (itemId) => {
+    const selectedInvestigation = dummypatient1.find((item) => item._id === itemId);
+    setEditedInvestigation({
+      _id: selectedInvestigation._id,
+      date: selectedInvestigation.date,
+      weight: selectedInvestigation.weight,
+      temperature: selectedInvestigation.temperature,
+      bloodPressure: selectedInvestigation.bloodPressure,
+      oxygenSaturation: selectedInvestigation.oxygenSaturation,
+      bloodSugar: selectedInvestigation.bloodSugar,
+    });
+    openEditModal();
+  };
+
+  const handleUpdate = async () => {
+    try {
+      await axios.put(`http://localhost:5000/Investigation/${editedInvestigation._id}`, editedInvestigation);
+      closeEditModal();
+      // Refresh data after update
+      fetchInvestigationData();
+    } catch (error) {
+      console.error('Error updating investigation data:', error);
+    }
+  };
+
+
+  
   return (
     <div className="Formsq2">
       {isFormOpen && (
@@ -236,168 +335,37 @@ const Investigation = () => {
                 </tr>
               </thead>
               <tbody className="invest-tablebody">
-                {dummypatient1.map((data, index) => (
+              {currentItems.map((data, index) => (
                   <tr key={index}>
                     <td className="invest">{data.date}</td>
                     <td className="invest">{data.weight}</td>
                     <td className="invest">{data.temperature}</td>
                     <td className="invest">{data.bloodPressure}</td>
                     <td className="invest">{data.oxygenSaturation}</td>
-                    <td className="invest">{data.bloodSugar}</td>
-                    <td>
-                      <Popup
-                        trigger={
-                          <button className="int11">
-                            <IoSettings className="quit" />
-                          </button>
-                        }
-                        position="bottom"
-                      >
-                        <div>
-                        <div className="invest-pop">
-                          <Popup trigger={<button className='int'>Edit Investigation</button>}
-                                                modal nested>
-                                            <div className='profile-pop1'>
-                                            <div className='invest-popup'>
-                        <div className='invest-column'>
-                            <div className='invest123'>
-                                <div className='invest-investigation'>
-                                    Investigation
-                                    <button className='Invest-0' onClick={closeForm}><MdOutlineCancel className='invest-icon10'/></button>
-
-                                </div>
-                                {/* <div className='invest-icons'>
-                                    <button className='Invest-0' onClick={closeForm}><MdOutlineCancel className='invest-icon10'/></button>
-                                </div> */}
-                            </div>
-                            <hr></hr>
-                            <div className='invest-box'>
-                                <div className='invest-row'>
-                                    <div className='invest-date'>
-                                        Investigation Date : 
-                                    </div>
-                                    <div className='invest-place'>
-                                        <input className='invest-place' type="date" id="birthday" name="birthday"></input>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='insert-row'>
-                                <div className='insert-box1'>
-                                    <div className='insert-attributes'>
-                                        Investigation attributes
-                                    </div>
-                                </div>
-                                <div className='insert-box-2'>
-                                    <form >
-                                        <div className='invest-row'>
-                                            <div className='invest-column'>
-                                                <div className='insert-name1'>
-                                                <label for="psw">Temperature :</label>
-                                                <input className='insert-name2' type="text" placeholder="Temperature" name="" required></input>
-
-                                                </div>
-                                                <div className='insert-blood1'>
-                                                <label for="psw">Blood Pressure : </label>
-                                                <input className='insert-blood2' type="text" placeholder="Blood Pressure" name="" required></input>
-
-                                                </div>
-                                                <div className='insert-sugar1'>
-                                                <label for="psw">Blood Sugar :</label>
-                                                <input className='insert-sugar2' type="text" placeholder="Blood Sugar" name="" required></input>
-
-                                                </div>
-
-                                            </div>
-                                            <div className='insert-column'>
-                                                <div className='insert-weight1'>
-                                                <label for="psw">Weight :</label>
-                                                <input className='insert-weight2' type="text" placeholder="Weight" name="" required></input>
-
-                                                </div>
-                                                <div className='insert-oxygen1'>
-                                                <label for="psw">Oxygen Saturation : </label>
-                                                <input className='insert-oxygen2' type="text" placeholder="oxygen Saturation" name="" required></input>
-
-                                                </div>
-                                                <div className='insert-button8'>
-                                                <Popup trigger=
-                                                    { <button className='insert-button9'>Update Investigation</button> }
-                                                        position='top'>
-                                                            <div>
-                                                                <div className='Invest-successfully'>
-                                                                <div className='personal-row'>
-                                                                    <div className='personal-icon10'>
-                                                                        <AiOutlineCheckCircle className='personal-icon0'/>
-                                                                    </div>
-                                                                    <div className='personal-success'>
-                                                                        Saved Successfully
-                                                                    </div>
-                                                                </div>
-                                                                </div>
-                                                            </div>
-                                                            </Popup>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                            </div>
-                                        </Popup>
-                            <div className="deletes">
-                            <Popup trigger={<div className='profile-check5q'> Delete Investigation</div>}
-  modal nested>
-    <div >
-        <div className='invest-popup18'>
-            <div className='invest-formsss'>
-                <div className='invest-row'>
-                    <div className='invest-com'>
-                        Conform
-                    </div>
-                    <div className='invest-button41'>
-                        <button className='invest-button42' onClick={closeForm}>
-                            <AiOutlineClose className='invest-iconw'/>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-            <div className='invest-text90'>
-                Are You Sure You Want to change SMS Setting<br></br>this patient ? 
-            </div>
-            <div className='invest-row'>
-                <div className='invest-30'>
-                    <button className='invest-33'>
-                        Yes
-                    </button>
-                </div>
-                <div className='invest-31'>
-                    <button className='invest-33'>
-                        No
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-  </Popup>
-                            </div>
-                          </div>
-                        </div>
-                      </Popup>
-                    </td>
+                    <td className="invest">{data.bloodSugar}</td>                  
+              <td>
+                  <div className='edit-delete-dropdown'>
+                    <IoSettings
+                      className='edit-delete-icon'
+                      onClick={() => handleEditDelete(data._id)}
+                    />
+                    {selectedItemId === data._id && (
+                      <div className='edit-delete-options'>
+                        <button className='editbut4325' onClick={() => handleEdit(data._id)}>Edit</button>
+                        <button className='deletebut4325' onClick={() => handleDelete(data._id)}>Delete</button>
+                      </div>
+                    )}
+                  </div>
+                </td>             
                   </tr>
                 ))}
               </tbody>
-            </table>
+              </table>        
             <div className="pat-footer33pat123">
               <button
                 className="butpagenation1235"
                 onClick={() => handlePageChange(currentPage - 1)}
-                disabled={isFirstPage}
+                disabled={currentPage === 1}
               >
                 <AiOutlineStepBackward />
               </button>
@@ -405,16 +373,85 @@ const Investigation = () => {
               <button
                 className="butpagenation1235"
                 onClick={() => handlePageChange(currentPage + 1)}
-                disabled={isLastPage}
+                disabled={currentPage === totalPages}
               >
                 <AiOutlineStepForward />
               </button>
-            </div>
-          </div>
+            </div>       
+          </div>         
+{isEditModalOpen && (
+  <div className="edit-modal">
+    <h2>Edit Investigation</h2>
+    <label htmlFor="editDate">Date:</label>
+    <input
+      type="date"
+      id="editDate"
+      name="date"
+      value={editedInvestigation.date}
+      onChange={(e) =>
+        setEditedInvestigation({ ...editedInvestigation, date: e.target.value })
+      }
+    />
+    <label htmlFor="editWeight">Weight:</label>
+    <input
+      type="text"
+      id="editWeight"
+      name="weight"
+      value={editedInvestigation.weight}
+      onChange={(e) =>
+        setEditedInvestigation({ ...editedInvestigation, weight: e.target.value })
+      }
+    />
+    <label htmlFor="editTemperature">Temperature:</label>
+    <input
+      type="text"
+      id="editTemperature"
+      name="temperature"
+      value={editedInvestigation.temperature}
+      onChange={(e) =>
+        setEditedInvestigation({ ...editedInvestigation, temperature: e.target.value })
+      }
+    />
+    <label htmlFor="editBloodPressure">Blood Pressure:</label>
+    <input
+      type="text"
+      id="editBloodPressure"
+      name="bloodPressure"
+      value={editedInvestigation.bloodPressure}
+      onChange={(e) =>
+        setEditedInvestigation({ ...editedInvestigation, bloodPressure: e.target.value })
+      }
+    />
+    <label htmlFor="editOxygenSaturation">Oxygen Saturation:</label>
+    <input
+      type="text"
+      id="editOxygenSaturation"
+      name="oxygenSaturation"
+      value={editedInvestigation.oxygenSaturation}
+      onChange={(e) =>
+        setEditedInvestigation({ ...editedInvestigation, oxygenSaturation: e.target.value })
+      }
+    />
+    <label htmlFor="editBloodSugar">Blood Sugar:</label>
+    <input
+      type="text"
+      id="editBloodSugar"
+      name="bloodSugar"
+      value={editedInvestigation.bloodSugar}
+      onChange={(e) =>
+        setEditedInvestigation({ ...editedInvestigation, bloodSugar: e.target.value })
+      }
+    />
+    <button onClick={handleUpdate}>Update</button>
+    <button onClick={closeEditModal}>Cancel</button>
+  </div>
+)}
+
         </div>
       )}
-    </div>
-  );
-};
 
+
+    </div>
+    
+  );};
 export default Investigation;

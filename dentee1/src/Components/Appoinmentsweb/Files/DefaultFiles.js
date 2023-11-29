@@ -32,7 +32,7 @@ const Files = () => {
       });
 
 
-      const response = await axios.post('http://localhost:5001/upload', formData, {
+      
       const response = await axios.post('http://localhost:5000/api/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
@@ -62,7 +62,7 @@ const Files = () => {
     const fetchUploadedData = async () => {
       try {
 
-        const response = await axios.get('http://localhost:5001/uploadedData');
+        
         const response = await axios.get('http://localhost:5000/api/getUploadedData');
         const data = response.data;
         setUploadedData(data);

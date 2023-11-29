@@ -7,7 +7,7 @@ import axios from 'axios';
 const Precrisptionhome = () => {
   const [activeSection, setActiveSection] = useState('');
   const [prescriptions, setPrescriptions] = useState([]);
-<<<<<<< HEAD
+
 
   useEffect(() => {
     // Define a function to fetch prescription data
@@ -31,7 +31,7 @@ const Precrisptionhome = () => {
     // Call the fetchPrescriptions function
     fetchPrescriptions();
   }, []); 
-=======
+
   const [editingIndex, setEditingIndex] = useState(null);
   const [openSettingsRow, setOpenSettingsRow] = useState(null);
   const [patientData, setPatientData] = useState({
@@ -43,7 +43,7 @@ const Precrisptionhome = () => {
     Duration: '',
     Note: '',
   });
->>>>>>> 7abec5596c7d97a39ef0568bfd33f2b6cf52f59b
+
 
   const handleButtonClick = (section) => {
     setActiveSection(section);
@@ -122,11 +122,9 @@ const Precrisptionhome = () => {
 
   return (
     <div className="prescription-container">
-<<<<<<< HEAD
-      {activeSection === '' ? (
-=======
+
       {activeSection === '' ? ( 
->>>>>>> 7abec5596c7d97a39ef0568bfd33f2b6cf52f59b
+
         <div className="precriptionbody">
           <div className="headerbuttons">
             <button
@@ -140,7 +138,6 @@ const Precrisptionhome = () => {
           <table>
             <tbody>
           <div className="prescription-btm-para">
-<<<<<<< HEAD
          
             <ul>
               {prescriptions.map((row) => (
@@ -195,35 +192,20 @@ const Precrisptionhome = () => {
             </tbody>
           </table>
 
->>>>>>> 7abec5596c7d97a39ef0568bfd33f2b6cf52f59b
+
           </div>
           </tbody>
           </table>
         </div>
-<<<<<<< HEAD
       ) : (
         <div className="addprescription-1-sectionContainer">
           {activeSection === 'AddPrescription' && <Addprescription_1 prescriptions={prescriptions} />}
         </div>
-=======
-      ) : ( // Display the "Add Prescription" page
-      <div className="addprescription-1-sectionContainer">
-      {/* Render the "AddPrescription" component */}
-      {activeSection === 'AddPrescription' && (
-        <Addprescription_1
-          initialData={patientData}
-          editingIndex={editingIndex}
-          index={editingIndex}
-          patientData={patientData}
-          handleChange={handleChange}
-          handleSubmit={handleSubmit}
-        />
->>>>>>> 7abec5596c7d97a39ef0568bfd33f2b6cf52f59b
       )}
     </div>
   )}
-    </div>
-  );
-};
+  
+ 
+
 
 export default Precrisptionhome;

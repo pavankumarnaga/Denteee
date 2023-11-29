@@ -45,9 +45,9 @@ function App10() {
         <div className="Profile-1-container-btn-1">
           {activeSection === 'PersonalDetails-1' && (
             <div className={`popupupup ${isPersonalDetailsOpen ? 'open' : ''}`}>
-              {/* Button to close the Personal Details popup */}
+        
              <button className="close-button" onClick={closePersonalDetailsPopup}>
-                X
+             <Link href='/Appointment_header'>  X    </Link>
               </button> 
 
               <PersonalDetails />

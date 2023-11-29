@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import './Manageadduser.css';
+import './Manageadduser.css';  
 import { AiFillCaretDown, AiOutlineArrowLeft } from 'react-icons/ai';
 import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -22,10 +23,9 @@ const Adduser = () => {
 
   const handleSave = () => {
     axios
-      .post('http://127.0.0.1:5001/users', user)
+      .post('http://127.0.0.1:5000/api/users', user)
       .then((response) => {
         console.log('Response from server:', response.data);
-        
         // Handle any further actions, e.g., redirect or show a success message
       })
       .catch((error) => {
@@ -35,10 +35,10 @@ const Adduser = () => {
 
   return (
     <>
-      <Navbar />  
+      <Navbar />
       <Sidebar />
       <div className="manageadd">
-        <div className="add-main">
+      <div className="add-main">
           <Link to="/Manageuser">
             <button className="add-button1">
               <AiOutlineArrowLeft className="update-icon" />
