@@ -11,7 +11,7 @@ const bankdetailsRoutes = require('./routes/bankdetailsRoutes');
 const addPatientsRoutes = require('./routes/addPatientsRoutes');
 const  addpatientwebRoutes = require('./routes/addpatientwebRoutes');
 const  appointmentheaderRoutes = require('./routes/appointmentheaderRoutes');
-const  invesdtagationRoutes = require('./routes/invesdtagationRoutes');
+// const  invesdtagationRoutes = require('./routes/invesdtagationRoutes');
 const  patientnoteRoutes = require('./routes/patientnoteRoutes');
 const  addpreciptionRoutes = require('./routes/addpreciptionRoutes');
 const  defaultfileRoutes = require('./routes/defaultfileRoutes');
@@ -22,6 +22,7 @@ const personalAttributeRoutes = require('./routes/personalAttributeRoutes');
 const billpaymentRoutes = require('./routes/billpaymentRoutes');
 const adduserRoutes = require('./routes/adduserRoutes');
 const investagationRoutes = require('./routes/investagationRoutes');
+const managetreatmentRoutes = require('./routes/managetreatmentRoutes');
 
 
 
@@ -56,7 +57,7 @@ app.use('/api', bankdetailsRoutes);
 app.use('/api', addPatientsRoutes); 
 app.use('/api', addpatientwebRoutes); 
 app.use('/api', appointmentheaderRoutes); 
-app.use('/api', invesdtagationRoutes); 
+// app.use('/api', invesdtagationRoutes); 
 app.use('/api', patientnoteRoutes);
 app.use('/api', addpreciptionRoutes);
 app.use('/api', defaultfileRoutes);
@@ -67,6 +68,8 @@ app.use('/api', personalAttributeRoutes);
 app.use('/api', billpaymentRoutes);
 app.use('/api',adduserRoutes);
 app.use('/api',investagationRoutes);
+app.use('/api',managetreatmentRoutes);
+
 
 
 const PORT = process.env.PORT || 5000;

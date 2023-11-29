@@ -64,7 +64,7 @@ const closeForm = () => {
 
 const fetchInvestigationData = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/investigation');
+    const response = await axios.get('http://localhost:5000/api/investigation');
     const fetchedData = response.data;
     setDummyPatient1(fetchedData);
   } catch (error) {
@@ -87,7 +87,7 @@ const handleSaveInvestigation = () => {
     bloodSugar: investigationData.bloodSugar,
   };
 
-  axios.post('http://localhost:5000/Investigation', newInvestigation)
+  axios.post('http://localhost:5000/api/investigation', newInvestigation)
     .then((response) => {
       console.log('Investigation data saved successfully');
       fetchInvestigationData(); 
@@ -110,7 +110,7 @@ const handleSaveInvestigation = () => {
 
   const handleEditFormSubmit = () => {
     axios
-      .put(`http://localhost:5000/Investigation/${editedInvestigation._id}`, editedInvestigation)
+      .put(`http://localhost:5000/api/investigation/${editedInvestigation._id}`, editedInvestigation)
       .then((response) => {
         console.log('Investigation data updated successfully');
         alert('Investigation data updated successfully');
@@ -125,7 +125,7 @@ const handleSaveInvestigation = () => {
 
 
   const handleDelete = (itemId) => {
-    axios.delete(`http://localhost:5000/Investigation/${itemId}`)
+    axios.delete(`http://localhost:5000/api/investigation/${itemId}`)
       .then((response) => {
         console.log('Investigation data deleted successfully');
         fetchInvestigationData();
@@ -174,7 +174,7 @@ const handleSaveInvestigation = () => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5000/Investigation/${editedInvestigation._id}`, editedInvestigation);
+      await axios.put(`http://localhost:5000/api/investigation/${editedInvestigation._id}`, editedInvestigation);
       closeEditModal();
       // Refresh data after update
       fetchInvestigationData();
@@ -185,7 +185,7 @@ const handleSaveInvestigation = () => {
 
 
   
-  return (
+  return ( 
     <div className="Formsq2">
       {isFormOpen && (
         <div className="invest-main">

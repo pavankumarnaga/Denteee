@@ -29,7 +29,7 @@ function Managetreatment() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5001/Managetreatment?search=${searchKeyword}`);
+      const response = await axios.get(`http://localhost:5000/managetreatment?search=${searchKeyword}`);
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -58,7 +58,7 @@ function Managetreatment() {
     if (editingIndex !== -1) {
       try {
         const updatedMedicine = { ...data[editingIndex], ...newMedicine };
-        await axios.put(`http://localhost:5001/Managetreatment/${data[editingIndex]._id}`, updatedMedicine);
+        await axios.put(`http://localhost:5000/api/managetreatment/${data[editingIndex]._id}`, updatedMedicine);
         const updatedData = [...data];
         updatedData[editingIndex] = updatedMedicine;
         setData(updatedData);
@@ -67,7 +67,7 @@ function Managetreatment() {
       }
     } else {
       try {
-        const response = await axios.post('http://localhost:5001/Managetreatment', newMedicine);
+        const response = await axios.post('http://localhost:5000/api/managetreatment', newMedicine);
         setData([...data, response.data]);
       } catch (error) {
         console.error('Error adding medicine:', error);
@@ -104,7 +104,7 @@ function Managetreatment() {
   const handleDelete = async (index) => {
     try {
       const medicineId = currentPatients[index]._id; // Get the ID of the specific row in the current page
-      await axios.delete(`http://localhost:5001/Managetreatment/${medicineId}`);
+      await axios.delete(`http://localhost:5000/api/managetreatment/${medicineId}`);
       const updatedData = [...data];
       updatedData.splice(indexOfFirstItem + index, 1); // Remove the item from the complete data array
       setData(updatedData);
@@ -115,7 +115,7 @@ function Managetreatment() {
   
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`http://localhost:5001/Managetreatment`);
+      const response = await axios.get(`http://localhost:5000/api/managetreatment`);
       const allData = response.data;
   
       // Filter data based on the searchKeyword
