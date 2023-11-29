@@ -1,162 +1,273 @@
-
-
-
 .payment-total1{
-    height: 17vw;
-    /* width: 99%; */
-    width: 96.5%;
-    border: 1px solid  whitesmoke;
-    margin-top: 2%;
-    margin-left: 2%;   
+  height: 20vw;
+  /* width: 99%; */
+  width: 96.5%;
+  border: 1px solid  whitesmoke;
+  margin-top: 2%;
+  margin-left: 2%;   
 }
 .paymentin{
-    /* margin-left: 2%; */
-    display: flex;
-    margin: 2%;
-    align-items: center;
+  /* margin-left: 2%; */
+  display: flex;
+  margin: 2%;
+  align-items: center;
+  font-size: 18px;
 }
 .payment-selectoption{
-    height: 30px;
-    width: 130px;
-    margin-left: 1%;
-    /* border: none;
-    border-color: 5px solid grey; */
+  height: 4vh;
+  width: 10%;
+  margin-left: 1%;
+  /* border: none;
+  border-color: 5px solid grey; */
 }
 .payment-printbutton{
-    height: 30px;
-    width: 137px;
-    margin-left: 50%;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
+  height: 4vh;
+  width: 9%;
+  margin-left: 50%;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
 }
 
 .payment-printbutton:hover{
-  background-color: #3d50ae;
+background-color: #3d50ae;
 }
 .payment-addnew{
-    height: 30px;
-    width:177px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
+  height: 4vh;
+  width: 100%;
+  margin-left: 10%;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
 }
 
 .payment-addnew:hover{
-  background-color: #3d50ae;
+background-color: #3d50ae;
 
 }
 .invest2-table{
-    width:100%;
-    height: 40px;
-    border: 1px solid rgb(209, 203, 203);
-    border-collapse: collapse;
-    text-align: center;
+  width:100%;
+  height: 5vh;
+  border: 1px solid rgb(209, 203, 203);
+  border-collapse: collapse;
+  text-align: center;
 }
 .invest2-thead{
-    border: 1px solid rgb(209, 203, 203);
-    border-collapse: collapse;
-    background-color: #007bff;
-    color: white;
-    font-size: 14px;
-    height: 40px;
-    width: 100%;
-  
+  border: 1px solid rgb(209, 203, 203);
+  border-collapse: collapse;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  height: 5vh;
+  width: 100%;
+
 }
 .invest2-tablebody{
-    border-collapse: collapse;
-    height: 40px;
-    width: 100%;
-    text-align:center;
-    align-items: center;
+  border-collapse: collapse;
+  height: 5vh;
+  width: 100%;
+  text-align:center;
+  align-items: center;
+}
+.invest3{
+align-items: center;
+text-align: center;
+border:1px solid rgb(242, 238, 238);
 }
 .invest2-headrow th{
-  margin: 10px 30px;
+margin: 1% 3%;
+}
+
+.payment-box{
+height: 6.5vh;
+width: 5vw;
+background-color: #fff;
+box-shadow: 0px 0px  4px rgba(0,0,0,0.4);
+border-radius: 3px;
+margin-top: -25%;
+cursor: pointer;
+}
+.payment-edit{
+padding-left: 6%;
+}
+.payment-edit:hover{
+background-color: rgb(219, 216, 216);
+}
+.payment-active{
+height: 3vh;
+width: 5vw;
+background-color: #489cf6;
+color: white;
+align-items: center;
+border-radius: 2px;
+margin-left: 33%;
+}
+.a-note-12{
+height: 8vh;
+width: 15vw;
+background-color: #fff;
+box-shadow: 0px 0px  4px rgba(0, 0, 0, 0.4);
+margin-top: 35vh;
+margin-left: -85%;
+outline-width: 0px;
+border-radius: 3px;
 }
 
 
 @media only screen and (max-width: 500px) {
 
-    .payment-total1{
-        height: 35vw;
-        /* width: 99%; */
-        width: 93%;
-        border: 1px solid;
-        margin-top: 2%;
-        margin-left: 2%;   
-    }
+  .payment-total1{
+      height: 50vw;
+      /* width: 99%; */
+      width: 98%;
+      border: 1px solid whitesmoke;
+      margin-top: 5%;
+      margin-left: 2%;   
+  }
 
-    .payment-selectoption{
-        height: 30px;
-        width: 130px;
-        margin-left: 1%;
-        /* border: none;
-        border-color: 5px solid grey; */
+  .payment-selectoption{
+      height: 3.5vh;
+      width: 13%;
+      margin-left: 1%;
+      /* border: none;
+      border-color: 5px solid grey; */
+  }
+  .payment-printbutton{
+      height: 4vh;
+      width: 15%;
+      margin-left: 10%;
+      background-color: #007bff;
+      border: none;
+  }
+  .invest2-table{
+      width:98%;
+      height: 40%;
+      border: 1px solid rgb(209, 203, 203);
+      border-collapse: collapse;
+      text-align: center;
+      margin-left: 0.5%;
+      margin-top: 2%;
     }
-    .payment-printbutton{
-        height: 30px;
-        width: 137px;
-        margin-left: 10%;
-        background-color: aqua;
-        border: none;
-    }
-    .invest2-table{
-        width:98%;
-        height: 40%;
-        border: 1px solid rgb(209, 203, 203);
-        border-collapse: collapse;
-        text-align: center;
-        margin-left: 0.5%;
-      }
-      .invest2-thead{
-        border: 1px solid rgb(209, 203, 203);
-        border-collapse: collapse;
-        background-color: rgb(140, 140, 140);
-        font-size: 10px;
-        height: 40%;
-        width: 100%;
-      
-      }
-      .invest2-tablebody{
-        border-collapse: collapse;
-        height: 20%;
-        width: 100%;
-        text-align:center;
-        align-items: center;
-      }
-      .invest2-headrow th{
-      margin: 10px 30px;
-      }
+    .invest2-thead{
+      border: 1px solid rgb(209, 203, 203);
+      border-collapse: collapse;
+      background-color: rgb(140, 140, 140);
+      font-size: 10px;
+      height: 40%;
+      width: 100%;
     
-      /* th,td {
-        align-items: center;  
-        font-size: 7px;
-      } */
-      .invest-bills-payment-22{
-        align-items: center;  
-        font-size: 10px;
-      }
-      .invest-bills-payment-33{
-        align-items: center;  
-        font-size: 10px;
-      }
+    }
+    .invest2-tablebody{
+      border-collapse: collapse;
+      height: 20%;
+      width: 100%;
+      text-align:center;
+      align-items: center;
+    }
+    .invest2-headrow th{
+    margin: 1% 3%;
+    }
+  
+    /* th,td {
+      align-items: center;  
+      font-size: 7px;
+    } */
+    .invest-bills-payment-22{
+      align-items: center;  
+      font-size: 10px;
+    }
+    .invest-bills-payment-33{
+      align-items: center;  
+      font-size: 10px;
+    }
+    .paymentin{
+      margin: 2%;
+      font-size: 12px;
+    }
+    .payment-active{
+      height: 2.8vh;
+      width: 6vw;
+    }
+    .payment-box{
+      width: 12vw;
+      margin-left: -30%;
+    }
 }
-
 
 /* Add border styles to table, th, and td elements */
 .invest2-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #000; /* Add border to the entire table */
+width: 100%;
+border-collapse: collapse;
+border: 1px solid #000; /* Add border to the entire table */
 }
 
 .invest2 {
-  border: 1px solid whitesmoke; /* Add border to table header cells */
+border: 1px solid whitesmoke; /* Add border to table header cells */
 }
 
 .invest2{
-  border: 1px solid whitesmoke; /* Add border to table data cells */
+border: 1px solid whitesmoke; /* Add border to table data cells */
+}
+.payment-date123{
+height: 4vh;
+width: 10%;
+}
+
+
+.pay1-popup {
+position: fixed;
+top: 7%;
+left: 04%;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+}
+.pay1-popup-content {
+background-color: #fff;
+padding: 2%;
+border-radius: 8px;
+text-align: center;
+width: 25%;
+}
+
+.pay1-popup input {
+width: 70%; 
+ padding: 2%;
+margin-bottom: 2%;
+}
+
+.pay1-popup select {
+width: 74.5%; 
+ padding: 2%;
+margin-bottom: 2%;
+margin-left: -0.1%;
+}
+.pay1-popup-save:hover{
+background-color: #3d50ae;
+color: whitesmoke;
+}
+.pay1-popup-save {
+background-color: #007bff;
+color: #fff;
+padding: 2% 4%;
+border: none;
+cursor: pointer;
+margin-right: 1%;
+}
+
+.pay1-popup-close11 {
+padding: 1% 2%;
+border: none;
+cursor: pointer;
+background-color: white;
+margin-left: 85%;
+}
+.pay1-popup-close11:hover{
+background-color: white;
 }

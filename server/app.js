@@ -19,6 +19,7 @@ const appointmentpageRoutes= require('./routes/appointmentpageRoutes');
 const personalRoutes = require('./routes/personalRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const personalAttributeRoutes = require('./routes/personalAttributeRoutes');
+const billpaymentRoutes = require('./routes/billpaymentRoutes');
 
 
 
@@ -61,6 +62,7 @@ app.use('/api', appointmentpageRoutes);
 app.use('/api', personalRoutes);
 app.use('/api', contactRoutes);
 app.use('/api', personalAttributeRoutes);
+app.use('/api', billpaymentRoutes);
 
 
 const PORT = process.env.PORT || 5000;

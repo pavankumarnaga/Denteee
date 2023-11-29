@@ -1,43 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { AiOutlineStepBackward, AiOutlineCaretRight, AiOutlineStepForward } from "react-icons/ai";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import './Ledger.css';
+import axios from 'axios';
 
-const dummyData = [
-  {
-    date: '2023-10-01',
-    type: 'Expense',
-    details: 'Supplies',
-    bill: 150.0,
-    payment: 50.0,
-    balance: 100.0,
-  },
-  {
-    date: '2023-10-05',
-    type: 'Income',
-    details: 'Consultation Fee',
-    bill: 200.0,
-    payment: 0.0,
-    balance: 300.0,
-  },
-  // Add more dummy data items here
-];
 
 const Bills2 = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 1; // Number of items to display per page
+  const [payment, setPayment] = useState([]);
+  const [error, setError] = useState(null);
+  const itemsPerPage = 3; // Number of items to display per page
 
-  const totalItems = dummyData.length;
+  const totalItems = payment.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
-  const currentItems = dummyData.slice(startIndex, endIndex);
+  const currentItems = payment.slice(startIndex, endIndex);
 
   const handlePageChange = (newPage) => {
     if (newPage >= 1 && newPage <= totalPages) {
       setCurrentPage(newPage);
     }
   };
+
+  useEffect(() => {
+    // Fetch data from backend when the component mounts
+    axios.get('http://localhost:5000/api/newpayment',payment)
+      .then(response => {
+        console.log(response.data); // Log the data received from the backend
+        setPayment(response.data);   
+      })
+      .catch(error => {
+        console.error('Error fetching users:', error);
+        setError(error.message);
+      });
+  }, []);
 
   return (
     <div>
@@ -66,14 +63,14 @@ const Bills2 = () => {
                 </tr>
               </thead>
               <tbody className='patledger-tablebody'>
-                {currentItems.map((item, index) => (
+                {currentItems.map((payment, index) => (
                   <tr className='patledger-row' key={index}>
-                    <td className='patledger-td'>{item.date}</td>
-                    <td className='patledger-td'>{item.type}</td>
-                    <td className='patledger-td'>{item.details}</td>
-                    <td className='patledger-td'>{item.bill}</td>
-                    <td className='patledger-td'>{item.payment}</td>
-                    <td className='patledger-td'>{item.balance}</td>
+                    <td className='patledger-td'>{payment.date}</td>
+                    <td className='patledger-td'>{payment.type}</td>
+                    <td className='patledger-td'>{payment.details}</td>
+                    <td className='patledger-td'>{payment.bill}</td>
+                    <td className='patledger-td'>{payment.paynow}</td>
+                    <td className='patledger-td'>{payment.balance}</td>
                   </tr>
                 ))}
               </tbody>

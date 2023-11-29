@@ -36,7 +36,7 @@ const Loginpage = () => {
   return (
     <div className="login-page-saloon" style={{ backgroundImage: 'url("https://www.shutterstock.com/image-photo/banner-dentists-room-office-closeup-different-2157401121")' }}>
       <div className="login-container-saloon">
-        <h2 className='h2-saloon'>Login to Denteeeeee</h2>
+        <h2 className='h2-saloon'>Login to Dentee</h2>
         <form onSubmit={handleSubmit} autoComplete='off'>
           <div className="form-group-saloon">
             <input

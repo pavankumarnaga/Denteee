@@ -26,10 +26,17 @@ function Payment() {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [isPopupVisible, setPopupVisisble]= useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
+ 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editIndex, setEditIndex] = useState(null);
+  const [date, setDate] = useState([]);
+  const [paynow, setPaynow] = useState([]);
+  const [note, setNote] = useState([]);
+  const [paymentMode, setPaymentMode] = useState([]);
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/payments?search=${searchKeyword}`
+        `http://127.0.0.1:5000/api/newpayment?search=${searchKeyword}`
       );
       setPayments(response.data);
     } catch (error) {
@@ -46,7 +53,7 @@ function Payment() {
   useEffect(() => {
     // Fetch payments from the backend
     axios
-      .get("http://localhost:5000/api/payments")
+      .get("http://127.0.0.1:5000/api/newpayment")
       .then((response) => setPayments(response.data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -90,7 +97,7 @@ function Payment() {
     // Add logic to save the edited payment to the backend
     axios
       .put(
-        `http://localhost:5000/api/payments/${selectedPayment._id}`,
+        `http://127.0.0.1:5000/api/newpayment/${selectedPayment._id}`,
         selectedPayment
       )
 
@@ -119,7 +126,7 @@ function Payment() {
   const handleDelete = (paymentId) => {
     // Add logic for deleting the payment with the given paymentId
     axios
-      .delete(`http://localhost:5000/api/payments/${paymentId}`)
+      .delete(`http://127.0.0.1:5000/api/newpayment/${paymentId}`)
       .then((response) => {
         console.log(`Successfully deleted payment with id ${paymentId}`);
         // Handle any additional logic after deletion
@@ -185,6 +192,7 @@ function Payment() {
                   <th className="pay-table-head">Action</th>
                 </tr>
               </thead>
+              <tbody>
               {currentItems.map((payment) => (
                 <tr key={payment._id} className="pay-some-1">
                   <td>{payment.receiptDate}</td>
@@ -286,6 +294,7 @@ function Payment() {
                   </td>
                 </tr>
               ))}
+              </tbody>
             </table>
           </div>
           <div className="pay-total">

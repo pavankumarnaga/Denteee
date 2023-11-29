@@ -31,7 +31,7 @@ const PrescriptionDetail = () => {
       notes: Array.from(document.querySelectorAll('.select-note')).map(noteInput => noteInput.value),
     };
 
-    const response = await fetch('http://localhost:5000/api/prescriptions', {
+    const response = await fetch('http://localhost:5001/api/prescriptions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ const PrescriptionDetail = () => {
               <Popup trigger={
                 <input
                 type='text'
-                placeholder='Select '
+                placeholder='Select Medicine'
                 className='choose-medicine'
                 value={selectedMedicine} // This sets the input value to the selectedMedicine
                 onClick={() => handleMedicineSelect('')} // Pass an empty string for now

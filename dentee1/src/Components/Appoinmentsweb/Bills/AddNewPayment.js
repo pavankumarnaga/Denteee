@@ -1,14 +1,61 @@
 import './AddNewPayment.css';
-import { AiOutlineArrowLeft, AiFillCreditCard } from "react-icons/ai";
+import { LiaClipboardSolid } from "react-icons/lia";
 import { BiSolidFlagAlt } from "react-icons/bi";
 import { CiSearch } from "react-icons/ci";
 import Popup from 'reactjs-popup';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Appointment_header from '../Appointment-header';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
-function Add_New_Payment() {
+function Add_New_Payment({ editPayment }) {
+
+  const [payment, setPayment] = useState({
+    date: editPayment ? editPayment.date : '',
+    paynow: editPayment ? editPayment.paynow : '',
+    note: editPayment ? editPayment.note : '',
+    paymentMode: editPayment ? editPayment.paymentMode : 'Select PaymentMode',
+  });
+
+  const handleInputChange = (e) => {    
+    const { name, value } = e.target;
+    setPayment({ ...payment, [name]: value });
+  };
+
+
+  useEffect(() => {
+    if (editPayment) {
+      setPayment({
+        date: editPayment.date,
+        paynow: editPayment.paynow,
+        note: editPayment.note,
+        paymentMode: editPayment.paymentMode,
+      });
+    }
+  }, [editPayment]);
+
+  const handleSave = () => {
+    const requestData = {
+      date: payment.date,
+      paynow: payment.paynow,
+      paymentMode: payment.paymentMode,
+      note: payment.note, // Add the note to the request data
+    };
+  
+    axios
+      .post('http://127.0.0.1:5000/api/newpayment', requestData)
+      .then((response) => {
+        console.log('Response from server:', response.data);
+        // Handle any further actions, e.g., redirect or show a success message
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
+  
+
+
    
   const [buttonText, setButtonText] = useState('Show');
   const handleClick = () => {
@@ -19,6 +66,10 @@ function Add_New_Payment() {
    }
  };
   const [selectedPaymentMode, setSelectedPaymentMode] = useState(''); // State for selected payment mode
+
+
+
+
   return (
     <>
     <Appointment_header/>
@@ -26,19 +77,50 @@ function Add_New_Payment() {
       <div className="addaPay-Body">
         <div className='addapay-selc'>
           <div className='addt-p-a'>Add Payment</div>
-          <input type='date' className='add-date4'/>
+          <input 
+            type='date' 
+            className='add-date4'
+            name='date'
+            value={payment.date}
+            onChange={handleInputChange}
+            />
           <div className='adda-paynow'>
             <div className='adda-paynow-1'> PayNow :</div>
-            <div className='adda-paynow-2'><input className='a-paynow-2-1' placeholder='Received Amount'></input></div>
-            <div className='adda-paynow-3'><AiFillCreditCard className='rec-icon' /></div>
+            <div className='adda-paynow-2'>
+              <input 
+                className='a-paynow-2-1' 
+                placeholder='Received Amount'
+                name='paynow'
+                value={payment.paynow}
+                onChange={handleInputChange}
+              />
+            </div>
+          
+            <Popup
+              trigger={<LiaClipboardSolid className='rec-icon' />}
+              modal nested
+            >
+              <input
+                type='text'
+                className='a-note-12'
+                placeholder='Note'
+                name='note'
+                value={payment.note}
+                onChange={handleInputChange}
+              />
+            </Popup>
+
+
           </div>
           <div className='addapay-mode'>
             <div className='addapay-mode-1'>Payment Mode:</div>
             <div className='addapay-mode-3'>
               <select
                 className='addapay-mode-2'
-                value={selectedPaymentMode}
-                onChange={(e) => setSelectedPaymentMode(e.target.value)}
+                name='paymentMode'
+                value={payment.paymentMode}
+                onChange={handleInputChange}
+                // onChange={(e) => setSelectedPaymentMode(e.target.value)}
               >
                 <div className='addnikh-1'>
               {selectedPaymentMode && (
@@ -61,11 +143,10 @@ function Add_New_Payment() {
                 </Popup>
               )}
             </div>
-                <option value="">Select Payment Mode</option>
-                <option value="Credit Card">Credit Card</option>
-                <option value="Debit Card">Debit Card</option>
+                <option value="">Select PaymentMode</option>
+                <option value="Card">Card</option>
                 <option value="UPI">UPI</option>
-                <option value="Online Banking">Online Banking</option>
+                <option value="Cash">Cash</option>
               </select>
             </div>
           </div>
@@ -109,7 +190,7 @@ function Add_New_Payment() {
             <div className='apay-f3'>Billed Invoices With Pending Payments</div>
           </div>
           <div className='addapay-ff1'>
-            <div className='apay-ff2'><button className='addapay-save'>Save</button></div>
+            <div className='apay-ff2'><button className='addapay-save' onClick={handleSave} >Save</button></div>
             <div className='addapay-ff3'><Link to='/Appointment_header'><button className='addapay-cancel'>Cancel</button></Link></div>
           </div>
         </div>
@@ -119,4 +200,4 @@ function Add_New_Payment() {
   );
 }
 
-export default Add_New_Payment;
+export default Add_New_Payment;

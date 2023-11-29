@@ -19,7 +19,7 @@ function AddPayment() {
   const handleSave = async () => {
     try {
    
-      const response = await axios.post('http://localhost:3006/api/payments', {
+      const response = await axios.post('http://127.0.0.1:5000/api/newpayment', {
         date: selectedDate,
         receivedAmount: receivedAmount,
         paymentMode: selectedPaymentMode,
