@@ -21,8 +21,9 @@ const Patient = () => {
 
   
   useEffect(() => {
-    axios.get('http://localhost:5002/Addpatient')
+    axios.get('http://localhost:5000/api/Addpatient')
       .then((response) => {
+        console.log('Fetched data:', response.data);
         setPatients(response.data);
         setLoading(false);
       })
@@ -31,6 +32,7 @@ const Patient = () => {
         setLoading(false);
       });
   }, []);
+  
 
 
 
@@ -45,7 +47,7 @@ const Patient = () => {
   
   const deletePatient = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5002/Addpatient/${id}`);
+      const response = await axios.delete(`http://localhost:5000/api/Addpatient/${id}`);
       if (response.data.message === 'Record deleted successfully') {
         // If the deletion was successful, update the state to reflect the changes
         const updatedPatients = patients.filter((patient) => patient._id !== id);
@@ -75,14 +77,15 @@ const Patient = () => {
   const filteredPatients = patients.filter((patient) => {
     const searchLowerCase = searchText.toLowerCase();
     return (
-      patient.firstName.toLowerCase().includes(searchLowerCase) ||
-      patient.lastName.toLowerCase().includes(searchLowerCase) ||
-      patient.customerId.toLowerCase().includes(searchLowerCase) ||
-      patient.age.toString().includes(searchLowerCase) ||
-      patient.gender.toLowerCase().includes(searchLowerCase) ||
-      patient.phoneNumber.includes(searchLowerCase)
+      (patient.firstName && patient.firstName.toLowerCase().includes(searchLowerCase)) ||
+      (patient.lastName && patient.lastName.toLowerCase().includes(searchLowerCase)) ||
+      (patient.customerId && patient.customerId.toLowerCase().includes(searchLowerCase)) ||
+      (patient.age && patient.age.toString().includes(searchLowerCase)) ||
+      (patient.gender && patient.gender.toLowerCase().includes(searchLowerCase)) ||
+      (patient.phoneNumber && patient.phoneNumber.includes(searchLowerCase))
     );
   });
+  
 
 
   const patientsPerPage = 2;
@@ -143,7 +146,8 @@ const Patient = () => {
               .slice((currentPage - 1) * patientsPerPage, currentPage * patientsPerPage).map((patient) => (
                 <tr key={patient._id}>
                   <td className='patient-gt'>
-                       <img src={`http://localhost:5002/${patient.imagePath}`} alt={`Patient ${patient.firstName} ${patient.lastName}`} className="patient-image77331" />
+                  <img src={`http://localhost:5000/${patient.imagePath}`} alt={`Patient ${patient.firstName} ${patient.lastName}`} className="patient-image77331" />
+
                   </td>
                   <td className='patient-gt'>{patient.firstName}{patient.lastName}</td>
                   <td className='patient-gt'>{patient.customerId}</td>

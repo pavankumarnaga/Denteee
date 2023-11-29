@@ -5,6 +5,67 @@
     margin-left: 10px;
     margin-top: 2%;
 }
+
+
+/* Styles for Edit and Delete buttons */
+.edit-delete-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .edit-delete-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #808080;
+    margin-right: 10px;
+  }
+  
+  .edit-delete-options {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+  }
+  
+  .edit-delete-dropdown:hover .edit-delete-options {
+    max-height: 100px; /* Change this value to fit your content */
+    overflow-y: auto;
+  }
+  
+  .edit-delete-options button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-delete-options button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for Edit button */
+  .editbut4325 {
+    color: black;
+  }
+  
+  /* Style for Delete button */
+  .deletebut4325 {
+    color: black;
+  }
+
+  
+
+
 .appoin-butt{
     background-color:#007bff;
     color: white;

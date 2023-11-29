@@ -1,38 +1,103 @@
-import React from 'react'
-import './Contact.css'
-
+import React, { useState } from 'react';
+import axios from 'axios';
+import './Contact.css';
 
 const Contact = () => {
+    const initialFormData = {
+      flatNo: '',
+      road: '',
+      city: '',
+      state: 'Select State',
+      country:'Select country',
+      pincode: '',
+    };
+  
+    const [formData, setFormData] = useState(initialFormData);
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await axios.post('http://localhost:5000/api/Contact', formData);
+  
+        if (response.status === 200) {
+          console.log('Data posted successfully');
+          window.alert('data posted successfully')
+          // Show alert after successful submission
+          alert('Data posted successfully');
+          // Clear form fields after submission
+          setFormData(initialFormData);
+        } else {
+          console.error('Failed to post data');
+          window.alert('data posted  unsuccessfully')
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    };
   return (
     <div className='Formsq1'>
-        {/* <form> */}
-        <div className='contact-main'>
-            
-            <div className='contact-column'>
-                <div className='contact-row'>
-                    <div className='contact-flat1'>
-                        <input className='contact-flat2' type="text" id="name" name="name" placeholder='Flat/door/block no' required="" ></input>
-                        
-                    </div>
-                    <div className='contact-road1'>
-                        <input className='contact-road2' type="text" id="name" name="name" placeholder='Road/street/lane' required="" ></input>
-                        
-                    </div>
-                    <div className='contact-city1'>
-                        <input className='contact-city2' type="text" id="name" name="name" placeholder='City' required="" ></input>
-                        
-                    </div>
-                </div>
-                <div className='contact-row'>
-                    <div className='contact-select1'>
-                        <select name="state" id="state" class="contact-select2">
-                            <option value="Andhra Pradesh">Select State</option>
-                            <option value="Andhra Pradesh">Andhra Pradesh</option>
-                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                            <option value="Assam">Assam</option>
-                            <option value="Bihar">Bihar</option>
-                            <option value="Chandigarh">Chandigarh</option>
+      <div className='contact-main'>
+        <form onSubmit={handleSubmit}>
+          <div className='contact-column'>
+            <div className='contact-row'>
+              <div className='contact-flat1'>
+                <input
+                  className='contact-flat2'
+                  type="text"
+                  name="flatNo"
+                  value={formData.flatNo}
+                  onChange={handleInputChange}
+                  placeholder='Flat/door/block no'
+                  required
+                />
+              </div>
+              <div className='contact-road1'>
+                <input
+                  className='contact-road2'
+                  type="text"
+                  name="road"
+                  value={formData.road}
+                  onChange={handleInputChange}
+                  placeholder='Road/street/lane'
+                  required
+                />
+              </div>
+              <div className='contact-city1'>
+                <input
+                  className='contact-city2'
+                  type="text"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleInputChange}
+                  placeholder='City'
+                  required
+                />
+              </div>
+            </div>
+            <div className='contact-row'>
+              <div className='contact-select1'>
+                <select
+                  name="state"
+                  id="state"
+                  className="contact-select2"
+                  value={formData.state}
+                  onChange={handleInputChange}
+                >
+                  <option value="Select State">Select State</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chandigarh">Chandigarh</option>
                             <option value="Chhattisgarh">Chhattisgarh</option>
                             <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
                             <option value="Daman and Diu">Daman and Diu</option>
@@ -63,12 +128,20 @@ const Contact = () => {
                             <option value="Uttar Pradesh">Uttar Pradesh</option>
                             <option value="Uttarakhand">Uttarakhand</option>
                             <option value="West Bengal">West Bengal</option>
-                        </select>
+                         
+                            </select>
                     </div>
                     <div className='contact-country1'>
-                        <select className='contact-country2' id="country" name="country">
-                            <option>Select country</option>
-                            <option value="AF">Afghanistan</option>
+                    <select
+                name="country"
+                id="country"
+                className="contact-country2"
+                value={formData.country}
+                onChange={handleInputChange}
+              >
+                          
+                          <option value="Select country">Select country</option>
+                          <option value="AF">Afghanistan</option>
                             <option value="AX">Aland Islands</option>
                             <option value="AL">Albania</option>
                             <option value="DZ">Algeria</option>
@@ -320,22 +393,30 @@ const Contact = () => {
                             <option value="YE">Yemen</option>
                             <option value="ZM">Zambia</option>
                             <option value="ZW">Zimbabwe</option>
-                        </select>
-                    </div>
-                    <div className='contact-pincode1'>
-                        <input className='contact-pincode2' type="text" id="name" name="name" placeholder='Pin/Zip Code' required="" ></input>
-
-                    </div>
-                </div>
-                <div className='contact-button3'>
-                    <button className='contact-button4' type="submit">Save</button>
-                </div>
+                        
+               
+                </select>
+              </div>
+              <div className='contact-pincode1'>
+                <input
+                  className='contact-pincode2'
+                  type="text"
+                  name="pincode"
+                  value={formData.pincode}
+                  onChange={handleInputChange}
+                  placeholder='Pin/Zip Code'
+                  required
+                />
+              </div>
             </div>
-            
-        </div>
-        {/* </form> */}
+            <div className='contact-button3'>
+              <button className='contact-button4' type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

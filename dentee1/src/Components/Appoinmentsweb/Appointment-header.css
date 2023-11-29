@@ -625,7 +625,8 @@
 .ntr-addin-date-sele{
     height: 10%;
     width: 80.3%;
-    border: 0.5px solid gray;
+    /* border: 0.5px solid gray; */
+    border: none;
     align-items: center;
     margin-top: 15px;
     margin-left: 10%;
@@ -915,7 +916,7 @@
     color: rgb(71, 69, 69);
 }
 
-/* ------------------------------** Filed selection bar **--------------------------------------- */
+/* ------------------------------* Filed selection bar *--------------------------------------- */
 
 
 .ntr-appo-selectionbar ul li:hover{

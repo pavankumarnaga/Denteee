@@ -40,28 +40,29 @@ const Appointment_header = () => {
   // const [patientData, setPatientData] = useState(null);
 
   const { patientId } = useParams();
+  const [treatmentData, setTreatmentData] = useState(null);
   const [selectedPatient, setSelectedPatient] = useState(null);
-
-
   const [patients, setPatients] = useState(null);
-
   const [isFullscreen, setIsFullscreen] = useState(false);
-
-    const inputRef = useRef(null);
-
-    const handleImageClick = () =>{
+  const inputRef = useRef(null);
+  const handleImageClick = () =>{
       inputRef.current.click();
     }
-
-
-
-    const handlePatientClick = (id) => {
+  const handlePatientClick = (id) => {
       setSelectedPatient(id);
     };
+    const [formData, setFormData] = useState({
+      temperature: '',
+      bloodPressure: '',
+      bloodSugar: '',
+      weight: '',
+      oxygenSaturation: '',
+      investigationDate: '',
+    });  
 
     useEffect(() => {
       if (patientId) {
-        const apiUrl = `http://localhost:5002/Addpatient/${patientId}`;
+        const apiUrl = `http://localhost:5000/api/Addpatient/${patientId}`;
         axios
           .get(apiUrl)
           .then((response) => {
@@ -73,7 +74,24 @@ const Appointment_header = () => {
       }
     }, [patientId]);
    
-
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
+    
+      axios.post('http://localhost:5000/api/investigations', formData)
+        .then((response) => {
+          // Handle success response
+          console.log('Investigation data posted successfully:', response.data);
+          
+          // Show alert for successful data posting
+          alert('Investigation data posted successfully!');
+        })
+        .catch((error) => {
+          // Handle error
+          console.error('Error posting investigation data:', error);
+          alert('Failed to post investigation data.');
+        });
+    };
+    
 
   
 
@@ -110,6 +128,13 @@ const Appointment_header = () => {
     setActiveSection(section);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
     
 
       return (
@@ -133,11 +158,18 @@ const Appointment_header = () => {
 
               <button className='ntr-img-upload'>
       {selectedPatient && selectedPatient.imagePath && (
-        <img src={`http://localhost:5002/${selectedPatient.imagePath}`} alt={`Patient ${selectedPatient.firstName} ${selectedPatient.lastName}`} className="patient-image775557" />
+        <img src={`http://localhost:5000/${selectedPatient.imagePath}`} alt={`Patient ${selectedPatient.firstName} ${selectedPatient.lastName}`} className="patient-image775557" />
       )}
     </button>
     </div>
-          </div>
+                {/* <button className='ntr-img-upload'>            
+                <img src={`http://localhost:5002/${selectedPatient.imagePath}`} alt={`Patient ${selectedPatient.firstName} ${selectedPatient.lastName}`} className="patient-image775557" />
+              </button></div> */}
+              {/* <input type='file'  ref={inputRef} className='ntr-img-upload-1' placeholder='upload'> */}
+
+                {/* </input>  */}
+
+              </div>
               <div className='ntr-patient-de'>
              
 
@@ -157,15 +189,16 @@ const Appointment_header = () => {
                 <BsFillPeopleFill className="ntr-patient-gender" /> {selectedPatient.gender}
               </td>
               <td>
-                <FaUserTie className="ntr-patient-age" /> {selectedPatient.age}
+              <FaMobileRetro className="ntr-patient-mno" /> {selectedPatient.phoneNumber}
               </td>
             </tr>
             <tr className="ntr-table-data-1" key={selectedPatient._id}>
               <td>
-                <FaMobileRetro className="ntr-patient-mno" /> {selectedPatient.phoneNumber}
+              <FaUserTie className="ntr-patient-age" /> {selectedPatient.age}
               </td>
               <td>
                 <LuMailPlus className="ntr-patient-mail" /> {selectedPatient.email}
+                
               </td>
               
             </tr>
@@ -192,8 +225,10 @@ const Appointment_header = () => {
                 <Popup trigger=
                 {<button className='ntr-wtsapp'>
 
-<ReactWhatsapp number="+91" class="btn btn-outline-primary" message="">Whatsapp</ReactWhatsapp>
-                  <BiLogoWhatsapp className='ntr-wtsapp-icon'/>Whatsapp</button>} 
+{/* <ReactWhatsapp number="+91" class="btn btn-outline-primary" message="">Whatsapp</ReactWhatsapp> */}
+                  <BiLogoWhatsapp className='ntr-wtsapp-icon'/>Whatsapp
+                  </button>
+                  } 
                 modal nested>
                 {   
                     close => (
@@ -382,43 +417,93 @@ const Appointment_header = () => {
                                       <IoCloseSharp/>
                               </button>
                           </div>
-                          <div className='ntr-addin-date-sele'>
-                           <div className='ntr-addin-text-1' ><span className='ntr-addin-text'>Investigation Date:</span></div>
+                          {/* <div className='ntr-addin-date-sele'>
+                           <div className='ntr-addin-text-1' >
+                            <span className='ntr-addin-text'>Investigation Date:</span>
+                            </div>
                            <div> <input className='ntr-addin-date' type='date'></input></div>
-                          </div>
-                          <div className='ntr-addin-body'>
-                            <div className='ntr-addin-body-1'>Investigation Attributes</div>
-                            <div className='ntr-addin-attri'>
-                              <div className='ntr-addin-attri-1'>
-                                 <div className='ntr-addin-leftatt-1'>
-                                    <span> Temparature:</span>
-                                    <input className='ntr-addin-temp' placeholder='Temparature'></input>
-                                 </div>
-                                 <div  className='ntr-addin-leftatt-2'>
-                                    <span> Blood Pressure:</span>
-                                    <input className='ntr-addin-bp' placeholder='Blood Pressure'></input>
-                                 </div>
-                                 <div className='ntr-addin-leftatt-3'>
-                                    <span> Blood Sugar:</span>
-                                    <input className='ntr-addin-bs' placeholder='Blood Sugar'></input>
-                                 </div>
-                                 
-                              </div>
-                              <div className='ntr-addin-attri-2'>
-                                  <div className='ntr-addin-right-1'>
-                                    <span> Weight:</span>
-                                    <input className='ntr-addin-weight' placeholder='Weight'></input>
-                                  </div>
-                                  <div className='ntr-addin-right-2'>
-                                    <span> Oxygen Saturation:</span>
-                                    <input className='ntr-addin-oxs' placeholder='Oxygen Saturation'></input>
-                                  </div>
-                              </div>
-                            </div>
-                            <div>
-                              <button className='ntr-addin-saveinvest'>Save Investigation</button>
-                            </div>
-                          </div>  
+                          </div> */}
+                           <div className='ntr-addin-date-sele'>
+          <div className='ntr-addin-text-1'>
+            <span className='ntr-addin-text'>Investigation Date:</span>
+          </div>
+          <div>
+            <input
+              className='ntr-addin-date'
+              type='date'
+              name='investigationDate'
+              value={formData.investigationDate}
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+  <div className='ntr-addin-body'>
+      <form onSubmit={handleFormSubmit}>
+        <div className='ntr-addin-body-1'>Investigation Attributes</div>
+        <div className='ntr-addin-attri'>
+          <div className='ntr-addin-attri-1'>
+            <div className='ntr-addin-leftatt-1'>
+              <span>Temperature:</span>
+              <input
+                className='ntr-addin-temp'
+                name='temperature'
+                placeholder='Temperature'
+                value={formData.temperature}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className='ntr-addin-leftatt-2'>
+              <span>Blood Pressure:</span>
+              <input
+                className='ntr-addin-bp'
+                name='bloodPressure'
+                placeholder='Blood Pressure'
+                value={formData.bloodPressure}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className='ntr-addin-leftatt-3'>
+              <span>Blood Sugar:</span>
+              <input
+                className='ntr-addin-bs'
+                name='bloodSugar'
+                placeholder='Blood Sugar'
+                value={formData.bloodSugar}
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+          <div className='ntr-addin-attri-2'>
+            <div className='ntr-addin-right-1'>
+              <span>Weight:</span>
+              <input
+                className='ntr-addin-weight'
+                name='weight'
+                placeholder='Weight'
+                value={formData.weight}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className='ntr-addin-right-2'>
+              <span>Oxygen Saturation:</span>
+              <input
+                className='ntr-addin-oxs'
+                name='oxygenSaturation'
+                placeholder='Oxygen Saturation'
+                value={formData.oxygenSaturation}
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+        </div>
+       
+        <div>
+          <button type='submit' className='ntr-addin-saveinvest'>
+            Save Investigation
+          </button>
+        </div>
+      </form>
+    </div>
                       </div>
                   )
               }
@@ -460,8 +545,22 @@ const Appointment_header = () => {
                 </div>
               </div>
               <div className='ntr-patient-sum'>
-                <p className='ntr-patient-sum-15'> Treatment Cost: INR <span>0.00</span> {''}| {''} Paid: INR <span>0.00</span>  {''}|{''} Balance: INR <span>0.00</span></p>
+                {/* <p className='ntr-patient-sum-15'> Treatment Cost: INR <span>0.00</span> {''}| {''} Paid: INR <span>0.00</span>  {''}|{''} Balance: INR <span>0.00</span></p>
                 <p  className='ntr-patient-sum-22'> Billed: INR <span>0.00</span> {''}| {''} Billed Balance: INR <span>0.00</span></p>
+                 */}
+
+ {treatmentData ? (
+        <>
+          <p className='ntr-patient-sum-15'>
+            Treatment Cost: INR <span>{treatmentData.treatmentCost}</span> | Paid: INR <span>{treatmentData.paidAmount}</span> | Balance: INR <span>{treatmentData.balanceAmount}</span>
+          </p>
+          <p className='ntr-patient-sum-22'>
+            Billed: INR <span>{treatmentData.billedAmount}</span> | Billed Balance: INR <span>{treatmentData.billedBalance}</span>
+          </p>
+        </>
+      ) : (
+        <p></p>
+      )}
                 <div className='ntr-patient-tips-20'>
                 <div><input type='date' className='ntr-date-123'></input></div>
                  {/* <div className='ntr-patient-tips-19'> 

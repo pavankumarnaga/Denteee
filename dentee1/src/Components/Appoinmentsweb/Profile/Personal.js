@@ -7,6 +7,8 @@ import { BiSearch } from 'react-icons/bi';
 import { BsFillCreditCardFill, BsFillPlusSquareFill } from 'react-icons/bs';
 import one from "./Images/Two.png";
 import Popup from 'reactjs-popup';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -45,7 +47,8 @@ const PersonalForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5001/personal1', {
+
+const response = await fetch('http://localhost:5000/api/Personal1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
